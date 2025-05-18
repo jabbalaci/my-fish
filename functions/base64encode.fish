@@ -1,0 +1,10 @@
+function base64encode -d "Base64 encode (filter)"
+    python3 -c "
+import base64
+import sys
+
+s = sys.stdin.read().rstrip('\r\n')
+data = base64.b64encode(s.encode())
+print(data.decode())
+"
+end

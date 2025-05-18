@@ -1,0 +1,2 @@
+.fish scripts here (in ~/.config/fish/conf.d/)
+are executed before config.fish

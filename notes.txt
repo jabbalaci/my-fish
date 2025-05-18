@@ -1,0 +1,35 @@
+Set fish to be the default shell:
+
+    $ chsh -s $(which fish)
+
+---
+
+Execute
+
+    $ fish_update_completions
+
+to update completions using manual pages.
+
+---
+
+    $ fish_config                           # start web UI
+
+    $ fish_config theme show                # Iterate over the different themes
+    $ fish_config theme show Tomorrow       # Show a single theme
+
+    $ fish_config prompt list               # List all prompts
+    $ fish_config prompt show informative   # Show a single prompt example
+
+---
+
+    $ fisher update
+
+update the plugins by using the `fish_plugins` file
+
+---
+
+    $ fish -P
+
+fish is running in private mode, history will not be persisted.
+
+---
