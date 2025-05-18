@@ -1,7 +1,7 @@
 # My Fish
 
 This repo. contains my configuration files for
-the [Fish shell](https://fishshell.com/).
+the [Fish 🐟 shell](https://fishshell.com/).
 
 Location of this folder: `~/.config/fish`
 
