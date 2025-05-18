@@ -5,6 +5,14 @@ the [Fish shell](https://fishshell.com/).
 
 Location of this folder: `~/.config/fish`
 
+## Screenshot
+
+<p align="center">
+  <img width="100%" src="https://i.imgur.com/7U8EtJ0.png">
+</p>
+
+I use a light theme, BTW.
+
 ## Filters
 
 I've made lots of useful filters that you can
