@@ -101,3 +101,6 @@ abbr rel "clear; exec fish"            # reload configuration changes in-place
 alias dlang "jkb dlang"
 alias nimm "jkb nim"
 alias pas "jkb pascal"
+abbr clip "xsel -b"
+abbr cb "xsel -b"
+abbr tocb "xsel -b"

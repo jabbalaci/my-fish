@@ -33,6 +33,7 @@ wolf, wolfram                       - ask Wolfram Alpha
 hexview                             - show hex values of the input
 randomline                          - select a non-empty random line
 between                             - print lines between <start_line> and <end_line> (incl.)
+sparkline                           - generate sparkline chart from numbers
 === Fun ===
 typewriter(2)                       - print text with some delay (without and with sound)
 rot13, caesar                       - ROT13 cipher, Caesar cipher with <rot>
