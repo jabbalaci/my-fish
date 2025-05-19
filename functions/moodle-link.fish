@@ -13,3 +13,5 @@ function moodle-link -d "Put a link on the given URL without embedding it | Mood
     echo -n $text | xsel -b
     echo "# copied to the clipboard"
 end
+
+# skip

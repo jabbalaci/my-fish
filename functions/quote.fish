@@ -1,3 +1,11 @@
+false && begin  # example
+    % echo "largest prime below 1 million" | quote
+    largest+prime+below+1+million
+    % echo "largest prime below 1 million" | quote | unquote
+    largest prime below 1 million
+end
+
+
 function quote -d "Create GET-style quoted text (filter)"
     python3 -c "
 import sys

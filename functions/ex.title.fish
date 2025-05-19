@@ -1,3 +1,13 @@
+false && begin  # example
+    % curl -s https://fishshell.com/ | ex.title
+    fish shell
+end
+
+false && begin  # note
+It was extracted from `<title>fish shell</title>`.
+end
+
+
 function ex.title -d "Extract HTML title from a webpage (filter)"
     python3 -c "
 import sys

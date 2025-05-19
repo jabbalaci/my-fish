@@ -1,6 +1,8 @@
 false && begin  # example
     % echo "hEllO" | lower
     hello
+    % echo "hEllO" | lower | upper
+    HELLO
 end
 
 

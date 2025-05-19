@@ -23,7 +23,7 @@ p.stem                              -> stuff.tar
 ex.urls, ex.title                   - extract: URLs from a webpage, HTML title of a webpage
 urlencode, urldecode                - URL encode/decode
 (un)quote                           - create/decode GET-style quoted text
-wolf, wolfram                       - ask Wolfram Alpha
+wolfram, wolf                       - ask Wolfram Alpha
 
 >>> Utils/Mixed <<<
 noaccents, nonempty                 - remove accents (á -> a, etc.), remove empty lines

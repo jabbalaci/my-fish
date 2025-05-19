@@ -1,6 +1,8 @@
 false && begin  # example
     % echo "hello" | reverse
     olleh
+    % echo "hello" | reverse | reverse
+    hello
 end
 
 

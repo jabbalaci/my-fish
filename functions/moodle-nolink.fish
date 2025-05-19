@@ -12,3 +12,5 @@ function moodle-nolink -d "Insert a URL as text, without putting a link on it | 
     echo -n $text | xsel -b
     echo "# copied to the clipboard"
 end
+
+# skip
