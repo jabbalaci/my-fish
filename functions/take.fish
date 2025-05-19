@@ -6,6 +6,6 @@
 # 2
 # 3
 
-function take --argument number -d "Take the first n lines of stdin"
+function take --argument number -d "Take the first `<n>` lines of stdin (filter)"
     head -$number
 end

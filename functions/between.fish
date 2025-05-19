@@ -1,4 +1,4 @@
-function between -d "Print lines between <start_line> and <end_line> [incl.] (filter)"
+function between -d "Print lines between `<start_line>` and `<end_line>` [incl.] (filter)"
     if test (count $argv) -lt 2
         echo "Usage: between <start_line> <end_line>" >&2
         return 1

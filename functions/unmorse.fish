@@ -1,4 +1,4 @@
-function unmorse -d "Convert Morse code to text (e.g., '... --- ...' -> 'SOS')"
+function unmorse -d "Convert Morse code to text [e.g., '... --- ...' -> 'SOS'] (filter)"
     python3 -c "
 import sys
 

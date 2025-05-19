@@ -4,6 +4,6 @@
 # $ seq 3 | rown 2
 # 2
 
-function rown --argument index -d "Print the row of the input indicated"
+function rown --argument index -d "Print the row of the input indicated (filter)"
     sed -n "$index p"
 end

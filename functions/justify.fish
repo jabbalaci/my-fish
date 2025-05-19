@@ -1,4 +1,4 @@
-function justify -d "Fully justify text to <width> [default: 78] (filter)"
+function justify -d "Fully justify text to `<width>` [default: 78] (filter)"
     set -l width 78
     if test -n "$argv[1]"
         set width $argv[1]

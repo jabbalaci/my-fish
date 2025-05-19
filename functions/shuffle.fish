@@ -1,4 +1,4 @@
-function shuffle -d "shuffle characters in each line (filter)"
+function shuffle -d "Shuffle characters in each line (filter)"
     python3 -c "
 import random
 import sys

@@ -4,6 +4,6 @@
 # $ echo 1 2 | coln 2
 # 2
 
-function coln -d "Split the input on whitespace and print the column indicated"
+function coln -d "Split the input on whitespace and print the column indicated (filter)"
     awk '{print $'$argv[1]'}'
 end

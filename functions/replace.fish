@@ -4,7 +4,7 @@ false && begin  # example
 end
 
 
-function replace -d "Replace <old> <new> (filter)"
+function replace -d "Replace `<old>` with `<new>` (filter)"
     set -l old $argv[1]
     set -l new $argv[2]
     if test -z "$old" -o -z "$new"

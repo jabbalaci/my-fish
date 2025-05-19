@@ -4,7 +4,7 @@ false && begin  # example
 end
 
 
-function repeat --argument n -d "Repeat a text <n> times (filter)"
+function repeat --argument n -d "Repeat a text `<n>` times (filter)"
     if test -z "$n"
         echo "Error: n argument is required" >&2
         return 1

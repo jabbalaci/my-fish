@@ -1,4 +1,4 @@
-function rot --argument n -d "Rotate letters with with <n> positions (filter)"
+function rot --argument n -d "Rotate letters with with `<n>` positions (filter)"
     if test -z "$n"
         echo "Usage: rot <n>" >&2
         return 1
