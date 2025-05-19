@@ -1,3 +1,13 @@
+false && begin  # example
+    % cat main.py
+    x = 1
+    y = 2
+    % cat main.py | addprefix "# "
+    # x = 1
+    # y = 2
+end
+
+
 function addprefix --argument prefix -d "Add prefix to every line (filter)"
 	if test -z "$prefix"
         echo "Error: prefix argument is required" >&2

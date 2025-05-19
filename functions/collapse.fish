@@ -1,3 +1,11 @@
+false && begin  # example
+    % echo "    .aa    bb.    " | collapse
+    .aa bb.
+    % echo "    .aa    bb.    " | collapse | len
+    7
+end
+
+
 function collapse -d "Collapse multiple whitespaces into single space (filter)"
     python3 -c "
 import sys

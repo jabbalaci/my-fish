@@ -1,3 +1,9 @@
+false && begin  # example
+    % echo "*" | repeat 5
+    *****
+end
+
+
 function repeat --argument n -d "Repeat a text <n> times (filter)"
     if test -z "$n"
         echo "Error: n argument is required" >&2

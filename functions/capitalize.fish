@@ -1,3 +1,9 @@
+false && begin  # example
+    % echo "hEllO" | capitalize
+    Hello
+end
+
+
 function capitalize -d "Convert to capitalized text (filter)"
     python3 -c "
 import sys

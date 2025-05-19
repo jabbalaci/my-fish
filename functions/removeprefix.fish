@@ -1,3 +1,13 @@
+false && begin  # example
+    % cat main.py
+    # x = 1
+    # y = 2
+    % cat main.py | removeprefix "# "
+    x = 1
+    y = 2
+end
+
+
 function removeprefix --argument prefix -d "Remove prefix (filter)"
     if test -z "$prefix"
         echo "Error: prefix argument is required" >&2

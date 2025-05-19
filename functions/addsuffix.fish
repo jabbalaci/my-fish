@@ -1,3 +1,13 @@
+false && begin  # example
+    % cat main.py
+    x = 1
+    y = 2
+    % cat main.py | addsuffix " # variable"
+    x = 1 # variable
+    y = 2 # variable
+end
+
+
 function addsuffix --argument suffix -d "Add suffix to every line (filter)"
 	if test -z "$suffix"
         echo "Error: suffix argument is required" >&2

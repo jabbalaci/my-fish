@@ -1,3 +1,9 @@
+false && begin  # example
+    % echo "hello" | reverse
+    olleh
+end
+
+
 function reverse -d "Reverse a string (filter)"
     python3 -c "
 import sys

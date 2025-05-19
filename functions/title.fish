@@ -1,8 +1,14 @@
+false && begin  # example
+    % echo "hello world" | title
+    Hello World
+end
+
+
 function title -d "Convert to title case (filter)"
     python3 -c "
 import sys
 
-s = sys.stdin.read()
-print(s.title(), end='')
+for line in sys.stdin:
+    print(line.title(), end='')
 "
 end

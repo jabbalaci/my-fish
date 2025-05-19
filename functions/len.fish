@@ -1,3 +1,9 @@
+false && begin  # example
+    % echo "hello" | len
+    5
+end
+
+
 function len -d "Length of a string (filter)"
     python3 -c "
 import sys

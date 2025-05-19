@@ -1,3 +1,9 @@
+false && begin  # example
+    % echo "cat dog cat cat" | replace cat kitten
+    kitten dog kitten kitten
+end
+
+
 function replace -d "Replace <old> <new> (filter)"
     set -l old $argv[1]
     set -l new $argv[2]
