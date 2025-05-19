@@ -33,3 +33,11 @@ update the plugins by using the `fish_plugins` file
 fish is running in private mode, history will not be persisted.
 
 ---
+
+false && begin
+    This is a multiline comment
+    It can span multiple lines
+    None of this will be executed
+end
+
+---

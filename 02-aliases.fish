@@ -15,7 +15,6 @@ abbr config fish_config                                     # web-based configur
 # ++  function abbreviations  ++ #
 # ++++++++++++++++++++++++++++++ #
 # 1) alias/abbr  2) real function name
-abbr cezar caesar
 abbr timestamp isodatetime
 abbr length len
 abbr p.suffix p.ext
