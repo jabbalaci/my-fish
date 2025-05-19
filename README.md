@@ -35,6 +35,8 @@ Here is the list of my filters in alphabetical order (not yet complete):
 
 ### (1) addprefix: Add prefix to every line
 
+[addprefix.fish](functions/addprefix.fish)
+
 ```shell
     $ cat main.py
     x = 1
@@ -44,9 +46,9 @@ Here is the list of my filters in alphabetical order (not yet complete):
     # y = 2
 ```
 
-[addprefix.fish](functions/addprefix.fish)
-
 ### (2) addsuffix: Add suffix to every line
+
+[addsuffix.fish](functions/addsuffix.fish)
 
 ```shell
     $ cat main.py
@@ -57,9 +59,9 @@ Here is the list of my filters in alphabetical order (not yet complete):
     y = 2 # variable
 ```
 
-[addsuffix.fish](functions/addsuffix.fish)
-
 ### (3) bin: Decimal number to binary
+
+[bin.fish](functions/bin.fish)
 
 ```shell
     $ echo 2025 | bin
@@ -68,18 +70,18 @@ Here is the list of my filters in alphabetical order (not yet complete):
     2025
 ```
 
-[bin.fish](functions/bin.fish)
-
 ### (4) capitalize: Convert to capitalized text
+
+[capitalize.fish](functions/capitalize.fish)
 
 ```shell
     $ echo "hEllO" | capitalize
     Hello
 ```
 
-[capitalize.fish](functions/capitalize.fish)
-
 ### (5) collapse: Collapse multiple whitespaces into single space
+
+[collapse.fish](functions/collapse.fish)
 
 ```shell
     $ echo "    .aa    bb.    " | collapse
@@ -88,9 +90,9 @@ Here is the list of my filters in alphabetical order (not yet complete):
     7
 ```
 
-[collapse.fish](functions/collapse.fish)
-
 ### (6) ex.title: Extract HTML title from a webpage
+
+[ex.title.fish](functions/ex.title.fish)
 
 ```shell
     $ curl -s https://fishshell.com/ | ex.title
@@ -99,9 +101,9 @@ Here is the list of my filters in alphabetical order (not yet complete):
 
 It was extracted from `<title>fish shell</title>`.
 
-[ex.title.fish](functions/ex.title.fish)
-
 ### (7) ex.urls: Extract all URLs
+
+[ex.urls.fish](functions/ex.urls.fish)
 
 ```shell
     $ curl -s https://fishshell.com/ | ex.urls
@@ -110,9 +112,9 @@ It was extracted from `<title>fish shell</title>`.
     ...
 ```
 
-[ex.urls.fish](functions/ex.urls.fish)
-
 ### (8) hex: Decimal number to hex
+
+[hex.fish](functions/hex.fish)
 
 ```shell
     $ echo 2025 | hex
@@ -121,18 +123,18 @@ It was extracted from `<title>fish shell</title>`.
     2025
 ```
 
-[hex.fish](functions/hex.fish)
-
 ### (9) len: Length of a string
+
+[len.fish](functions/len.fish)
 
 ```shell
     $ echo "hello" | len
     5
 ```
 
-[len.fish](functions/len.fish)
-
 ### (10) lower: Convert to lowercase
+
+[lower.fish](functions/lower.fish)
 
 ```shell
     $ echo "hEllO" | lower
@@ -141,9 +143,9 @@ It was extracted from `<title>fish shell</title>`.
     HELLO
 ```
 
-[lower.fish](functions/lower.fish)
-
 ### (11) oct: Decimal number to octal
+
+[oct.fish](functions/oct.fish)
 
 ```shell
     $ echo 2025 | oct
@@ -152,63 +154,63 @@ It was extracted from `<title>fish shell</title>`.
     2025
 ```
 
-[oct.fish](functions/oct.fish)
-
 ### (12) p.allext: Path [/usr/lib/a.tar.gz -> .tar.gz]
+
+[p.allext.fish](functions/p.allext.fish)
 
 ```shell
     $ echo /usr/lib/python2.5/stuff.tar.gz | p.allext
     .tar.gz
 ```
 
-[p.allext.fish](functions/p.allext.fish)
-
 ### (13) p.ext: Path [/usr/lib/a.tar.gz -> .gz]
+
+[p.ext.fish](functions/p.ext.fish)
 
 ```shell
     $ echo /usr/lib/python2.5/stuff.tar.gz | p.ext
     .gz
 ```
 
-[p.ext.fish](functions/p.ext.fish)
-
 ### (14) p.fname: Path [/usr/lib/stuff.tar.gz -> stuff]
+
+[p.fname.fish](functions/p.fname.fish)
 
 ```shell
     $ echo /usr/lib/python2.5/stuff.tar.gz | p.fname
     stuff
 ```
 
-[p.fname.fish](functions/p.fname.fish)
-
 ### (15) p.name: Path [/usr/lib/python2.5/gopherlib.py -> gopherlib.py]
+
+[p.name.fish](functions/p.name.fish)
 
 ```shell
     $ echo /usr/lib/python2.5/stuff.tar.gz | p.name
     stuff.tar.gz
 ```
 
-[p.name.fish](functions/p.name.fish)
-
 ### (16) p.parent: Path [/usr/lib/python2.5/gopherlib.py -> /usr/lib/python2.5]
+
+[p.parent.fish](functions/p.parent.fish)
 
 ```shell
     $ echo /usr/lib/python2.5/stuff.tar.gz | p.parent
     /usr/lib/python2.5
 ```
 
-[p.parent.fish](functions/p.parent.fish)
-
 ### (17) p.stem: Path [/usr/lib/python2.5/gopherlib.py -> gopherlib]
+
+[p.stem.fish](functions/p.stem.fish)
 
 ```shell
     $ echo /usr/lib/python2.5/stuff.tar.gz | p.stem
     stuff.tar
 ```
 
-[p.stem.fish](functions/p.stem.fish)
-
 ### (18) quote: Create GET-style quoted text
+
+[quote.fish](functions/quote.fish)
 
 ```shell
     $ echo "largest prime below 1 million" | quote
@@ -217,9 +219,9 @@ It was extracted from `<title>fish shell</title>`.
     largest prime below 1 million
 ```
 
-[quote.fish](functions/quote.fish)
-
 ### (19) removeprefix: Remove prefix
+
+[removeprefix.fish](functions/removeprefix.fish)
 
 ```shell
     $ cat main.py
@@ -230,9 +232,9 @@ It was extracted from `<title>fish shell</title>`.
     y = 2
 ```
 
-[removeprefix.fish](functions/removeprefix.fish)
-
 ### (20) removesuffix: Remove suffix
+
+[removesuffix.fish](functions/removesuffix.fish)
 
 ```shell
     $ cat main.py
@@ -243,27 +245,27 @@ It was extracted from `<title>fish shell</title>`.
     y = 2
 ```
 
-[removesuffix.fish](functions/removesuffix.fish)
-
 ### (21) repeat: Repeat a text `<n>` times
+
+[repeat.fish](functions/repeat.fish)
 
 ```shell
     $ echo "*" | repeat 5
     *****
 ```
 
-[repeat.fish](functions/repeat.fish)
-
 ### (22) replace: Replace `<old>` with `<new>`
+
+[replace.fish](functions/replace.fish)
 
 ```shell
     $ echo "cat dog cat cat" | replace cat kitten
     kitten dog kitten kitten
 ```
 
-[replace.fish](functions/replace.fish)
-
 ### (23) reverse: Reverse a string
+
+[reverse.fish](functions/reverse.fish)
 
 ```shell
     $ echo "hello" | reverse
@@ -272,18 +274,18 @@ It was extracted from `<title>fish shell</title>`.
     hello
 ```
 
-[reverse.fish](functions/reverse.fish)
-
 ### (24) title: Convert to title case
+
+[title.fish](functions/title.fish)
 
 ```shell
     $ echo "hello world" | title
     Hello World
 ```
 
-[title.fish](functions/title.fish)
-
 ### (25) trim: Trim leading/trailing whitespace
+
+[trim.fish](functions/trim.fish)
 
 ```shell
     $ echo "     aa bb    " | trim
@@ -292,9 +294,9 @@ It was extracted from `<title>fish shell</title>`.
     5
 ```
 
-[trim.fish](functions/trim.fish)
-
 ### (26) unbin: Binary number to decimal
+
+[unbin.fish](functions/unbin.fish)
 
 ```shell
     $ echo 1110 | unbin
@@ -303,9 +305,9 @@ It was extracted from `<title>fish shell</title>`.
     0b1110
 ```
 
-[unbin.fish](functions/unbin.fish)
-
 ### (27) unhex: Hex number to decimal
+
+[unhex.fish](functions/unhex.fish)
 
 ```shell
     $ echo ff | unhex
@@ -314,9 +316,9 @@ It was extracted from `<title>fish shell</title>`.
     0xff
 ```
 
-[unhex.fish](functions/unhex.fish)
-
 ### (28) unoct: Octal number to decimal
+
+[unoct.fish](functions/unoct.fish)
 
 ```shell
     $ echo 755 | unoct
@@ -325,9 +327,9 @@ It was extracted from `<title>fish shell</title>`.
     0o755
 ```
 
-[unoct.fish](functions/unoct.fish)
-
 ### (29) unquote: Decode GET-style quoted text
+
+[unquote.fish](functions/unquote.fish)
 
 ```shell
     $ echo "largest+prime+below+1+million" | unquote
@@ -336,9 +338,9 @@ It was extracted from `<title>fish shell</title>`.
     largest+prime+below+1+million
 ```
 
-[unquote.fish](functions/unquote.fish)
-
 ### (30) upper: Convert to uppercase
+
+[upper.fish](functions/upper.fish)
 
 ```shell
     $ echo "hEllO" | upper
@@ -347,9 +349,9 @@ It was extracted from `<title>fish shell</title>`.
     hello
 ```
 
-[upper.fish](functions/upper.fish)
-
 ### (31) urldecode: URL-decode input
+
+[urldecode.fish](functions/urldecode.fish)
 
 ```shell
     $ echo "https%3A//en.wikipedia.org/wiki/C_%28programming_language%29" | urldecode
@@ -358,9 +360,9 @@ It was extracted from `<title>fish shell</title>`.
     https%3A//en.wikipedia.org/wiki/C_%28programming_language%29
 ```
 
-[urldecode.fish](functions/urldecode.fish)
-
 ### (32) urlencode: URL-encode input
+
+[urlencode.fish](functions/urlencode.fish)
 
 ```shell
     $ echo "https://en.wikipedia.org/wiki/C_(programming_language)" | urlencode
@@ -369,9 +371,9 @@ It was extracted from `<title>fish shell</title>`.
     https://en.wikipedia.org/wiki/C_(programming_language)
 ```
 
-[urlencode.fish](functions/urlencode.fish)
-
 ### (33) wolfram: Ask Wolfram Alpha
+
+[wolfram.fish](functions/wolfram.fish)
 
 ```shell
     $ echo "largest prime below 1 million" | wolfram
@@ -382,8 +384,6 @@ It was extracted from `<title>fish shell</title>`.
 
 You need an API key for this (it's free).
 API docs: https://products.wolframalpha.com/short-answers-api/documentation .
-
-[wolfram.fish](functions/wolfram.fish)
 
 <!-- END: filters -->
 
