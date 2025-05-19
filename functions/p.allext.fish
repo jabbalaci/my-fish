@@ -1,3 +1,9 @@
+false && begin  # example
+    % echo /usr/lib/python2.5/stuff.tar.gz | p.allext
+    .tar.gz
+end
+
+
 function p.allext -d "Path [/usr/lib/a.tar.gz -> .tar.gz] (filter)"
     python3 -c "
 import sys

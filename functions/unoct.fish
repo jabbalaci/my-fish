@@ -1,3 +1,11 @@
+false && begin  # example
+    % echo 755 | unoct
+    493
+    % echo 755 | unoct | oct
+    0o755
+end
+
+
 function unoct -d "Octal number to decimal (filter)"
     python3 -c "
 import sys

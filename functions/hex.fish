@@ -1,3 +1,11 @@
+false && begin  # example
+    % echo 2025 | hex
+    0x7e9
+    % echo 2025 | hex | unhex
+    2025
+end
+
+
 function hex -d "Decimal number to hex (filter)"
     python3 -c "
 import sys

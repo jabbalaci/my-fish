@@ -1,3 +1,11 @@
+false && begin  # example
+    % echo ff | unhex
+    255
+    % echo ff | unhex | hex
+    0xff
+end
+
+
 function unhex -d "Hex number to decimal (filter)"
     python3 -c "
 import sys

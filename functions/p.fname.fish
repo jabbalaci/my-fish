@@ -1,3 +1,9 @@
+false && begin  # example
+    % echo /usr/lib/python2.5/stuff.tar.gz | p.fname
+    stuff
+end
+
+
 function p.fname -d "Path [/usr/lib/stuff.tar.gz -> stuff] (filter)"
     python3 -c "
 import sys
