@@ -27,8 +27,8 @@ I use a light theme, BTW.
 I've made lots of useful filters that you can
 find in the `functions/` folder.
 
-A filter takes the output of a program and transforms
-it. It is used after a pipe. Example:
+A filter takes the output of a program as its input and transforms it.
+It is used after a pipe. Example:
 
 ```shell
 $ echo "hello" | upper
