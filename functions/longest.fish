@@ -5,7 +5,7 @@ end
 
 
 function longest -d "Length of the longest line (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 maxi = -1

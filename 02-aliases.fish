@@ -36,9 +36,9 @@ alias q="cls; d"
 alias ... "cd ../.."
 alias cd.. "cd .."
 abbr - "cd -"
-alias p2='python2'
-alias p3='python3'
-alias p='python3'
+abbr p2 'python2'
+abbr p3 'python3'
+abbr p 'python3'
 alias pypy='pypy3'
 alias tree="tree -C"
 alias grep="grep --color=auto"

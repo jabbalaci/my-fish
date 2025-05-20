@@ -5,7 +5,7 @@ end
 
 
 function noaccents -d "Remove accents [á -> a, etc.] (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 d = {

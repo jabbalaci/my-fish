@@ -13,7 +13,7 @@ end
 
 
 function randomline -d "Select a non-empty random line from input (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import random
 import sys
 

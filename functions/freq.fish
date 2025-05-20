@@ -11,7 +11,7 @@ end
 
 
 function freq -d "Word frequency [simple, case-insensitive] (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 from collections import defaultdict
 

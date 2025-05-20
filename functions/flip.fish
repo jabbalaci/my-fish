@@ -8,7 +8,7 @@ end
 
 
 function flip -d "Flip input text upside down using Unicode (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 # Upside-down character map

@@ -8,7 +8,7 @@ end
 
 
 function oct -d "Decimal number to octal (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 try:

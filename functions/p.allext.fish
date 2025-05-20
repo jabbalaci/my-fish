@@ -5,7 +5,7 @@ end
 
 
 function p.allext -d "Path [/usr/lib/a.tar.gz -> .tar.gz] (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 from pathlib import Path
 

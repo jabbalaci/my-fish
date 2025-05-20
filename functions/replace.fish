@@ -12,7 +12,7 @@ function replace -d "Replace `<old>` with `<new>` (filter)"
         return 1
     end
 
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 s = sys.stdin.read()

@@ -5,7 +5,7 @@ end
 
 
 function filesize -d "Convert filesize [bytes] to human-readable format (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 def sizeof_fmt(num):

@@ -8,7 +8,7 @@ end
 
 
 function lower -d "Convert to lowercase (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 for line in sys.stdin:

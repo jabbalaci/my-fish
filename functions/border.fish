@@ -17,7 +17,7 @@ function border --argument symbol -d "Draw border around text (filter)"
 	    set ch $symbol
 	end
 
-	pypy3 -c "
+	python3 -S -c "
 import sys
 
 text = '$text'

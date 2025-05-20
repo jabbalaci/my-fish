@@ -5,7 +5,7 @@ end
 
 
 function len -d "Length of a string (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 s = sys.stdin.read().rstrip('\r\n')

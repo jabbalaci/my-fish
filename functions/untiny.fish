@@ -12,7 +12,7 @@ end
 
 
 function untiny -d "Convert tiny superscript letters back to normal text [not perfect] (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 d = {

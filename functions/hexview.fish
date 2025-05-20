@@ -9,7 +9,7 @@ end
 
 
 function hexview -d "Show hex values of the input (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 for line in sys.stdin:

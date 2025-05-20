@@ -20,7 +20,7 @@ end
 
 
 function nonempty -d "Remove empty lines (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 lines = sys.stdin.read().splitlines()

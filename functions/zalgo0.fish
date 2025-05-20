@@ -13,7 +13,7 @@ end
 
 
 function zalgo0 -d "Add random Unicode glitches to text [light] (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import random
 import sys
 

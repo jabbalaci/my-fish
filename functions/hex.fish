@@ -8,7 +8,7 @@ end
 
 
 function hex -d "Decimal number to hex (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 try:

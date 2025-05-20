@@ -8,7 +8,7 @@ end
 
 
 function unflip -d "Revert upside-down Unicode text back to normal (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 # Inverse mapping of flipped characters

@@ -36,11 +36,21 @@ HELLO
 ```
 
 Most of my filters are implemented in the form
-of embedded Python scripts. For performance reasons,
-instead of the standard CPython, I use PyPy3, which
-starts faster. However, the two are compatible, thus
-you can replace `pypy3` with `python3` everywhere.
-Or just put an alias on it: `alias pypy3 python3` .
+of embedded Python scripts.
+
+Let me put here a note: by default, CPython starts
+slowly. Normally it's not an issue, but when
+you chain several filters together, these times
+add up. On my machine, executing an empty file
+took 90 ms. It was the startup time of the interpreter.
+The more filters I chained, the slower it became.
+But I found a trick: with the `-S` option (ex.: `python3 -S script.py`) we can
+disable the import of the `site` module, thus
+I could reduce the startup time from 90 ms to 10 ms.
+Since I don't use any 3rd-party libraries in my filters,
+just the standard library, it shouldn't cause any
+problems. However, if you encounter any problem,
+just let me know. Thanks.
 
 Here is the list of my filters in alphabetical order:
 

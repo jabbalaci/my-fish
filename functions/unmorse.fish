@@ -13,7 +13,7 @@ end
 
 
 function unmorse -d "Convert Morse code to text [e.g., '... --- ...' -> 'SOS'] (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 MORSE_CODE = {

@@ -27,7 +27,7 @@ function justify -d "Fully justify text to `<width>` [default: 78] (filter)"
         set width $argv[1]
     end
 
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 width = int('$width')

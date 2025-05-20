@@ -8,7 +8,7 @@ end
 
 
 function reverse -d "Reverse a string (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 s = sys.stdin.read().rstrip('\r\n')

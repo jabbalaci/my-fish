@@ -5,7 +5,7 @@ end
 
 
 function p.parent -d "Path [/usr/lib/python2.5/gopherlib.py -> /usr/lib/python2.5] (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 from pathlib import Path
 

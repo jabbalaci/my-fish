@@ -13,7 +13,7 @@ end
 
 
 function zalgo -d "Add Zalgo (glitchy) combining characters [aggressive] (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 import random
 

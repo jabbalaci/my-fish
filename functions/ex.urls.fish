@@ -7,7 +7,7 @@ end
 
 
 function ex.urls -d "Extract all URLs (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import re
 import sys
 

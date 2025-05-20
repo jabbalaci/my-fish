@@ -9,7 +9,7 @@ end
 
 
 function ex.title -d "Extract HTML title from a webpage (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 original = sys.stdin.read()

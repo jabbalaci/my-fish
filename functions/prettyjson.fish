@@ -1,5 +1,5 @@
 function _prettyjson -d "(internal function)"
-    pypy3 -c "
+    python3 -S -c "
 import json
 import sys
 

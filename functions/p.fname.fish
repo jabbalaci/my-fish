@@ -5,7 +5,7 @@ end
 
 
 function p.fname -d "Path [/usr/lib/stuff.tar.gz -> stuff] (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 from pathlib import Path
 

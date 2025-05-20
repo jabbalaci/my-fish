@@ -8,7 +8,7 @@ end
 
 
 function shuffle -d "Shuffle characters in each line (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import random
 import sys
 

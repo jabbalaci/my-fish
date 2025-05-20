@@ -12,7 +12,7 @@ function prettynum -d "Prettify a number (filter)"
     if test -n "$argv[1]"
         set sep $argv[1]
     end
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 try:

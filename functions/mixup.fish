@@ -17,7 +17,7 @@ end
 
 
 function mixup -d "Mix up inner letters of each word, keeping first/last intact (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import random
 import sys
 

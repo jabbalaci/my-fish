@@ -8,7 +8,7 @@ end
 
 
 function urldecode -d "URL-decode input (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 import urllib.parse
 

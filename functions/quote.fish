@@ -8,7 +8,7 @@ end
 
 
 function quote -d "Create GET-style quoted text (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 import urllib.parse
 

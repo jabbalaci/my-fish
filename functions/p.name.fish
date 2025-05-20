@@ -5,7 +5,7 @@ end
 
 
 function p.name -d "Path [/usr/lib/python2.5/gopherlib.py -> gopherlib.py] (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 from pathlib import Path
 

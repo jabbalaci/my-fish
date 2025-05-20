@@ -5,7 +5,7 @@ end
 
 
 function p.ext -d "Path [/usr/lib/a.tar.gz -> .gz] (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 from pathlib import Path
 

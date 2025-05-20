@@ -1,5 +1,5 @@
 function alphabet -d "Print the alphabet (lowercase, uppercase, digits, printable characters)"
-    pypy3 -c "
+    python3 -S -c "
 import string
 
 print(string.ascii_lowercase)

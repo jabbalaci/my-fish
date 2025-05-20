@@ -12,7 +12,7 @@ end
 
 
 function unmirror -d "Convert mirrored text back to normal (filter)"
-    pypy3 -c "
+    python3 -S -c "
 import sys
 
 s1 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ<([>)]{}3'
