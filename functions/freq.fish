@@ -1,6 +1,7 @@
 false && begin  # example
     % cat words.txt
     aa bb aa aa cc cc dd
+
     % cat words.txt | freq
     aa: 3
     cc: 2

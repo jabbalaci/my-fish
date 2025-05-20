@@ -2,6 +2,7 @@ false && begin  # example
     % cat main.py
     x = 1 # variable
     y = 2 # variable
+
     % cat main.py | removesuffix " # variable"
     x = 1
     y = 2

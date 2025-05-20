@@ -1,6 +1,7 @@
 false && begin  # example
     % echo "largest prime below 1 million" | wolfram
     999983
+
     % echo "Is 31 a prime?" | wolfram
     yes
 end

@@ -1,8 +1,11 @@
 false && begin  # example
     % cd /
+
     % pwd
     /
+
     % qj db
+
     % pwd
     /home/jabba/Dropbox
 end

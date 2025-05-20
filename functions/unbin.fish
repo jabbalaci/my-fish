@@ -1,6 +1,7 @@
 false && begin  # example
     % echo 1110 | unbin
     14
+
     % echo 1110 | unbin | bin
     0b1110
 end

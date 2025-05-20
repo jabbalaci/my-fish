@@ -3,8 +3,10 @@ false && begin  # example
     one
     two
     three
+
     % cat 123.txt | randomline
     two
+
     % cat 123.txt | randomline
     one
 end

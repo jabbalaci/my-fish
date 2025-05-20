@@ -41,6 +41,7 @@ Here is the list of my filters in alphabetical order (not yet complete):
     $ cat main.py
     x = 1
     y = 2
+
     $ cat main.py | addprefix "# "
     # x = 1
     # y = 2
@@ -54,6 +55,7 @@ Here is the list of my filters in alphabetical order (not yet complete):
     $ cat main.py
     x = 1
     y = 2
+
     $ cat main.py | addsuffix " # variable"
     x = 1 # variable
     y = 2 # variable
@@ -66,6 +68,7 @@ Here is the list of my filters in alphabetical order (not yet complete):
 ```shell
     $ echo "aGVsbG8=" | base64decode
     hello
+
     $ echo "aGVsbG8=" | base64decode | base64encode
     aGVsbG8=
 ```
@@ -77,6 +80,7 @@ Here is the list of my filters in alphabetical order (not yet complete):
 ```shell
     $ echo "hello" | base64encode
     aGVsbG8=
+
     $ echo "hello" | base64encode | base64decode
     hello
 ```
@@ -90,6 +94,7 @@ Here is the list of my filters in alphabetical order (not yet complete):
     one
     two
     three
+
     $ cat 123.txt | between 2 3
     two
     three
@@ -102,6 +107,7 @@ Here is the list of my filters in alphabetical order (not yet complete):
 ```shell
     $ echo 2025 | bin
     0b11111101001
+
     $ echo 2025 | bin | unbin
     2025
 ```
@@ -115,6 +121,7 @@ Here is the list of my filters in alphabetical order (not yet complete):
     #################
     ##  Section 1  ##
     #################
+
     $ echo "Section 1" | border '+'
     +++++++++++++++++
     ++  Section 1  ++
@@ -137,6 +144,7 @@ Here is the list of my filters in alphabetical order (not yet complete):
 ```shell
     $ echo "    .aa    bb.    " | collapse
     .aa bb.
+
     $ echo "    .aa    bb.    " | collapse | len
     7
 ```
@@ -179,6 +187,7 @@ It was extracted from `<title>fish shell</title>`.
 ```shell
     $ cat words.txt
     aa bb aa aa cc cc dd
+
     $ cat words.txt | freq
     aa: 3
     cc: 2
@@ -193,6 +202,7 @@ It was extracted from `<title>fish shell</title>`.
 ```shell
     $ echo 2025 | hex
     0x7e9
+
     $ echo 2025 | hex | unhex
     2025
 ```
@@ -204,6 +214,7 @@ It was extracted from `<title>fish shell</title>`.
 ```shell
     $ echo "hello" | hexview
     68 65 6C 6C 6F 0A
+
     $ echo -n "hello" | hexview
     68 65 6C 6C 6F
     # echo -n: no newline character
@@ -219,11 +230,13 @@ It was extracted from `<title>fish shell</title>`.
     molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
     numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
     optio, eaque rerum!
+
     $ cat lorem.txt | justify
     Lorem  ipsum  dolor  sit  amet  consectetur adipisicing elit. Maxime mollitia,
     molestiae  quas  vel  sint commodi repudiandae consequuntur voluptatum laborum
     numquam  blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
     optio, eaque rerum!
+
     $ cat lorem.txt | justify 50
     Lorem ipsum dolor sit amet consectetur adipisicing
     elit.  Maxime  mollitia,  molestiae  quas vel sint
@@ -258,6 +271,7 @@ It was extracted from `<title>fish shell</title>`.
 ```shell
     $ echo "hEllO" | lower
     hello
+
     $ echo "hEllO" | lower | upper
     HELLO
 ```
@@ -285,6 +299,7 @@ It was extracted from `<title>fish shell</title>`.
 
         return 0;
     }
+
     $ cat main.c | nonempty
     #include <stdio.h>
     int main()
@@ -301,6 +316,7 @@ It was extracted from `<title>fish shell</title>`.
 ```shell
     $ echo 2025 | oct
     0o3751
+
     $ echo 2025 | oct | unoct
     2025
 ```
@@ -387,6 +403,7 @@ Here is a [screenshot](https://i.imgur.com/W93WyiO.png) of the difference.
 ```shell
     $ echo 12345679 | prettynum
     12,345,679
+
     $ echo 12345679 | prettynum '_'
     12_345_679
 ```
@@ -421,6 +438,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
 ```shell
     $ echo "largest prime below 1 million" | quote
     largest+prime+below+1+million
+
     $ echo "largest prime below 1 million" | quote | unquote
     largest prime below 1 million
 ```
@@ -434,8 +452,10 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     one
     two
     three
+
     $ cat 123.txt | randomline
     two
+
     $ cat 123.txt | randomline
     one
 ```
@@ -448,6 +468,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     $ cat main.py
     # x = 1
     # y = 2
+
     $ cat main.py | removeprefix "# "
     x = 1
     y = 2
@@ -461,6 +482,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     $ cat main.py
     x = 1 # variable
     y = 2 # variable
+
     $ cat main.py | removesuffix " # variable"
     x = 1
     y = 2
@@ -491,6 +513,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
 ```shell
     $ echo "hello" | reverse
     olleh
+
     $ echo "hello" | reverse | reverse
     hello
 ```
@@ -520,6 +543,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
 ```shell
     $ echo "     aa bb    " | trim
     aa bb
+
     $ echo "     aa bb    " | trim | len
     5
 ```
@@ -531,6 +555,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
 ```shell
     $ echo 1110 | unbin
     14
+
     $ echo 1110 | unbin | bin
     0b1110
 ```
@@ -542,6 +567,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
 ```shell
     $ echo ff | unhex
     255
+
     $ echo ff | unhex | hex
     0xff
 ```
@@ -553,6 +579,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
 ```shell
     $ echo 755 | unoct
     493
+
     $ echo 755 | unoct | oct
     0o755
 ```
@@ -564,6 +591,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
 ```shell
     $ echo "largest+prime+below+1+million" | unquote
     largest prime below 1 million
+
     $ echo "largest+prime+below+1+million" | unquote | quote
     largest+prime+below+1+million
 ```
@@ -575,6 +603,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
 ```shell
     $ echo "hEllO" | upper
     HELLO
+
     $ echo "hEllO" | upper | lower
     hello
 ```
@@ -586,6 +615,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
 ```shell
     $ echo "https%3A//en.wikipedia.org/wiki/C_%28programming_language%29" | urldecode
     https://en.wikipedia.org/wiki/C_(programming_language)
+
     $ echo "https%3A//en.wikipedia.org/wiki/C_%28programming_language%29" | urldecode | urlencode
     https%3A//en.wikipedia.org/wiki/C_%28programming_language%29
 ```
@@ -597,6 +627,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
 ```shell
     $ echo "https://en.wikipedia.org/wiki/C_(programming_language)" | urlencode
     https%3A//en.wikipedia.org/wiki/C_%28programming_language%29
+
     $ echo "https://en.wikipedia.org/wiki/C_(programming_language)" | urlencode | urldecode
     https://en.wikipedia.org/wiki/C_(programming_language)
 ```
@@ -608,6 +639,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
 ```shell
     $ echo "largest prime below 1 million" | wolfram
     999983
+
     $ echo "Is 31 a prime?" | wolfram
     yes
 ```

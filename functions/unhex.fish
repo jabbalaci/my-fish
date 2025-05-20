@@ -1,6 +1,7 @@
 false && begin  # example
     % echo ff | unhex
     255
+
     % echo ff | unhex | hex
     0xff
 end

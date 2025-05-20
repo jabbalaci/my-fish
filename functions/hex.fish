@@ -1,6 +1,7 @@
 false && begin  # example
     % echo 2025 | hex
     0x7e9
+
     % echo 2025 | hex | unhex
     2025
 end

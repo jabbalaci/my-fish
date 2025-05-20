@@ -1,6 +1,7 @@
 false && begin  # example
     % echo "     aa bb    " | trim
     aa bb
+
     % echo "     aa bb    " | trim | len
     5
 end

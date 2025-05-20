@@ -2,6 +2,7 @@ false && begin  # example
     % cat main.py
     # x = 1
     # y = 2
+
     % cat main.py | removeprefix "# "
     x = 1
     y = 2

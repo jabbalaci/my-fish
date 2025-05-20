@@ -1,6 +1,7 @@
 false && begin  # example
     % echo "    .aa    bb.    " | collapse
     .aa bb.
+
     % echo "    .aa    bb.    " | collapse | len
     7
 end

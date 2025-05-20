@@ -1,6 +1,7 @@
 false && begin  # example
     % echo "https%3A//en.wikipedia.org/wiki/C_%28programming_language%29" | urldecode
     https://en.wikipedia.org/wiki/C_\(programming_language\)
+
     % echo "https%3A//en.wikipedia.org/wiki/C_%28programming_language%29" | urldecode | urlencode
     https%3A//en.wikipedia.org/wiki/C_%28programming_language%29
 end

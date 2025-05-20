@@ -1,6 +1,7 @@
 false && begin  # example
     % echo 755 | unoct
     493
+
     % echo 755 | unoct | oct
     0o755
 end

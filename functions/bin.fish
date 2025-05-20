@@ -1,6 +1,7 @@
 false && begin  # example
     % echo 2025 | bin
     0b11111101001
+
     % echo 2025 | bin | unbin
     2025
 end

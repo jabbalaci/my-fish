@@ -1,6 +1,7 @@
 false && begin  # example
     % echo 2025 | oct
     0o3751
+
     % echo 2025 | oct | unoct
     2025
 end

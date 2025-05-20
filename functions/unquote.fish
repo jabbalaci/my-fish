@@ -1,6 +1,7 @@
 false && begin  # example
     % echo "largest+prime+below+1+million" | unquote
     largest prime below 1 million
+
     % echo "largest+prime+below+1+million" | unquote | quote
     largest+prime+below+1+million
 end

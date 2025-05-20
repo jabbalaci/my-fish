@@ -8,6 +8,7 @@ false && begin  # example
 
         return 0;
     }
+
     % cat main.c | nonempty
     #include <stdio.h>
     int main\(\)

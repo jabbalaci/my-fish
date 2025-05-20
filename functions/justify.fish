@@ -4,11 +4,13 @@ false && begin  # example
     molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
     numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
     optio, eaque rerum!
+
     % cat lorem.txt | justify
     Lorem  ipsum  dolor  sit  amet  consectetur adipisicing elit. Maxime mollitia,
     molestiae  quas  vel  sint commodi repudiandae consequuntur voluptatum laborum
     numquam  blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
     optio, eaque rerum!
+
     % cat lorem.txt | justify 50
     Lorem ipsum dolor sit amet consectetur adipisicing
     elit.  Maxime  mollitia,  molestiae  quas vel sint

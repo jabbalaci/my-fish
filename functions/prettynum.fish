@@ -1,6 +1,7 @@
 false && begin  # example
     % echo 12345679 | prettynum
     12,345,679
+
     % echo 12345679 | prettynum '_'
     12_345_679
 end

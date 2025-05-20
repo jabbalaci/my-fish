@@ -3,6 +3,7 @@ false && begin  # example
     #################
     ##  Section 1  ##
     #################
+
     % echo "Section 1" | border '+'
     +++++++++++++++++
     ++  Section 1  ++

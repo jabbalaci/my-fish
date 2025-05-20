@@ -1,6 +1,7 @@
 false && begin  # example
     % echo "hello" | base64encode
     aGVsbG8\=
+
     % echo "hello" | base64encode | base64decode
     hello
 end
