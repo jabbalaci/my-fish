@@ -12,7 +12,7 @@ end
 
 
 function tiny -d "Convert text to tiny superscript letters (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 
 SUPERSCRIPT_MAP = {

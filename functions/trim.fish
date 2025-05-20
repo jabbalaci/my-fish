@@ -8,7 +8,7 @@ end
 
 
 function trim -d "Trim leading/trailing whitespace (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 
 s = sys.stdin.read().strip()

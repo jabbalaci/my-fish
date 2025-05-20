@@ -8,7 +8,7 @@ end
 
 
 function upper -d "Convert to uppercase (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 
 for line in sys.stdin:

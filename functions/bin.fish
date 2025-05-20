@@ -8,7 +8,7 @@ end
 
 
 function bin -d "Decimal number to binary (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 
 try:

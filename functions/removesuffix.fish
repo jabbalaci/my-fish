@@ -15,7 +15,7 @@ function removesuffix --argument suffix -d "Remove suffix (filter)"
         return 1
     end
 
-	python3 -c "
+	pypy3 -c "
 import sys
 
 suffix = '$suffix'

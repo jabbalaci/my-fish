@@ -30,7 +30,7 @@ function rot --argument n -d "Rotate letters with with `<n>` positions (filter)"
         return 1
     end
 
-    python3 -c "
+    pypy3 -c "
 import sys
 
 try:

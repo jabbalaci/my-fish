@@ -15,7 +15,7 @@ function addsuffix --argument suffix -d "Add suffix to every line (filter)"
         return 1
     end
 
-	python3 -c "
+	pypy3 -c "
 import sys
 
 suffix = '$suffix'

@@ -12,7 +12,7 @@ end
 
 
 function mirror -d "Mirror text using mirrored Unicode characters (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 
 s1 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ<([>)]{}3'

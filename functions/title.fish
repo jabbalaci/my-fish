@@ -5,7 +5,7 @@ end
 
 
 function title -d "Convert to title case (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 
 for line in sys.stdin:

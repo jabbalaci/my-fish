@@ -5,7 +5,7 @@ end
 
 
 function swapcase -d "Swap lower- and uppercase (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 
 s = sys.stdin.read()

@@ -8,7 +8,7 @@ end
 
 
 function randomcase -d "Alternate case randomly (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 import random
 

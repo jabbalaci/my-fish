@@ -19,7 +19,7 @@ function between -d "Print lines between `<start_line>` and `<end_line>` [incl.]
     set -l start_line $argv[1]
     set -l end_line $argv[2]
 
-    python3 -c "
+    pypy3 -c "
 import sys
 
 start_line = int('$start_line')

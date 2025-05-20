@@ -8,7 +8,7 @@ end
 
 
 function unquote -d "Decode GET-style quoted text (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 import urllib.parse
 

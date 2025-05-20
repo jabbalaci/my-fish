@@ -8,7 +8,7 @@ end
 
 
 function unoct -d "Octal number to decimal (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 
 try:

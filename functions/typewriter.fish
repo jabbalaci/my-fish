@@ -12,7 +12,7 @@ end
 
 
 function typewriter -d "Print like a typewriter (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 import time
 

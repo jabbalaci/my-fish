@@ -8,7 +8,7 @@ end
 
 
 function base64encode -d "Base64 encode (filter)"
-    python3 -c "
+    pypy3 -c "
 import base64
 import sys
 

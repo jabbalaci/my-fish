@@ -8,7 +8,7 @@ end
 
 
 function unhex -d "Hex number to decimal (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 
 try:

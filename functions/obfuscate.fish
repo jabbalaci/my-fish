@@ -5,7 +5,7 @@ end
 
 
 function obfuscate -d "Replace letters with similar-looking symbols [e -> 3, a -> @, etc.] (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 
 OBFUSCATE_MAP = {

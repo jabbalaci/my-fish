@@ -15,7 +15,7 @@ function removeprefix --argument prefix -d "Remove prefix (filter)"
         return 1
     end
 
-	python3 -c "
+	pypy3 -c "
 import sys
 
 prefix = '$prefix'

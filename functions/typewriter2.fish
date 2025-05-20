@@ -17,7 +17,7 @@ end
 
 
 function typewriter2 -d "Print like a typewriter with sound effects (filter)"
-    python3 -c "
+    pypy3 -c "
 import glob
 import os
 import random

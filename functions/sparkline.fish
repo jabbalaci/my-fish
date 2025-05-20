@@ -5,7 +5,7 @@ end
 
 
 function sparkline -d "Generate sparkline chart from numbers (filter)"
-    python3 -c "
+    pypy3 -c "
 import re
 import sys
 

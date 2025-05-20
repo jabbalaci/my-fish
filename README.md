@@ -27,9 +27,13 @@ HELLO
 ```
 
 Most of my filters are implemented in the form
-of embedded Python scripts.
+of embedded Python scripts. For performance reasons,
+instead of the standard CPython, I use PyPy3, which
+starts faster. However, the two are compatible, thus
+you can replace `pypy3` with `python3` everywhere.
+Or just put an alias on it: `alias pypy3 python3` .
 
-Here is the list of my filters in alphabetical order (not yet complete):
+Here is the list of my filters in alphabetical order:
 
 <!-- START: filters -->
 

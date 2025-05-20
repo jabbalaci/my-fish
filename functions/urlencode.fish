@@ -8,7 +8,7 @@ end
 
 
 function urlencode -d "URL-encode input (filter)"
-    python3 -c "
+    pypy3 -c "
 import sys
 import urllib.parse
 
