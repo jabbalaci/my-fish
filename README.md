@@ -5,6 +5,15 @@ the [Fish 🐟 shell](https://fishshell.com/).
 
 Location of this folder: `~/.config/fish`
 
+## Table of Contents
+
+1. [Screenshot](#screenshot)
+1. [Filters](#filters)
+1. [Functions](#functions)
+3. [Issues](#issues)
+4. [Links](#links)
+5. [Author](#author)
+
 ## Screenshot
 
 <p align="center">
@@ -938,10 +947,25 @@ aggressive than `zalgo`.
 
 <!-- END: filters -->
 
+## Functions
+
+Some of my functions (that are NOT filters) in
+alphabetical order.
+
+<!-- START: functions -->
+
+TODO...
+
+<!-- END: functions -->
+
 ## Issues
 
 If you have an idea how to improve something, or
 if you find a bug, feel free to issue a ticket.
+
+## Links
+
+* https://fishshell.com
 
 ## Author
 * Laszlo Szathmary (jabba.laci@gmail.com), 2025
