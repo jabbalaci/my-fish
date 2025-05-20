@@ -1,3 +1,12 @@
+false && begin  # example
+    % echo "12345678" | shuffle
+    14857362
+
+    % echo "12345678" | shuffle
+    12563487
+end
+
+
 function shuffle -d "Shuffle characters in each line (filter)"
     python3 -c "
 import random

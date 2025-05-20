@@ -1,3 +1,16 @@
+false && begin  # example
+    % echo "llɘʜƨ ʜƨiᖷ" | unmirror
+    Fish shell
+
+    % echo "llɘʜƨ ʜƨiᖷ" | unmirror | mirror
+    llɘʜƨ ʜƨiᖷ
+end
+
+false && begin  # note
+It might be improved with https://www.flipyourtext.com/
+end
+
+
 function unmirror -d "Convert mirrored text back to normal (filter)"
     python3 -c "
 import sys

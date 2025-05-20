@@ -1,3 +1,17 @@
+false && begin  # example
+    % echo "Fish shell" | zalgo
+    F̸̷̗̏̚ì̛͖s̞̗҆͠h͚҄҈̖̘ s̱̖̍ͪ҄̚h̭̹̳̘e̸ͥ҉҉̛̛l̗̖ͮl̤ͨ҈̙̚
+
+    % echo "Fish shell" | zalgo0
+    F̂i͕sͥh̐ ͍s͍h̶e̚l͇l͠
+end
+
+false && begin  # note
+It adds glitchy characters to the text. `zalgo` is more
+aggressive than `zalgo0`.
+end
+
+
 function zalgo -d "Add Zalgo (glitchy) combining characters [aggressive] (filter)"
     python3 -c "
 import sys

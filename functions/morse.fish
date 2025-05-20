@@ -1,5 +1,16 @@
-# International Morse code: https://www.itu.int/rec/R-REC-M.1677-1-200910-I/
-# https://en.wikipedia.org/wiki/Morse_code
+false && begin  # example
+    % echo "SOS Titanic" | morse
+    ... --- ... / - .. - .- -. .. -.-.
+
+    % echo "SOS Titanic" | morse | unmorse
+    SOS TITANIC
+end
+
+false && begin  # note
+* International Morse code: https://www.itu.int/rec/R-REC-M.1677-1-200910-I/
+* https://en.wikipedia.org/wiki/Morse_code
+end
+
 
 function morse -d "Convert text to Morse code [e.g., 'SOS' -> '... --- ...'] (filter)"
     python3 -c "

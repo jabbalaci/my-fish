@@ -1,3 +1,12 @@
+false && begin  # example
+    % echo "Fish shell" | flip
+    ʃʃǝɥs ɥsᴉℲ
+
+    % echo "Fish shell" | flip | unflip
+    Fish shell
+end
+
+
 function flip -d "Flip input text upside down using Unicode (filter)"
     python3 -c "
 import sys

@@ -1,3 +1,17 @@
+false && begin  # example
+    % echo "- .. - .- -. .. -.-." | unmorse
+    TITANIC
+
+    % echo "- .. - .- -. .. -.-." | unmorse | morse
+    - .. - .- -. .. -.-.
+end
+
+false && begin  # note
+* International Morse code: https://www.itu.int/rec/R-REC-M.1677-1-200910-I/
+* https://en.wikipedia.org/wiki/Morse_code
+end
+
+
 function unmorse -d "Convert Morse code to text [e.g., '... --- ...' -> 'SOS'] (filter)"
     python3 -c "
 import sys

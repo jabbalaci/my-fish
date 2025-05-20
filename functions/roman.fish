@@ -1,3 +1,12 @@
+false && begin  # example
+    % echo 2025 | roman
+    MMXXV
+
+    % echo 2025 | roman | unroman
+    2025
+end
+
+
 function roman --description "Convert number to Roman numeral [1-3999] (filter)"
     # Read from stdin if no argument
     if test (count $argv) -eq 0

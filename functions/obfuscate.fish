@@ -1,3 +1,9 @@
+false && begin  # example
+    % echo "This is just a sentence." | obfuscate
+    7h1\$ 1\$ ju\$7 @ \$3n73nc3.
+end
+
+
 function obfuscate -d "Replace letters with similar-looking symbols [e -> 3, a -> @, etc.] (filter)"
     python3 -c "
 import sys

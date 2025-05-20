@@ -3,7 +3,7 @@ false && begin  # example
     hello
 
     % echo "aGVsbG8=" | base64decode | base64encode
-    aGVsbG8=
+    aGVsbG8\=
 end
 
 

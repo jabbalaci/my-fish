@@ -1,3 +1,12 @@
+false && begin  # example
+    % echo "Hello World" | randomcase
+    heLLo woRLd
+
+    % echo "Hello World" | randomcase
+    HEllo WorLD
+end
+
+
 function randomcase -d "Alternate case randomly (filter)"
     python3 -c "
 import sys

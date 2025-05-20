@@ -1,4 +1,15 @@
-# might be improved with https://www.flipyourtext.com/
+false && begin  # example
+    % echo "Fish shell" | mirror
+    llɘʜƨ ʜƨiᖷ
+
+    % echo "Fish shell" | mirror | unmirror
+    Fish shell
+end
+
+false && begin  # note
+It might be improved with https://www.flipyourtext.com/
+end
+
 
 function mirror -d "Mirror text using mirrored Unicode characters (filter)"
     python3 -c "

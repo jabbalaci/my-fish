@@ -1,4 +1,17 @@
-# a less aggressive version of zalgo
+false && begin  # example
+    % echo "Fish shell" | zalgo0
+    F̂i͕sͥh̐ ͍s͍h̶e̚l͇l͠
+
+    % echo "Fish shell" | zalgo
+    F̸̷̗̏̚ì̛͖s̞̗҆͠h͚҄҈̖̘ s̱̖̍ͪ҄̚h̭̹̳̘e̸ͥ҉҉̛̛l̗̖ͮl̤ͨ҈̙̚
+end
+
+false && begin  # note
+It adds glitchy characters to the text. `zalgo0` is less
+aggressive than `zalgo`.
+end
+
+
 function zalgo0 -d "Add random Unicode glitches to text [light] (filter)"
     python3 -c "
 import random

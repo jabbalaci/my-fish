@@ -1,3 +1,12 @@
+false && begin  # example
+    % echo "ʃʃǝɥs ɥsᴉℲ" | unflip
+    Fish shell
+
+    % echo "ʃʃǝɥs ɥsᴉℲ" | unflip | flip
+    ʃʃǝɥs ɥsᴉℲ
+end
+
+
 function unflip -d "Revert upside-down Unicode text back to normal (filter)"
     python3 -c "
 import sys

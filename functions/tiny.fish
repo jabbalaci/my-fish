@@ -1,3 +1,16 @@
+false && begin  # example
+    % echo "Fish shell" | tiny
+    ᶠⁱˢʰ ˢʰᵉˡˡ
+
+    % echo "Fish shell" | tiny | untiny
+    FiSh Shell
+end
+
+false && begin  # note
+Conversion from tiny to normal is not perfect due to some Unicode limitations.
+end
+
+
 function tiny -d "Convert text to tiny superscript letters (filter)"
     python3 -c "
 import sys

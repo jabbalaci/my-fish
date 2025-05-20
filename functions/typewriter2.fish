@@ -1,3 +1,21 @@
+false && begin  # example
+    % cat main.c | typewriter2
+    #include <stdio.h>
+
+    int main...
+end
+
+false && begin  # note
+The content of the file is printed character by character,
+with some delay. This version adds clicky sounds to
+each character, making it similar to typing on a keyboard.
+
+The sound files are played with `mplayer` \(make sure it\'s installed\).
+You can download some sound file packs from here: https://github.com/jabbalaci/keysound/tree/main/sounds .
+This one uses the `fallout` sound pack.
+end
+
+
 function typewriter2 -d "Print like a typewriter with sound effects (filter)"
     python3 -c "
 import glob

@@ -1,3 +1,29 @@
+false && begin  # example
+    % echo "Fish" | rot 2
+    Hkuj
+
+    % echo "Fish" | rot -2
+    Dgqf
+
+    % echo "Fish" | rot 2 | rot -2
+    Fish
+
+    % echo "Fish" | rot 13
+    Svfu
+
+    % echo "Fish" | rot 13 | rot13
+    Fish
+end
+
+false && begin  # note
+[Caesar\'s code.]\(https://en.wikipedia.org/wiki/Caesar_cipher\) Letters of the English
+alphabet are rotated by `n` positions. `n` can be negative too, in which case letters
+are rotated left.
+
+[ROT13]\(https://en.wikipedia.org/wiki/ROT13\) is a special case of the Caesar cipher.
+end
+
+
 function rot --argument n -d "Rotate letters with with `<n>` positions (filter)"
     if test -z "$n"
         echo "Usage: rot <n>" >&2
