@@ -1,3 +1,24 @@
+false && begin  # example
+    % cat lorem.txt
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+    molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+    numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+    optio, eaque rerum!
+    % cat lorem.txt | justify
+    Lorem  ipsum  dolor  sit  amet  consectetur adipisicing elit. Maxime mollitia,
+    molestiae  quas  vel  sint commodi repudiandae consequuntur voluptatum laborum
+    numquam  blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
+    optio, eaque rerum!
+    % cat lorem.txt | justify 50
+    Lorem ipsum dolor sit amet consectetur adipisicing
+    elit.  Maxime  mollitia,  molestiae  quas vel sint
+    commodi    repudiandae   consequuntur   voluptatum
+    laborum numquam blanditiis harum quisquam eius sed
+    odit  fugiat  iusto  fuga praesentium optio, eaque
+    rerum!
+end
+
+
 function justify -d "Fully justify text to `<width>` [default: 78] (filter)"
     set -l width 78
     if test -n "$argv[1]"

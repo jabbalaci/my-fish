@@ -1,3 +1,14 @@
+false && begin  # example
+    % cat words.txt
+    aa bb aa aa cc cc dd
+    % cat words.txt | freq
+    aa: 3
+    cc: 2
+    bb: 1
+    dd: 1
+end
+
+
 function freq -d "Word frequency [simple, case-insensitive] (filter)"
     python3 -c "
 import sys

@@ -1,3 +1,14 @@
+false && begin  # example
+    % echo "Section 1" | border
+    #################
+    ##  Section 1  ##
+    #################
+    % echo "Section 1" | border '+'
+    +++++++++++++++++
+    ++  Section 1  ++
+    +++++++++++++++++
+end
+
 function border --argument symbol -d "Draw border around text (filter)"
 	read -l text
 	set -l ch '#'

@@ -7,7 +7,7 @@ end
 
 false && begin  # note
 You need an API key for this \(it\'s free\).
-API docs: https://products.wolframalpha.com/short-answers-api/documentation .
+API docs: https://products.wolframalpha.com/short-answers-api/documentation
 end
 
 

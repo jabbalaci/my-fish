@@ -1,3 +1,11 @@
+false && begin  # example
+    % echo "aGVsbG8=" | base64decode
+    hello
+    % echo "aGVsbG8=" | base64decode | base64encode
+    aGVsbG8=
+end
+
+
 function base64decode -d "Base64 decode (filter)"
     python3 -c "
 import base64

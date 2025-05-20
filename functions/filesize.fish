@@ -1,3 +1,9 @@
+false && begin  # example
+    % echo 123456 | filesize
+    120.56 KB
+end
+
+
 function filesize -d "Convert filesize [bytes] to human-readable format (filter)"
     python3 -c "
 import sys

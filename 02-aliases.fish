@@ -92,6 +92,7 @@ abbr dh dirh
 abbr cwd pwd
 abbr cmd command
 alias "\cat" "command cat"
+alias "ccat" "command cat"
 abbr pwd-short prompt_pwd
 abbr zj zellij
 alias matrix="cmatrix -ab"      # yay -S cmatrix

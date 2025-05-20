@@ -12,6 +12,25 @@ except Exception as e:
 "
 end
 
+false && begin  # example
+    % cat example.json
+    { "title": "Hackers", "year": 1995 }
+    % cat example.json | prettyjson
+    # the output is shown with `bat`
+    % cat example.json | prettyjson cat
+    {
+        "title": "Hackers",
+        "year": 1995
+    }
+    # the output is shown with `cat`
+end
+
+false && begin  # note
+By default it wants to use the command `bat` \(make sure that it\'s installed\).
+If you don\'t have `bat`, you can also use `cat`.
+Here is a [screenshot]\(https://i.imgur.com/W93WyiO.png\) of the difference.
+end
+
 
 function prettyjson --argument prg -d "Pretty-print JSON (filter)"
     if test -z "$prg"

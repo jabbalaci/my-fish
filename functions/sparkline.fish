@@ -1,5 +1,8 @@
-# $ echo "15 8 23 17 42 8 35 27" | sparkline
-# ▂▁▅▃█▁▇▆
+false && begin  # example
+    % echo "15 8 23 17 42 8 35 27" | sparkline
+    ▂▁▅▃█▁▇▆
+end
+
 
 function sparkline -d "Generate sparkline chart from numbers (filter)"
     python3 -c "

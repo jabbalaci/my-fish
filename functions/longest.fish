@@ -1,3 +1,9 @@
+false && begin  # example
+    % cat main.c | longest
+    22
+end
+
+
 function longest -d "Length of the longest line (filter)"
     python3 -c "
 import sys

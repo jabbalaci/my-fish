@@ -1,3 +1,14 @@
+false && begin  # example
+    % cat 123.txt
+    one
+    two
+    three
+    % cat 123.txt | between 2 3
+    two
+    three
+end
+
+
 function between -d "Print lines between `<start_line>` and `<end_line>` [incl.] (filter)"
     if test (count $argv) -lt 2
         echo "Usage: between <start_line> <end_line>" >&2

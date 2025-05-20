@@ -1,3 +1,15 @@
+false && begin  # example
+    % cat 123.txt
+    one
+    two
+    three
+    % cat 123.txt | randomline
+    two
+    % cat 123.txt | randomline
+    one
+end
+
+
 function randomline -d "Select a non-empty random line from input (filter)"
     python3 -c "
 import random
