@@ -12,7 +12,7 @@ false && begin  # note
 Interestingly, if you mix up the inner letters of words, but you keep the first
 and last letters intact, the text is still rather readable.
 
-The readable version of the 2nd example is [here]\(https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFish_%28Unix_shell%29\).
+The readable version of the 2nd example is [here]\(https://en.wikipedia.org/wiki/Fish_%28Unix_shell%29\).
 end
 
 
