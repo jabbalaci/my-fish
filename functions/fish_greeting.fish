@@ -1,3 +1,12 @@
+false && begin  # note
+When you open a new terminal / tab, this function is called automatically.
+With this you can print some greeting message before the first prompt.
+
+If this function doesn\'t print anything on the screen, then there\'s no
+greeting message. If you want to disable messages, just leave its body empty.
+end
+
+
 function fish_greeting -d "Default greeting message"
     if test (machine_id) = "asus-vivobook-s15"  # used for teaching
         #wezterm imgcat $DROPBOX/document/en/laszlo.jpg

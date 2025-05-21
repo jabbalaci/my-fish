@@ -1,3 +1,16 @@
+false && begin  # example
+    % gitup
+    # uploads local changes to the git repo
+end
+
+false && begin  # note
+Uploads local changes to the git repo.
+
+The process is broken down into 3 steps: add, commit, push.
+The process can be terminated at any time.
+end
+
+
 function gitup -d "Upload local changes to the git repo"
     git status
     echo

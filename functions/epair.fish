@@ -1,3 +1,19 @@
+false && begin  # example
+    % epair bin
+    # opens bin.fish and unbin.fish in your text editor
+
+    % epair unbin
+    # opens unbin.fish and bin.fish in your text editor
+end
+
+false && begin  # note
+**e**dit a **pair** of functions from anywhere
+
+If a function has an un*.fish pair, then you can edit both of them
+in your text editor side by side. The `micro` text editor is used by default.
+end
+
+
 function epair --argument name -d "Edit the given function and its pair (ex.: hex and unhex)"
     if test -z "$name"
         echo "Error: name argument (without .fish) is required" >&2

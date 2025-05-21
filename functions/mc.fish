@@ -1,3 +1,17 @@
+false && begin  # example
+    % mc
+    # starts Midnight Commander
+end
+
+false && begin  # note
+Use this function to start Midnight Commander. This way, when you
+navigate somewhere in MC and quit, you\'ll find yourself in the
+directory where you quit.
+
+Without this, you\'d get back to the folder where you launched MC.
+end
+
+
 function mc -d "Launch Midnight Commander and stay in the folder where you quit"
     set -l MC_USER (whoami)
     set -l MC_PWD_DIR "/tmp/mc-$MC_USER"

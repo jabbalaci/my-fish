@@ -1,3 +1,9 @@
+false && begin  # note
+This function provides the prompt before the cursor.
+Edit it to create your own cool prompt.
+end
+
+
 function fish_prompt -d "Jabba's prompt"
     set -l last_status $status
     set -l normal (set_color normal)

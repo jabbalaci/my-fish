@@ -1,3 +1,13 @@
+false && begin  # example
+    % ex file.zip
+    # extracts the archive
+end
+
+false && begin  # note
+A universal solution for extracting any archive.
+end
+
+
 function ex --argument fname -d "Universal archive extractor"
     if test -z "$fname"
         echo "Error: fname argument is required" >&2

@@ -1,3 +1,15 @@
+false && begin  # example
+    % filters
+    # prints my filters
+end
+
+false && begin  # note
+It just prints a list of my filters.
+The filters are organized into categories.
+I must update this list manually.
+end
+
+
 function filters -d "My filters"
     echo "My filters" | border
     echo -n "\

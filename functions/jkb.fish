@@ -1,3 +1,14 @@
+false && begin  # example
+    % jkb
+    # it starts JKB
+end
+
+false && begin  # note
+JKB manages my knowledge base \(Jabba\'s Knowledge Base\).
+This program is not \(yet\) open-sourced.
+end
+
+
 function jkb --argument vault -d "Start Jabba's Knowledge Base"
     cd $DROPBOX/python/jkb
     if test -z $vault

@@ -1,3 +1,19 @@
+false && begin  # example
+    % moodle-link
+    Insert a clickable \(YouTube\) link without embedding the video | Moodle
+
+    URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+    '<a style="color: rgb(57, 155, 226);" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ#" target="_blank">https://www.youtube.com/watch?v=dQw4w9WgXcQ</a>'
+    # copied to the clipboard
+end
+
+false && begin  # note
+An interactive script that reads a URL and produces a string
+that can be pasted in the source code of a Moodle page.
+It inserts a clickable link and prevents embedding.
+end
+
+
 function moodle-link -d "Put a link on the given URL without embedding it | Moodle"
     echo "Insert a clickable (YouTube) link without embedding the video | Moodle"
     echo
@@ -13,5 +29,3 @@ function moodle-link -d "Put a link on the given URL without embedding it | Mood
     echo -n $text | xsel -b
     echo "# copied to the clipboard"
 end
-
-# skip

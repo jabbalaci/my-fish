@@ -1,3 +1,16 @@
+false && begin  # example
+    % ef upper
+    # opens upper.fish in your text editor
+
+    % ef upper.fish
+    # using the .fish extension is optional
+end
+
+false && begin  # note
+**e**dit a **f**unction from anywhere
+end
+
+
 function ef --argument name -d "Edit the given function"
     if test -z "$name"
         echo "Error: name argument (without .fish) is required" >&2
