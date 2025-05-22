@@ -1,3 +1,16 @@
+false && begin  # example
+    % r main.c
+    Hello World
+
+    % r sum.c 2 3
+    5
+end
+
+false && begin  # note
+Takes a source code and runs it. It can be extended to support various languages.
+end
+
+
 function r --argument fname -d "Run a source code (compile and run)"
     if test -z "$fname"
         echo "Run what?" >&2
@@ -9,7 +22,7 @@ function r --argument fname -d "Run a source code (compile and run)"
         return 1
     end
 
-    # remove the 1st element
+    # remove the 1st element and keep the rest
     set -l rest $argv[2..-1]
 
     switch $fname
