@@ -6,7 +6,7 @@ end
 false && begin  # note
 On Manjaro Linux, it updates the list of mirror servers and sorts them by response time.
 
-It only checks mirror servers on your continent.
+It only checks mirror servers of your continent.
 end
 
 

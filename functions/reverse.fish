@@ -12,7 +12,9 @@ file and reverses the whole content.
 
 If you want to reverse a file line-by-line, use the `rev` command from the `util-linux` package:
 
+```shell
     \$ cat book.txt | rev
+```
 end
 
 

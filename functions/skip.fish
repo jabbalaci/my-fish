@@ -19,6 +19,6 @@ Skips the first `n` lines of stdin.
 end
 
 
-function skip --argument n -d "Skip the first n lines of stdin"
+function skip --argument n -d "Skip the first `<n>` lines of stdin"
     tail +(math 1 + $n)
 end
