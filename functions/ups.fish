@@ -1,3 +1,17 @@
+false && begin  # example
+    % ups
+    # brings up a "menu" with all the update/upgrade possibilities
+end
+
+false && begin  # note
+This script brings up a "menu" from which I can select the update/upgrade option.
+I regularly need to update the mirror list, upgrade the packages,
+upgrade softwares installed with pipx and uv, etc. I cannot keep
+all the update commands in my head. This script helps me keep
+my system up-to-date without causing any mental overhead.
+end
+
+
 function ups --argument choice -d "Updates / upgrades"
     if test -z $choice
 	    echo -n "\
