@@ -7,7 +7,7 @@ false && begin  # example
 end
 
 
-function roman --description "Convert number to Roman numeral [1-3999] (filter)"
+function roman -d "Convert number to Roman numeral [1-3999] (filter)"
     # Read from stdin if no argument
     if test (count $argv) -eq 0
         while read -l num

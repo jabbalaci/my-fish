@@ -7,7 +7,7 @@ false && begin  # example
 end
 
 
-function unroman --description "Convert Roman numeral to number (filter)"
+function unroman -d "Convert Roman numeral to number (filter)"
     # Read from stdin if no argument
     if test (count $argv) -eq 0
         while read -l roman

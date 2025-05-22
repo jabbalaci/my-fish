@@ -656,9 +656,11 @@ file and reverses the whole content.
 
 If you want to reverse a file line-by-line, use the `rev` command from the `util-linux` package:
 
+```shell
     $ cat book.txt | rev
+```
 
-### (48) roman:
+### (48) roman: Convert number to Roman numeral [1-3999]
 
 [roman.fish](functions/roman.fish)
 
@@ -904,7 +906,7 @@ It might be improved with https://www.flipyourtext.com/
     largest+prime+below+1+million
 ```
 
-### (66) unroman:
+### (66) unroman: Convert Roman numeral to number
 
 [unroman.fish](functions/unroman.fish)
 
@@ -1296,7 +1298,7 @@ The process can be terminated at any time.
 
 On Manjaro Linux, it updates the list of mirror servers and sorts them by response time.
 
-It only checks mirror servers on your continent.
+It only checks mirror servers of your continent.
 
 ### (22) gpu-info: GPU info
 
@@ -1651,7 +1653,7 @@ it's easy to attach them), then delete them from `/tmp/send`.
 
 This script called `s` allows me to enter this folder with the speed of light.
 
-### (45) skip: Skip the first n lines of stdin
+### (45) skip: Skip the first `<n>` lines of stdin
 
 [skip.fish](functions/skip.fish)
 
