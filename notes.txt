@@ -41,3 +41,9 @@ false && begin
 end
 
 ---
+
+Find slow-loading functions:
+
+    $ fish --profile-startup /tmp/profile.log
+
+---
