@@ -15,8 +15,10 @@ end
 false && begin  # example
     % cat example.json
     { "title": "Hackers", "year": 1995 }
+
     % cat example.json | prettyjson
     # the output is shown with `bat`
+
     % cat example.json | prettyjson cat
     {
         "title": "Hackers",

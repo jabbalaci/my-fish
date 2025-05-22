@@ -1,10 +1,12 @@
 false && begin  # example
+```text
     % alphabet
-    "abcdefghijklmnopqrstuvwxyz"
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
-    '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+    abcdefghijklmnopqrstuvwxyz
+    ABCDEFGHIJKLMNOPQRSTUVWXYZ
+    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+    !\"#\$%&\'\(\)*+,-./:;\<\=\>?@[\\]^_`{|}~
+    0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\"#\$%&\'\(\)*+,-./:;\<\=\>?@[\\]^_`{|}~
+```
 end
 
 false && begin  # note

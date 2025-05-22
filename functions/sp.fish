@@ -12,7 +12,7 @@ false && begin  # example
 end
 
 false && begin  # note
-`sp` stands for **s**how **p**path.
+`sp` stands for **s**how **p**ath.
 
 `sp` alone shows the current directory and copies it to the clipboard.
 
