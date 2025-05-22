@@ -230,7 +230,34 @@ It was extracted from `<title>fish shell</title>`.
     dd: 1
 ```
 
-### (15) hex: Decimal number to hex
+### (15) getcol: Split the input on whitespace and print the column indicated
+
+[getcol.fish](functions/getcol.fish)
+
+```shell
+    $ echo 1 2 | getcol 2
+    2
+```
+
+**get** the given **col**umn
+
+### (16) getrow: Print the row of the input indicated
+
+[getrow.fish](functions/getrow.fish)
+
+```shell
+    $ seq 3
+    1
+    2
+    3
+
+    $ seq 3 | getrow 2
+    2
+```
+
+**get** the given **row**
+
+### (17) hex: Decimal number to hex
 
 [hex.fish](functions/hex.fish)
 
@@ -242,7 +269,7 @@ It was extracted from `<title>fish shell</title>`.
     2025
 ```
 
-### (16) hexview: Show hex values of the input
+### (18) hexview: Show hex values of the input
 
 [hexview.fish](functions/hexview.fish)
 
@@ -255,7 +282,7 @@ It was extracted from `<title>fish shell</title>`.
     # echo -n: no newline character
 ```
 
-### (17) justify: Fully justify text to `<width>` [default: 78]
+### (19) justify: Fully justify text to `<width>` [default: 78]
 
 [justify.fish](functions/justify.fish)
 
@@ -281,7 +308,7 @@ It was extracted from `<title>fish shell</title>`.
     rerum!
 ```
 
-### (18) len: Length of a string
+### (20) len: Length of a string
 
 [len.fish](functions/len.fish)
 
@@ -290,7 +317,7 @@ It was extracted from `<title>fish shell</title>`.
     5
 ```
 
-### (19) longest: Length of the longest line
+### (21) longest: Length of the longest line
 
 [longest.fish](functions/longest.fish)
 
@@ -299,7 +326,7 @@ It was extracted from `<title>fish shell</title>`.
     22
 ```
 
-### (20) lower: Convert to lowercase
+### (22) lower: Convert to lowercase
 
 [lower.fish](functions/lower.fish)
 
@@ -311,7 +338,7 @@ It was extracted from `<title>fish shell</title>`.
     HELLO
 ```
 
-### (21) mirror: Mirror text using mirrored Unicode characters
+### (23) mirror: Mirror text using mirrored Unicode characters
 
 [mirror.fish](functions/mirror.fish)
 
@@ -325,7 +352,7 @@ It was extracted from `<title>fish shell</title>`.
 
 It might be improved with https://www.flipyourtext.com/
 
-### (22) mixup: Mix up inner letters of each word, keeping first/last intact
+### (24) mixup: Mix up inner letters of each word, keeping first/last intact
 
 [mixup.fish](functions/mixup.fish)
 
@@ -344,7 +371,7 @@ and last letters intact, the text is still rather readable.
 
 The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/Fish_%28Unix_shell%29).
 
-### (23) morse: Convert text to Morse code [e.g., 'SOS' -> '... --- ...']
+### (25) morse: Convert text to Morse code [e.g., 'SOS' -> '... --- ...']
 
 [morse.fish](functions/morse.fish)
 
@@ -359,7 +386,7 @@ The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/
 * International Morse code: https://www.itu.int/rec/R-REC-M.1677-1-200910-I/
 * https://en.wikipedia.org/wiki/Morse_code
 
-### (24) noaccents: Remove accents [á -> a, etc.]
+### (26) noaccents: Remove accents [á -> a, etc.]
 
 [noaccents.fish](functions/noaccents.fish)
 
@@ -368,7 +395,7 @@ The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/
     Laszlo
 ```
 
-### (25) nonempty: Remove empty lines
+### (27) nonempty: Remove empty lines
 
 [nonempty.fish](functions/nonempty.fish)
 
@@ -392,7 +419,7 @@ The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/
     }
 ```
 
-### (26) obfuscate: Replace letters with similar-looking symbols [e -> 3, a -> @, etc.]
+### (28) obfuscate: Replace letters with similar-looking symbols [e -> 3, a -> @, etc.]
 
 [obfuscate.fish](functions/obfuscate.fish)
 
@@ -401,7 +428,7 @@ The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/
     7h1$ 1$ ju$7 @ $3n73nc3.
 ```
 
-### (27) oct: Decimal number to octal
+### (29) oct: Decimal number to octal
 
 [oct.fish](functions/oct.fish)
 
@@ -413,7 +440,7 @@ The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/
     2025
 ```
 
-### (28) p.allext: Path [/usr/lib/a.tar.gz -> .tar.gz]
+### (30) p.allext: Path [/usr/lib/a.tar.gz -> .tar.gz]
 
 [p.allext.fish](functions/p.allext.fish)
 
@@ -422,7 +449,7 @@ The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/
     .tar.gz
 ```
 
-### (29) p.ext: Path [/usr/lib/a.tar.gz -> .gz]
+### (31) p.ext: Path [/usr/lib/a.tar.gz -> .gz]
 
 [p.ext.fish](functions/p.ext.fish)
 
@@ -431,7 +458,7 @@ The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/
     .gz
 ```
 
-### (30) p.fname: Path [/usr/lib/stuff.tar.gz -> stuff]
+### (32) p.fname: Path [/usr/lib/stuff.tar.gz -> stuff]
 
 [p.fname.fish](functions/p.fname.fish)
 
@@ -440,7 +467,7 @@ The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/
     stuff
 ```
 
-### (31) p.name: Path [/usr/lib/python2.5/gopherlib.py -> gopherlib.py]
+### (33) p.name: Path [/usr/lib/python2.5/gopherlib.py -> gopherlib.py]
 
 [p.name.fish](functions/p.name.fish)
 
@@ -449,7 +476,7 @@ The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/
     stuff.tar.gz
 ```
 
-### (32) p.parent: Path [/usr/lib/python2.5/gopherlib.py -> /usr/lib/python2.5]
+### (34) p.parent: Path [/usr/lib/python2.5/gopherlib.py -> /usr/lib/python2.5]
 
 [p.parent.fish](functions/p.parent.fish)
 
@@ -458,7 +485,7 @@ The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/
     /usr/lib/python2.5
 ```
 
-### (33) p.stem: Path [/usr/lib/python2.5/gopherlib.py -> gopherlib]
+### (35) p.stem: Path [/usr/lib/python2.5/gopherlib.py -> gopherlib]
 
 [p.stem.fish](functions/p.stem.fish)
 
@@ -467,7 +494,7 @@ The readable version of the 2nd example is [here](https://en.wikipedia.org/wiki/
     stuff.tar
 ```
 
-### (34) prettyjson: Pretty-print JSON
+### (36) prettyjson: Pretty-print JSON
 
 [prettyjson.fish](functions/prettyjson.fish)
 
@@ -488,7 +515,7 @@ By default it wants to use the command `bat` (make sure that it's installed).
 If you don't have `bat`, you can also use `cat`.
 Here is a [screenshot](https://i.imgur.com/W93WyiO.png) of the difference.
 
-### (35) prettynum: Prettify a number
+### (37) prettynum: Prettify a number
 
 [prettynum.fish](functions/prettynum.fish)
 
@@ -500,7 +527,7 @@ Here is a [screenshot](https://i.imgur.com/W93WyiO.png) of the difference.
     12_345_679
 ```
 
-### (36) qrcode: Generate a QR code from text [ANSI]
+### (38) qrcode: Generate a QR code from text [ANSI]
 
 [qrcode.fish](functions/qrcode.fish)
 
@@ -511,7 +538,7 @@ Here is a [screenshot](https://i.imgur.com/W93WyiO.png) of the difference.
 It requires the `qrencode` package (`yay -S qrencode`).
 The QR code is shown in the terminal (see [screenshot](https://i.imgur.com/WaWTdmG.png)).
 
-### (37) qrcode2: Generate a QR code from text [PNG]
+### (39) qrcode2: Generate a QR code from text [PNG]
 
 [qrcode2.fish](functions/qrcode2.fish)
 
@@ -523,7 +550,7 @@ It requires the `qrencode` package (`yay -S qrencode`).
 The QR code is saved as a PNG and opened automatically with the default image viewer
 (see [screenshot](https://i.imgur.com/DrFVW2i.png)).
 
-### (38) quote: Create GET-style quoted text
+### (40) quote: Create GET-style quoted text
 
 [quote.fish](functions/quote.fish)
 
@@ -535,7 +562,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     largest prime below 1 million
 ```
 
-### (39) randomcase: Alternate case randomly
+### (41) randomcase: Alternate case randomly
 
 [randomcase.fish](functions/randomcase.fish)
 
@@ -547,7 +574,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     HEllo WorLD
 ```
 
-### (40) randomline: Select a non-empty random line from input
+### (42) randomline: Select a non-empty random line from input
 
 [randomline.fish](functions/randomline.fish)
 
@@ -564,7 +591,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     one
 ```
 
-### (41) removeprefix: Remove prefix
+### (43) removeprefix: Remove prefix
 
 [removeprefix.fish](functions/removeprefix.fish)
 
@@ -578,7 +605,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     y = 2
 ```
 
-### (42) removesuffix: Remove suffix
+### (44) removesuffix: Remove suffix
 
 [removesuffix.fish](functions/removesuffix.fish)
 
@@ -592,7 +619,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     y = 2
 ```
 
-### (43) repeat: Repeat a text `<n>` times
+### (45) repeat: Repeat a text `<n>` times
 
 [repeat.fish](functions/repeat.fish)
 
@@ -601,7 +628,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     *****
 ```
 
-### (44) replace: Replace `<old>` with `<new>`
+### (46) replace: Replace `<old>` with `<new>`
 
 [replace.fish](functions/replace.fish)
 
@@ -610,7 +637,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     kitten dog kitten kitten
 ```
 
-### (45) reverse: Reverse a string
+### (47) reverse: Reverse a string
 
 [reverse.fish](functions/reverse.fish)
 
@@ -622,7 +649,14 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     hello
 ```
 
-### (46) roman:
+If you pass it the content of a text file, it reads the whole content of the
+file and reverses the whole content.
+
+If you want to reverse a file line-by-line, use the `rev` command from the `util-linux` package:
+
+    $ cat book.txt | rev
+
+### (48) roman:
 
 [roman.fish](functions/roman.fish)
 
@@ -634,7 +668,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     2025
 ```
 
-### (47) rot: Rotate letters with with `<n>` positions
+### (49) rot: Rotate letters with with `<n>` positions
 
 [rot.fish](functions/rot.fish)
 
@@ -661,7 +695,7 @@ are rotated left.
 
 [ROT13](https://en.wikipedia.org/wiki/ROT13) is a special case of the Caesar cipher.
 
-### (48) shuffle: Shuffle characters in each line
+### (50) shuffle: Shuffle characters in each line
 
 [shuffle.fish](functions/shuffle.fish)
 
@@ -673,7 +707,7 @@ are rotated left.
     12563487
 ```
 
-### (49) sparkline: Generate sparkline chart from numbers
+### (51) sparkline: Generate sparkline chart from numbers
 
 [sparkline.fish](functions/sparkline.fish)
 
@@ -682,7 +716,7 @@ are rotated left.
     ▂▁▅▃█▁▇▆
 ```
 
-### (50) swapcase: Swap lower- and uppercase
+### (52) swapcase: Swap lower- and uppercase
 
 [swapcase.fish](functions/swapcase.fish)
 
@@ -691,7 +725,27 @@ are rotated left.
     hELLO wORLD
 ```
 
-### (51) tiny: Convert text to tiny superscript letters
+### (53) take: Take the first `<n>` lines of stdin
+
+[take.fish](functions/take.fish)
+
+```shell
+    $ seq 5
+    1
+    2
+    3
+    4
+    5
+
+    $ seq 5 | take 3
+    1
+    2
+    3
+```
+
+Take the first `n` lines of standard input.
+
+### (54) tiny: Convert text to tiny superscript letters
 
 [tiny.fish](functions/tiny.fish)
 
@@ -705,7 +759,7 @@ are rotated left.
 
 Conversion from tiny to normal is not perfect due to some Unicode limitations.
 
-### (52) title: Convert to title case
+### (55) title: Convert to title case
 
 [title.fish](functions/title.fish)
 
@@ -714,7 +768,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     Hello World
 ```
 
-### (53) trim: Trim leading/trailing whitespace
+### (56) trim: Trim leading/trailing whitespace
 
 [trim.fish](functions/trim.fish)
 
@@ -726,7 +780,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     5
 ```
 
-### (54) typewriter: Print like a typewriter
+### (57) typewriter: Print like a typewriter
 
 [typewriter.fish](functions/typewriter.fish)
 
@@ -740,7 +794,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
 The content of the file is printed character by character,
 with some delay, similarly to a typewriter.
 
-### (55) typewriter2: Print like a typewriter with sound effects
+### (58) typewriter2: Print like a typewriter with sound effects
 
 [typewriter2.fish](functions/typewriter2.fish)
 
@@ -759,7 +813,7 @@ The sound files are played with `mplayer` (make sure it's installed).
 You can download some sound file packs from here: https://github.com/jabbalaci/keysound/tree/main/sounds .
 This one uses the `fallout` sound pack.
 
-### (56) unbin: Binary number to decimal
+### (59) unbin: Binary number to decimal
 
 [unbin.fish](functions/unbin.fish)
 
@@ -771,7 +825,7 @@ This one uses the `fallout` sound pack.
     0b1110
 ```
 
-### (57) unflip: Revert upside-down Unicode text back to normal
+### (60) unflip: Revert upside-down Unicode text back to normal
 
 [unflip.fish](functions/unflip.fish)
 
@@ -783,7 +837,7 @@ This one uses the `fallout` sound pack.
     ʃʃǝɥs ɥsᴉℲ
 ```
 
-### (58) unhex: Hex number to decimal
+### (61) unhex: Hex number to decimal
 
 [unhex.fish](functions/unhex.fish)
 
@@ -795,7 +849,7 @@ This one uses the `fallout` sound pack.
     0xff
 ```
 
-### (59) unmirror: Convert mirrored text back to normal
+### (62) unmirror: Convert mirrored text back to normal
 
 [unmirror.fish](functions/unmirror.fish)
 
@@ -809,7 +863,7 @@ This one uses the `fallout` sound pack.
 
 It might be improved with https://www.flipyourtext.com/
 
-### (60) unmorse: Convert Morse code to text [e.g., '... --- ...' -> 'SOS']
+### (63) unmorse: Convert Morse code to text [e.g., '... --- ...' -> 'SOS']
 
 [unmorse.fish](functions/unmorse.fish)
 
@@ -824,7 +878,7 @@ It might be improved with https://www.flipyourtext.com/
 * International Morse code: https://www.itu.int/rec/R-REC-M.1677-1-200910-I/
 * https://en.wikipedia.org/wiki/Morse_code
 
-### (61) unoct: Octal number to decimal
+### (64) unoct: Octal number to decimal
 
 [unoct.fish](functions/unoct.fish)
 
@@ -836,7 +890,7 @@ It might be improved with https://www.flipyourtext.com/
     0o755
 ```
 
-### (62) unquote: Decode GET-style quoted text
+### (65) unquote: Decode GET-style quoted text
 
 [unquote.fish](functions/unquote.fish)
 
@@ -848,7 +902,7 @@ It might be improved with https://www.flipyourtext.com/
     largest+prime+below+1+million
 ```
 
-### (63) unroman:
+### (66) unroman:
 
 [unroman.fish](functions/unroman.fish)
 
@@ -860,7 +914,7 @@ It might be improved with https://www.flipyourtext.com/
     MMXXV
 ```
 
-### (64) untiny: Convert tiny superscript letters back to normal text [not perfect]
+### (67) untiny: Convert tiny superscript letters back to normal text [not perfect]
 
 [untiny.fish](functions/untiny.fish)
 
@@ -874,7 +928,7 @@ It might be improved with https://www.flipyourtext.com/
 
 Conversion from tiny to normal is not perfect due to some Unicode limitations.
 
-### (65) upper: Convert to uppercase
+### (68) upper: Convert to uppercase
 
 [upper.fish](functions/upper.fish)
 
@@ -886,7 +940,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     hello
 ```
 
-### (66) urldecode: URL-decode input
+### (69) urldecode: URL-decode input
 
 [urldecode.fish](functions/urldecode.fish)
 
@@ -898,7 +952,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     https%3A//en.wikipedia.org/wiki/C_%28programming_language%29
 ```
 
-### (67) urlencode: URL-encode input
+### (70) urlencode: URL-encode input
 
 [urlencode.fish](functions/urlencode.fish)
 
@@ -910,7 +964,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     https://en.wikipedia.org/wiki/C_(programming_language)
 ```
 
-### (68) wolfram: Ask Wolfram Alpha
+### (71) wolfram: Ask Wolfram Alpha
 
 [wolfram.fish](functions/wolfram.fish)
 
@@ -925,7 +979,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
 You need an API key for this (it's free).
 API docs: https://products.wolframalpha.com/short-answers-api/documentation
 
-### (69) zalgo: Add Zalgo (glitchy) combining characters [aggressive]
+### (72) zalgo: Add Zalgo (glitchy) combining characters [aggressive]
 
 [zalgo.fish](functions/zalgo.fish)
 
@@ -940,7 +994,7 @@ API docs: https://products.wolframalpha.com/short-answers-api/documentation
 It adds glitchy characters to the text. `zalgo` is more
 aggressive than `zalgo0`.
 
-### (70) zalgo0: Add random Unicode glitches to text [light]
+### (73) zalgo0: Add random Unicode glitches to text [light]
 
 [zalgo0.fish](functions/zalgo0.fish)
 
