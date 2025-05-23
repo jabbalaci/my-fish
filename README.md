@@ -1841,6 +1841,7 @@ if you find a bug, feel free to issue a ticket.
 ## Links
 
 * https://fishshell.com
+* [Reddit announcement](https://old.reddit.com/r/fishshell/comments/1kr3jtp/70_useful_filter_functions/)
 
 ## Author
 * Laszlo Szathmary (jabba.laci@gmail.com), 2025
