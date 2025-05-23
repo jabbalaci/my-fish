@@ -13,5 +13,6 @@ end
 
 
 function pyloc -d "Count Python lines of code (excluding .venv)"
+    echo "# try tokei too"
     find . -name "*.py" | grep -v ".venv" | xargs wc -l
 end

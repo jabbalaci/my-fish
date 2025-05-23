@@ -19,7 +19,6 @@ abbr timestamp isodatetime
 abbr length len
 abbr p.suffix p.ext
 abbr p.dir p.parent
-abbr strip trim
 abbr wolf wolfram
 abbr addpostfix addsuffix
 abbr removepostfix removesuffix
@@ -39,6 +38,8 @@ abbr - "cd -"
 abbr p2 'python2'
 abbr p3 'python3'
 abbr p 'python3'
+abbr b bash
+abbr z zsh
 alias pypy='pypy3'
 alias tree="tree -C"
 alias grep="grep --color=auto"
@@ -48,6 +49,7 @@ alias vim $EDITOR
 alias v vim
 abbr val valgrind
 alias m micro
+alias edit "$DROPBOX/home/jabba/opt/edit-1.0.0-x86_64-linux-gnu"  # https://github.com/microsoft/edit
 alias cat='bat --pager never'
 alias on="source .venv/bin/activate.fish"
 alias off deactivate

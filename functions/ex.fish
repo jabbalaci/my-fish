@@ -42,6 +42,8 @@ function ex --argument fname -d "Universal archive extractor"
                 uncompress $fname
             case '*.7z'
                 7z x $fname
+            case '*.xz'
+                unxz $fname
             case '*'
                 echo "'$fname' cannot be extracted via ex()" >&2
                 return 1

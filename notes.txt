@@ -47,3 +47,9 @@ Find slow-loading functions:
     $ fish --profile-startup /tmp/profile.log
 
 ---
+
+    $ prg 1>/dev/null 2>&1      # long
+
+    $ prg &>/dev/null           # short, same as before
+
+---
