@@ -5,12 +5,12 @@ end
 
 
 function replace -d "Replace `<old>` with `<new>` (filter)"
-    set -l old $argv[1]
-    set -l new $argv[2]
-    if test -z "$old" -o -z "$new"
+    if test (count $argv) -ne 2
         echo "Error: <old> and <new> arguments are required" >&2
         return 1
     end
+    set -l old $argv[1]
+    set -l new $argv[2]
 
     python3 -S -c "
 import sys

@@ -564,7 +564,21 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     largest prime below 1 million
 ```
 
-### (41) randomcase: Alternate case randomly
+### (41) quotes: Add quotes around the input
+
+[quotes.fish](functions/quotes.fish)
+
+```shell
+    $ echo "hello"
+    hello
+
+    $ echo "hello" | quotes
+    'hello'
+```
+
+Puts the input among quotes, making the beginning and the end of the input clearly visible.
+
+### (42) randomcase: Alternate case randomly
 
 [randomcase.fish](functions/randomcase.fish)
 
@@ -576,7 +590,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     HEllo WorLD
 ```
 
-### (42) randomline: Select a non-empty random line from input
+### (43) randomline: Select a non-empty random line from input
 
 [randomline.fish](functions/randomline.fish)
 
@@ -593,7 +607,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     one
 ```
 
-### (43) removeprefix: Remove prefix
+### (44) removeprefix: Remove prefix
 
 [removeprefix.fish](functions/removeprefix.fish)
 
@@ -607,7 +621,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     y = 2
 ```
 
-### (44) removesuffix: Remove suffix
+### (45) removesuffix: Remove suffix
 
 [removesuffix.fish](functions/removesuffix.fish)
 
@@ -621,7 +635,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     y = 2
 ```
 
-### (45) repeat: Repeat a text `<n>` times
+### (46) repeat: Repeat a text `<n>` times
 
 [repeat.fish](functions/repeat.fish)
 
@@ -630,7 +644,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     *****
 ```
 
-### (46) replace: Replace `<old>` with `<new>`
+### (47) replace: Replace `<old>` with `<new>`
 
 [replace.fish](functions/replace.fish)
 
@@ -639,7 +653,7 @@ The QR code is saved as a PNG and opened automatically with the default image vi
     kitten dog kitten kitten
 ```
 
-### (47) reverse: Reverse a string
+### (48) reverse: Reverse a string
 
 [reverse.fish](functions/reverse.fish)
 
@@ -660,7 +674,7 @@ If you want to reverse a file line-by-line, use the `rev` command from the `util
     $ cat book.txt | rev
 ```
 
-### (48) roman: Convert number to Roman numeral [1-3999]
+### (49) roman: Convert number to Roman numeral [1-3999]
 
 [roman.fish](functions/roman.fish)
 
@@ -672,7 +686,7 @@ If you want to reverse a file line-by-line, use the `rev` command from the `util
     2025
 ```
 
-### (49) rot: Rotate letters with with `<n>` positions
+### (50) rot: Rotate letters with with `<n>` positions
 
 [rot.fish](functions/rot.fish)
 
@@ -699,7 +713,7 @@ are rotated left.
 
 [ROT13](https://en.wikipedia.org/wiki/ROT13) is a special case of the Caesar cipher.
 
-### (50) shuffle: Shuffle characters in each line
+### (51) shuffle: Shuffle characters in each line
 
 [shuffle.fish](functions/shuffle.fish)
 
@@ -711,7 +725,7 @@ are rotated left.
     12563487
 ```
 
-### (51) sparkline: Generate sparkline chart from numbers
+### (52) sparkline: Generate sparkline chart from numbers
 
 [sparkline.fish](functions/sparkline.fish)
 
@@ -720,7 +734,7 @@ are rotated left.
     ▂▁▅▃█▁▇▆
 ```
 
-### (52) swapcase: Swap lower- and uppercase
+### (53) swapcase: Swap lower- and uppercase
 
 [swapcase.fish](functions/swapcase.fish)
 
@@ -729,7 +743,7 @@ are rotated left.
     hELLO wORLD
 ```
 
-### (53) take: Take the first `<n>` lines of stdin
+### (54) take: Take the first `<n>` lines of stdin
 
 [take.fish](functions/take.fish)
 
@@ -749,7 +763,7 @@ are rotated left.
 
 Take the first `n` lines of standard input.
 
-### (54) tiny: Convert text to tiny superscript letters
+### (55) tiny: Convert text to tiny superscript letters
 
 [tiny.fish](functions/tiny.fish)
 
@@ -763,7 +777,7 @@ Take the first `n` lines of standard input.
 
 Conversion from tiny to normal is not perfect due to some Unicode limitations.
 
-### (55) title: Convert to title case
+### (56) title: Convert to title case
 
 [title.fish](functions/title.fish)
 
@@ -772,7 +786,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     Hello World
 ```
 
-### (56) trim: Trim leading/trailing whitespace
+### (57) trim: Trim leading/trailing whitespace
 
 [trim.fish](functions/trim.fish)
 
@@ -784,7 +798,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     5
 ```
 
-### (57) typewriter: Print like a typewriter
+### (58) typewriter: Print like a typewriter
 
 [typewriter.fish](functions/typewriter.fish)
 
@@ -798,7 +812,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
 The content of the file is printed character by character,
 with some delay, similarly to a typewriter.
 
-### (58) typewriter2: Print like a typewriter with sound effects
+### (59) typewriter2: Print like a typewriter with sound effects
 
 [typewriter2.fish](functions/typewriter2.fish)
 
@@ -817,7 +831,7 @@ The sound files are played with `mplayer` (make sure it's installed).
 You can download some sound file packs from here: https://github.com/jabbalaci/keysound/tree/main/sounds .
 This one uses the `fallout` sound pack.
 
-### (59) unbin: Binary number to decimal
+### (60) unbin: Binary number to decimal
 
 [unbin.fish](functions/unbin.fish)
 
@@ -829,7 +843,7 @@ This one uses the `fallout` sound pack.
     0b1110
 ```
 
-### (60) unflip: Revert upside-down Unicode text back to normal
+### (61) unflip: Revert upside-down Unicode text back to normal
 
 [unflip.fish](functions/unflip.fish)
 
@@ -841,7 +855,7 @@ This one uses the `fallout` sound pack.
     ʃʃǝɥs ɥsᴉℲ
 ```
 
-### (61) unhex: Hex number to decimal
+### (62) unhex: Hex number to decimal
 
 [unhex.fish](functions/unhex.fish)
 
@@ -853,7 +867,7 @@ This one uses the `fallout` sound pack.
     0xff
 ```
 
-### (62) unmirror: Convert mirrored text back to normal
+### (63) unmirror: Convert mirrored text back to normal
 
 [unmirror.fish](functions/unmirror.fish)
 
@@ -867,7 +881,7 @@ This one uses the `fallout` sound pack.
 
 It might be improved with https://www.flipyourtext.com/
 
-### (63) unmorse: Convert Morse code to text [e.g., '... --- ...' -> 'SOS']
+### (64) unmorse: Convert Morse code to text [e.g., '... --- ...' -> 'SOS']
 
 [unmorse.fish](functions/unmorse.fish)
 
@@ -882,7 +896,7 @@ It might be improved with https://www.flipyourtext.com/
 * International Morse code: https://www.itu.int/rec/R-REC-M.1677-1-200910-I/
 * https://en.wikipedia.org/wiki/Morse_code
 
-### (64) unoct: Octal number to decimal
+### (65) unoct: Octal number to decimal
 
 [unoct.fish](functions/unoct.fish)
 
@@ -894,7 +908,7 @@ It might be improved with https://www.flipyourtext.com/
     0o755
 ```
 
-### (65) unquote: Decode GET-style quoted text
+### (66) unquote: Decode GET-style quoted text
 
 [unquote.fish](functions/unquote.fish)
 
@@ -906,7 +920,7 @@ It might be improved with https://www.flipyourtext.com/
     largest+prime+below+1+million
 ```
 
-### (66) unroman: Convert Roman numeral to number
+### (67) unroman: Convert Roman numeral to number
 
 [unroman.fish](functions/unroman.fish)
 
@@ -918,7 +932,7 @@ It might be improved with https://www.flipyourtext.com/
     MMXXV
 ```
 
-### (67) untiny: Convert tiny superscript letters back to normal text [not perfect]
+### (68) untiny: Convert tiny superscript letters back to normal text [not perfect]
 
 [untiny.fish](functions/untiny.fish)
 
@@ -932,7 +946,7 @@ It might be improved with https://www.flipyourtext.com/
 
 Conversion from tiny to normal is not perfect due to some Unicode limitations.
 
-### (68) upper: Convert to uppercase
+### (69) upper: Convert to uppercase
 
 [upper.fish](functions/upper.fish)
 
@@ -944,7 +958,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     hello
 ```
 
-### (69) urldecode: URL-decode input
+### (70) urldecode: URL-decode input
 
 [urldecode.fish](functions/urldecode.fish)
 
@@ -956,7 +970,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     https%3A//en.wikipedia.org/wiki/C_%28programming_language%29
 ```
 
-### (70) urlencode: URL-encode input
+### (71) urlencode: URL-encode input
 
 [urlencode.fish](functions/urlencode.fish)
 
@@ -968,7 +982,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     https://en.wikipedia.org/wiki/C_(programming_language)
 ```
 
-### (71) wolfram: Ask Wolfram Alpha
+### (72) wolfram: Ask Wolfram Alpha
 
 [wolfram.fish](functions/wolfram.fish)
 
@@ -983,7 +997,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
 You need an API key for this (it's free).
 API docs: https://products.wolframalpha.com/short-answers-api/documentation
 
-### (72) zalgo: Add Zalgo (glitchy) combining characters [aggressive]
+### (73) zalgo: Add Zalgo (glitchy) combining characters [aggressive]
 
 [zalgo.fish](functions/zalgo.fish)
 
@@ -998,7 +1012,7 @@ API docs: https://products.wolframalpha.com/short-answers-api/documentation
 It adds glitchy characters to the text. `zalgo` is more
 aggressive than `zalgo0`.
 
-### (73) zalgo0: Add random Unicode glitches to text [light]
+### (74) zalgo0: Add random Unicode glitches to text [light]
 
 [zalgo0.fish](functions/zalgo0.fish)
 
