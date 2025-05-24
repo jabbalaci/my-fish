@@ -46,10 +46,11 @@ alias grep="grep --color=auto"
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias vim $EDITOR
-alias v vim
+abbr v vim
 abbr val valgrind
-alias m micro
+abbr m micro
 alias edit "$DROPBOX/home/jabba/opt/edit-1.0.0-x86_64-linux-gnu"  # https://github.com/microsoft/edit
+abbr e edit
 alias cat='bat --pager never'
 alias on="source .venv/bin/activate.fish"
 alias off deactivate
@@ -98,12 +99,13 @@ alias "\cat" "command cat"
 alias "ccat" "command cat"
 abbr pwd-short prompt_pwd
 abbr zj zellij
-alias matrix="cmatrix -ab"      # yay -S cmatrix
+alias matrix="cmatrix -ab"          # yay -S cmatrix
 abbr fp flatpak
-abbr rel "clear; exec fish"            # reload configuration changes in-place
+abbr rel "clear; exec fish"         # reload configuration changes in-place
 alias dlang "jkb dlang"
 alias nimm "jkb nim"
 alias pas "jkb pascal"
 abbr clip "xsel -b"
 abbr cb "xsel -b"
 abbr tocb "xsel -b"
+abbr repo "gh repo view --web"      # yay -S github-cli
