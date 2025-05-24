@@ -11,6 +11,9 @@ end
 
 
 function dos-greeting -d "Classical DOS starting screen"
+    function fish_greeting  # disable other greeting message
+    end
+
     echo Starting MS-DOS...
     echo
     echo HIMEM is testing extended memory...done.
