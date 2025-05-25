@@ -38,6 +38,7 @@ abbr - "cd -"
 abbr p2 'python2'
 abbr p3 'python3'
 abbr p 'python3'
+abbr pp 'python3clean'         # no extra info line
 abbr b bash
 abbr z zsh
 alias pypy='pypy3'
