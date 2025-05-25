@@ -1574,7 +1574,31 @@ In private mode history will not be persisted.
 Traverses the current directory recursively (excluding .venv),
 and counts Python lines of code.
 
-### (40) qj: QuickJump script
+### (40) python3clean: Start the Python 3 REPL without the extra info line
+
+[python3clean.fish](functions/python3clean.fish)
+
+```shell
+    $ python3clean
+    Python 3.13.3 (main, Apr  9 2025, 07:44:25) [GCC 14.2.1 20250207] on linux
+    >>>
+```
+
+By default, the Python 3 REPL starts like this:
+
+```shell
+    $ python3
+    Python 3.13.3 (main, Apr  9 2025, 07:44:25) [GCC 14.2.1 20250207] on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
+```
+
+Notice the extra line that starts with "Type...". We don't need that line.
+This function removes it.
+
+Tip: this function has a long name so I suggest putting an alias on it.
+
+### (41) qj: QuickJump script
 
 [qj.fish](functions/qj.fish)
 
@@ -1593,7 +1617,7 @@ and counts Python lines of code.
 This is a launcher for my QuickJump script.
 Available here: https://github.com/jabbalaci/quickjump
 
-### (41) r: Run a source code (compile and run)
+### (42) r: Run a source code (compile and run)
 
 [r.fish](functions/r.fish)
 
@@ -1607,7 +1631,7 @@ Available here: https://github.com/jabbalaci/quickjump
 
 Takes a source code and runs it. It can be extended to support various languages.
 
-### (42) random-functions: Some random functions (so that you don't forget them)
+### (43) random-functions: Some random functions (so that you don't forget them)
 
 [random-functions.fish](functions/random-functions.fish)
 
@@ -1629,7 +1653,7 @@ How it works:
 * B: aliases
 * Print A\B (difference)
 
-### (43) re: Wake up the Dropbox client
+### (44) re: Wake up the Dropbox client
 
 [re.fish](functions/re.fish)
 
@@ -1642,7 +1666,7 @@ When I wake up a computer from suspend mode, sometimes the Dropbox client
 doesn't recognize that it should start synchronizing. With this script
 I can force it to start working.
 
-### (44) ren: Rename a file interactively
+### (45) ren: Rename a file interactively
 
 [ren.fish](functions/ren.fish)
 
@@ -1656,7 +1680,7 @@ It allows you to rename a file interactively.
 
 Location of the script: https://github.com/jabbalaci/Bash-Utils/blob/master/ren.py
 
-### (45) resolution: Current resolution
+### (46) resolution: Current resolution
 
 [resolution.fish](functions/resolution.fish)
 
@@ -1667,7 +1691,7 @@ Location of the script: https://github.com/jabbalaci/Bash-Utils/blob/master/ren.
 
 Shows your current resolution.
 
-### (46) s: CD into /tmp/send
+### (47) s: CD into /tmp/send
 
 [s.fish](functions/s.fish)
 
@@ -1689,7 +1713,7 @@ it's easy to attach them), then delete them from `/tmp/send`.
 
 This script called `s` allows me to enter this folder with the speed of light.
 
-### (47) skip: Skip the first `<n>` lines of stdin
+### (48) skip: Skip the first `<n>` lines of stdin
 
 [skip.fish](functions/skip.fish)
 
@@ -1709,7 +1733,7 @@ This script called `s` allows me to enter this folder with the speed of light.
 
 Skips the first `n` lines of stdin.
 
-### (48) sp: Show the current path or show the path of a given file
+### (49) sp: Show the current path or show the path of a given file
 
 [sp.fish](functions/sp.fish)
 
@@ -1735,7 +1759,7 @@ path to the clipboard.
 
 `sp.py` can be found here: https://github.com/jabbalaci/Bash-Utils/blob/master/sp.py
 
-### (49) unixtime: Print the Unix epoch time
+### (50) unixtime: Print the Unix epoch time
 
 [unixtime.fish](functions/unixtime.fish)
 
@@ -1753,7 +1777,7 @@ since January 1, 1970.
 
 `unixtime2date` is the opposite.
 
-### (50) unixtime2date: Convert Unix epoch time to normal date
+### (51) unixtime2date: Convert Unix epoch time to normal date
 
 [unixtime2date.fish](functions/unixtime2date.fish)
 
@@ -1769,7 +1793,7 @@ since January 1, 1970.
 Takes a Unix epoch time (number) and converts it
 back to human-friendly date.
 
-### (51) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
+### (52) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
 
 [upgrade_pipx_and_uv.fish](functions/upgrade_pipx_and_uv.fish)
 
@@ -1783,7 +1807,7 @@ back to human-friendly date.
 They have that nice feature that they can update all the packages
 that were installed with them. This script triggers this update procedure.
 
-### (52) ups: Updates / upgrades
+### (53) ups: Updates / upgrades
 
 [ups.fish](functions/ups.fish)
 
@@ -1798,7 +1822,7 @@ upgrade softwares installed with pipx and uv, etc. I cannot keep
 all the update commands in my head. This script helps me keep
 my system up-to-date without causing any mental overhead.
 
-### (53) uv_venv: Call the `uv_venv` script
+### (54) uv_venv: Call the `uv_venv` script
 
 [uv_venv.fish](functions/uv_venv.fish)
 
@@ -1817,7 +1841,7 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (54) xfce-info: Current XFCE version
+### (55) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -1830,7 +1854,7 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (55) y: Start yazi (and stay in the folder where you quit)
+### (56) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 

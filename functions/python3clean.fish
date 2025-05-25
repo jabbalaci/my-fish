@@ -5,7 +5,7 @@ false && begin  # example
 end
 
 false && begin  # note
-By default, Python 3 starts like this:
+By default, the Python 3 REPL starts like this:
 
 ```shell
     % python3
@@ -15,13 +15,13 @@ By default, Python 3 starts like this:
 ```
 
 Notice the extra line that starts with "Type...". We don\'t need that line.
-This function removes that line.
+This function removes it.
 
 Tip: this function has a long name so I suggest putting an alias on it.
 end
 
 
-function python3clean -d "Start Python 3 without the extra info line"
+function python3clean -d "Start the Python 3 REPL without the extra info line"
     set -l pyline "Python "(python3 -S -c "import sys; print(sys.version)")" on linux"
     echo $pyline
     python3 -q
