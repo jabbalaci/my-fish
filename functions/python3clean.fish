@@ -22,7 +22,7 @@ end
 
 
 function python3clean -d "Start the Python 3 REPL without the extra info line"
-    set -l pyline "Python "(python3 -S -c "import sys; print(sys.version)")" on linux"
+    set -l pyline (python3 -S -c "import sys; print(f'Python {sys.version} on {sys.platform}')")
     echo $pyline
     python3 -q
 end
