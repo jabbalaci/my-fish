@@ -34,6 +34,7 @@ p.stem                              -> stuff.tar
 
 >>> Web/Net <<<
 ex.urls, ex.title                   - extract: URLs from a webpage, HTML title of a webpage
+ex.thumbnail                        - extract the URL of a YouTube video's thumbnail
 urlencode, urldecode                - URL encode/decode
 (un)quote                           - create/decode GET-style quoted text
 wolfram, wolf                       - ask Wolfram Alpha
