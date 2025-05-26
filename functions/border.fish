@@ -11,13 +11,13 @@ false && begin  # example
 end
 
 function border --argument symbol -d "Draw border around text (filter)"
-	read -l text
-	set -l ch '#'
-	if test -n "$symbol"
-	    set ch $symbol
-	end
+    read -l text
+    set -l ch '#'
+    if test -n "$symbol"
+        set ch $symbol
+    end
 
-	python3 -S -c "
+    python3 -S -c "
 import sys
 
 text = '$text'

@@ -14,6 +14,6 @@ function aur --argument pkg -d "Find package in the AUR repository"
         return 1
     end
 
-	set -l url "https://aur.archlinux.org/packages?O=0&SeB=N&K=$pkg&outdated=&SB=n&SO=a&PP=50&submit=Go"
-	open $url &>/dev/null
+    set -l url "https://aur.archlinux.org/packages?O=0&SeB=N&K=$pkg&outdated=&SB=n&SO=a&PP=50&submit=Go"
+    open $url &>/dev/null
 end

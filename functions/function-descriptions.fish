@@ -18,8 +18,8 @@ end
 
 
 function function-descriptions -d "Functions and their descriptions"
-    set -l A /tmp/a.txt
-    set -l B /tmp/b.txt
+    set -l A (mktemp)
+    set -l B (mktemp)
 
     functions | string split "," | grep -v "^fish" | grep -v "^fzf" | sort >$A
     alias | getcol 2 | sort >$B
@@ -27,4 +27,6 @@ function function-descriptions -d "Functions and their descriptions"
     for line in (comm -23 $A $B)
         printf '* %-30s- %s\n' $line (functions -Dv $line)[-1]
     end
+
+    command rm $A $B
 end

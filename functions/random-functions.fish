@@ -20,8 +20,8 @@ end
 
 
 function random-functions -d "Some random functions (so that you don't forget them)"
-    set -l A /tmp/a.txt
-    set -l B /tmp/b.txt
+    set -l A (mktemp)
+    set -l B (mktemp)
 
     functions | string split "," | grep -v "^fish" | grep -v "^fzf" | sort >$A
     alias | getcol 2 | sort >$B
@@ -29,4 +29,6 @@ function random-functions -d "Some random functions (so that you don't forget th
     for line in (comm -23 $A $B | sort --random-sort | head -3)
         printf '* %-30s- %s\n' $line (functions -Dv $line)[-1]
     end
+
+    command rm $A $B
 end

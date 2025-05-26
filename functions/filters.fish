@@ -23,6 +23,7 @@ repeat                              - repeat a text <n> times
 addprefix, addsuffix                - add <prefix> / <suffix> to each line
 removeprefix, removesuffix          - remove <prefix> / <suffix> from each line
 (un)hex, (un)bin, (un)oct           - decimal <-> hex, decimal <-> binary, decimal <-> octal
+quotes                              - add quotes around the input
 # /usr/lib/python2.5/stuff.tar.gz
 p.parent, p.dir                     -> /usr/lib/python2.5
 p.name                              -> stuff.tar.gz
@@ -46,7 +47,7 @@ justify                             - fully justify text to <width> (default: 78
 filesize                            - filesize (bytes) to human-readable format
 qrcode, qrcode2                     - generate QR code from text (ANSI, PNG)
 border                              - draw border around text
-hexview                             - show hex values of the input
+hexview, hexview2                   - show hex values of the input
 randomline                          - select a non-empty random line
 between                             - print lines between <start_line> and <end_line> (incl.)
 sparkline                           - generate sparkline chart from numbers
