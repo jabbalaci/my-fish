@@ -1034,7 +1034,23 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     https://en.wikipedia.org/wiki/C_(programming_language)
 ```
 
-### (74) wolfram: Ask Wolfram Alpha
+### (74) whitespaces: Show whitespaces
+
+[whitespaces.fish](functions/whitespaces.fish)
+
+```shell
+    $ cat Makefile
+    cat:
+            cat Makefile
+
+    $ cat Makefile | whitespaces
+    cat:␤
+    ⭾cat␣Makefile␤
+```
+
+Tab, newline, carriage return and space characters are made visible with Unicode characters.
+
+### (75) wolfram: Ask Wolfram Alpha
 
 [wolfram.fish](functions/wolfram.fish)
 
@@ -1049,7 +1065,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
 You need an API key for this (it's free).
 API docs: https://products.wolframalpha.com/short-answers-api/documentation
 
-### (75) zalgo: Add Zalgo (glitchy) combining characters [aggressive]
+### (76) zalgo: Add Zalgo (glitchy) combining characters [aggressive]
 
 [zalgo.fish](functions/zalgo.fish)
 
@@ -1064,7 +1080,7 @@ API docs: https://products.wolframalpha.com/short-answers-api/documentation
 It adds glitchy characters to the text. `zalgo` is more
 aggressive than `zalgo0`.
 
-### (76) zalgo0: Add random Unicode glitches to text [light]
+### (77) zalgo0: Add random Unicode glitches to text [light]
 
 [zalgo0.fish](functions/zalgo0.fish)
 

@@ -41,6 +41,7 @@ wolfram, wolf                       - ask Wolfram Alpha
 
 >>> Utils/Mixed <<<
 noaccents, nonempty                 - remove accents (á -> a, etc.), remove empty lines
+whitespaces                         - show whitespaces
 base64encode, base64decode          - base64 encode/decode
 prettyjson, prettynum               - prettify JSON, prettify number
 longest                             - length of the longest line

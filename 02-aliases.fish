@@ -109,4 +109,5 @@ alias pas "jkb pascal"
 abbr clip "xsel -b"
 abbr cb "xsel -b"
 abbr tocb "xsel -b"
-abbr repo "gh repo view --web"      # yay -S github-cli
+abbr repo "gh repo view --web"          # yay -S github-cli
+alias xxd "xxd -R never -g 1 -d"        # no color, group by 1 byte, show offset in decimal instead of hex [in package tinyxxd]
