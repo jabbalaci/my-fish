@@ -289,17 +289,30 @@ It was extracted from `<title>fish shell</title>`.
 [hexview.fish](functions/hexview.fish)
 
 ```shell
-    $ echo "ab cd" | hexview
-    a61 b62 ␣20 c63 d64 ␤0A
+    $ echo "Éva" | hexview
+    ÉC9 v76 a61 ␤0A
 
-    $ echo -n "ab cd" | hexview
-    a61 b62 ␣20 c63 d64
+    $ echo -n "Éva" | hexview
+    ÉC9 v76 a61
     # echo -n: no newline character
+
+    $ echo "Éva" | hexview bin
+    .C3 .89 v76 a61 ␤0A
 ```
 
-In front of a hex value it also shows the character for easier identification.
-If the character is non-printable, then a dot (`.`) is shown.
+This filter is **made for text input** that may contain non-ASCII characters.
+For binary files, use a proper hex editor.
+
+You can use it 2 modes:
+
+* text mode (default)
+* binary mode
+
 Tab, newline, carriage return and space characters are made visible with Unicode characters.
+
+In text mode, in front of a hex value it also shows the character for easier identification.
+If you have non-ASCII characters in your input, you'd better switch to binary mode.
+In binary mode, the input is processed as a byte stream. Non-printable characters appear as a dot (`.`).
 
 ### (20) hexview2: Show the input and the hex values of the input side-by-side
 
@@ -310,7 +323,13 @@ Tab, newline, carriage return and space characters are made visible with Unicode
     # opens an editor in split mode
     # left side: content of the file
     # right side: hex values of the lines
+
+    $ cat main.c | hexview2 bin
+    # bin mode is also available for hexview2
 ```
+
+This filter is **made for text input** that may contain non-ASCII characters.
+For binary files, use a proper hex editor.
 
 You can see the input and the hex values side-by-side.
 The hex values are generated with the `hexview` filter.
