@@ -1423,7 +1423,15 @@ It only checks mirror servers of your continent.
 
 Prints info about your GPU.
 
-### (25) isodate: Print date in YYYY-MM-DD format
+### (25) hxd: Start HxD
+
+[hxd.fish](functions/hxd.fish)
+
+HxD is an excellent hex editor. This is a Windows software,
+available at https://mh-nexus.de/en/hxd/ . If you know a better
+Linux alternative, let me know. We start it with wine.
+
+### (26) isodate: Print date in YYYY-MM-DD format
 
 [isodate.fish](functions/isodate.fish)
 
@@ -1437,7 +1445,7 @@ Prints date in YYYY-MM-DD format.
 Fun fact: in Hungary we use this format.
 We're going from the big picture towards the details, not vice versa.
 
-### (26) isodatetime: Print timestamp in YYYY-MM-DDTHH:MM:SS format
+### (27) isodatetime: Print timestamp in YYYY-MM-DDTHH:MM:SS format
 
 [isodatetime.fish](functions/isodatetime.fish)
 
@@ -1448,7 +1456,7 @@ We're going from the big picture towards the details, not vice versa.
 
 Can be used as a timestamp.
 
-### (27) jive: Start the JiVE image viewer
+### (28) jive: Start the JiVE image viewer
 
 [jive.fish](functions/jive.fish)
 
@@ -1461,7 +1469,7 @@ JiVE is an image viewer with some built-in NSFW support...
 
 The project can be found here: https://github.com/jabbalaci/JiVE-Image-Viewer
 
-### (28) json: Print key/value pairs in a JSON file
+### (29) json: Print key/value pairs in a JSON file
 
 [json.fish](functions/json.fish)
 
@@ -1485,7 +1493,7 @@ The project can be found here: https://github.com/jabbalaci/JiVE-Image-Viewer
 
 The project can be found here: https://github.com/jabbalaci/JSON-path
 
-### (29) kpx: Start keepassxc
+### (30) kpx: Start keepassxc
 
 [kpx.fish](functions/kpx.fish)
 
@@ -1498,7 +1506,7 @@ This is a launcher for keepassxc.
 
 [KeePassXC](https://keepassxc.org/) is an excellent, cross-platform password manager.
 
-### (30) machine_id: Print the machine ID
+### (31) machine_id: Print the machine ID
 
 [machine_id.fish](functions/machine_id.fish)
 
@@ -1513,7 +1521,7 @@ I came up with the idea to create the file `~/MACHINE_ID`, which contains a uniq
 identifier string. This file is not synced among my computers. A program/script can
 query the value of this file and set itself accordingly.
 
-### (31) mc: Launch Midnight Commander and stay in the folder where you quit
+### (32) mc: Launch Midnight Commander and stay in the folder where you quit
 
 [mc.fish](functions/mc.fish)
 
@@ -1528,7 +1536,7 @@ directory where you quit.
 
 Without this, you'd get back to the folder where you launched MC.
 
-### (32) mdgo: Make directory and cd into it
+### (33) mdgo: Make directory and cd into it
 
 [mdgo.fish](functions/mdgo.fish)
 
@@ -1544,7 +1552,7 @@ Without this, you'd get back to the folder where you launched MC.
 
 Makes the directory and enters into it. Others like to call it `mdcd`.
 
-### (33) minimal-prompt: A minimal prompt
+### (34) minimal-prompt: A minimal prompt
 
 [minimal-prompt.fish](functions/minimal-prompt.fish)
 
@@ -1556,7 +1564,7 @@ Makes the directory and enters into it. Others like to call it `mdcd`.
 Might be useful if you want to do a demo and you want to hide your fancy prompt
 to avoid distraction.
 
-### (34) moodle-link: Put a link on the given URL without embedding it | Moodle
+### (35) moodle-link: Put a link on the given URL without embedding it | Moodle
 
 [moodle-link.fish](functions/moodle-link.fish)
 
@@ -1573,7 +1581,7 @@ An interactive script that reads a URL and produces a string
 that can be pasted in the source code of a Moodle page.
 It inserts a clickable link and prevents embedding.
 
-### (35) moodle-nolink: Insert a URL as text, without putting a link on it | Moodle
+### (36) moodle-nolink: Insert a URL as text, without putting a link on it | Moodle
 
 [moodle-nolink.fish](functions/moodle-nolink.fish)
 
@@ -1589,7 +1597,7 @@ It inserts a clickable link and prevents embedding.
 It produces a string that can be pasted in the source code of a Moodle page.
 The link (URL) will appear as a normal text, not as a hyperlink.
 
-### (36) no-autosuggestions: Disable autosuggestions
+### (37) no-autosuggestions: Disable autosuggestions
 
 [no-autosuggestions.fish](functions/no-autosuggestions.fish)
 
@@ -1602,7 +1610,7 @@ Disables autosuggestions. As you type, nothing will appear in gray after the cur
 Might be useful when you do a demo and others can see your screen and
 you don't want to reveal what files you downloaded last time with wget...
 
-### (37) no-theme: Select the None theme (no colors)
+### (38) no-theme: Select the None theme (no colors)
 
 [no-theme.fish](functions/no-theme.fish)
 
@@ -1616,7 +1624,7 @@ As you type, everything has the same color.
 By default, fish adds colors to syntactic elements.
 With `no-theme` you can disable it.
 
-### (38) private-mode: Start private mode, history will not be persisted
+### (39) private-mode: Start private mode, history will not be persisted
 
 [private-mode.fish](functions/private-mode.fish)
 
@@ -1627,7 +1635,7 @@ With `no-theme` you can disable it.
 
 In private mode history will not be persisted.
 
-### (39) pyloc: Count Python lines of code (excluding .venv)
+### (40) pyloc: Count Python lines of code (excluding .venv)
 
 [pyloc.fish](functions/pyloc.fish)
 
@@ -1642,7 +1650,7 @@ In private mode history will not be persisted.
 Traverses the current directory recursively (excluding .venv),
 and counts Python lines of code.
 
-### (40) python3clean: Start the Python 3 REPL without the extra info line
+### (41) python3clean: Start the Python 3 REPL without the extra info line
 
 [python3clean.fish](functions/python3clean.fish)
 
@@ -1666,7 +1674,7 @@ This function removes it.
 
 Tip: this function has a long name so I suggest putting an alias on it.
 
-### (41) qj: QuickJump script
+### (42) qj: QuickJump script
 
 [qj.fish](functions/qj.fish)
 
@@ -1685,7 +1693,7 @@ Tip: this function has a long name so I suggest putting an alias on it.
 This is a launcher for my QuickJump script.
 Available here: https://github.com/jabbalaci/quickjump
 
-### (42) r: Run a source code (compile and run)
+### (43) r: Run a source code (compile and run)
 
 [r.fish](functions/r.fish)
 
@@ -1699,7 +1707,7 @@ Available here: https://github.com/jabbalaci/quickjump
 
 Takes a source code and runs it. It can be extended to support various languages.
 
-### (43) random-functions: Some random functions (so that you don't forget them)
+### (44) random-functions: Some random functions (so that you don't forget them)
 
 [random-functions.fish](functions/random-functions.fish)
 
@@ -1721,7 +1729,7 @@ How it works:
 * B: aliases
 * Print A\B (difference)
 
-### (44) re: Wake up the Dropbox client
+### (45) re: Wake up the Dropbox client
 
 [re.fish](functions/re.fish)
 
@@ -1734,7 +1742,7 @@ When I wake up a computer from suspend mode, sometimes the Dropbox client
 doesn't recognize that it should start synchronizing. With this script
 I can force it to start working.
 
-### (45) ren: Rename a file interactively
+### (46) ren: Rename a file interactively
 
 [ren.fish](functions/ren.fish)
 
@@ -1748,7 +1756,7 @@ It allows you to rename a file interactively.
 
 Location of the script: https://github.com/jabbalaci/Bash-Utils/blob/master/ren.py
 
-### (46) resolution: Current resolution
+### (47) resolution: Current resolution
 
 [resolution.fish](functions/resolution.fish)
 
@@ -1759,7 +1767,7 @@ Location of the script: https://github.com/jabbalaci/Bash-Utils/blob/master/ren.
 
 Shows your current resolution.
 
-### (47) s: CD into /tmp/send
+### (48) s: CD into /tmp/send
 
 [s.fish](functions/s.fish)
 
@@ -1781,7 +1789,7 @@ it's easy to attach them), then delete them from `/tmp/send`.
 
 This script called `s` allows me to enter this folder with the speed of light.
 
-### (48) skip: Skip the first `<n>` lines of stdin
+### (49) skip: Skip the first `<n>` lines of stdin
 
 [skip.fish](functions/skip.fish)
 
@@ -1801,7 +1809,7 @@ This script called `s` allows me to enter this folder with the speed of light.
 
 Skips the first `n` lines of stdin.
 
-### (49) sp: Show the current path or show the path of a given file
+### (50) sp: Show the current path or show the path of a given file
 
 [sp.fish](functions/sp.fish)
 
@@ -1827,7 +1835,7 @@ path to the clipboard.
 
 `sp.py` can be found here: https://github.com/jabbalaci/Bash-Utils/blob/master/sp.py
 
-### (50) unixtime: Print the Unix epoch time
+### (51) unixtime: Print the Unix epoch time
 
 [unixtime.fish](functions/unixtime.fish)
 
@@ -1845,7 +1853,7 @@ since January 1, 1970.
 
 `unixtime2date` is the opposite.
 
-### (51) unixtime2date: Convert Unix epoch time to normal date
+### (52) unixtime2date: Convert Unix epoch time to normal date
 
 [unixtime2date.fish](functions/unixtime2date.fish)
 
@@ -1861,7 +1869,7 @@ since January 1, 1970.
 Takes a Unix epoch time (number) and converts it
 back to human-friendly date.
 
-### (52) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
+### (53) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
 
 [upgrade_pipx_and_uv.fish](functions/upgrade_pipx_and_uv.fish)
 
@@ -1875,7 +1883,7 @@ back to human-friendly date.
 They have that nice feature that they can update all the packages
 that were installed with them. This script triggers this update procedure.
 
-### (53) ups: Updates / upgrades
+### (54) ups: Updates / upgrades
 
 [ups.fish](functions/ups.fish)
 
@@ -1890,7 +1898,7 @@ upgrade softwares installed with pipx and uv, etc. I cannot keep
 all the update commands in my head. This script helps me keep
 my system up-to-date without causing any mental overhead.
 
-### (54) uv_venv: Call the `uv_venv` script
+### (55) uv_venv: Call the `uv_venv` script
 
 [uv_venv.fish](functions/uv_venv.fish)
 
@@ -1909,7 +1917,7 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (55) xfce-info: Current XFCE version
+### (56) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -1922,7 +1930,20 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (56) y: Start yazi (and stay in the folder where you quit)
+### (57) xrates: Currency rates of HUF, EUR and USD
+
+[xrates.fish](functions/xrates.fish)
+
+```shell
+    $ xrates
+    1 EUR is 404.86 HUF
+    1 USD is 355.87 HUF
+```
+
+See https://frankfurter.dev for more info. It's a free, open-source currency data API
+that tracks reference exchange rates.
+
+### (58) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 
