@@ -4,6 +4,7 @@
 
 set -gx FISH_DIR "$HOME/.config/fish"
 set -gx FISH_FUNCTIONS_DIR "$FISH_DIR/functions"
+set -gx FISH_MYSCRIPTS_DIR "$FISH_DIR/myscripts"
 set -gx EDITOR "micro"
 set -gx VIEWER $EDITOR
 set -gx VISUAL $EDITOR
