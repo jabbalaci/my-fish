@@ -1938,10 +1938,19 @@ Tip: the `fastfetch` command can also tell you this information in the command l
     $ xrates
     1 EUR is 404.86 HUF
     1 USD is 355.87 HUF
+
+    $ xrates 185
+    1 EUR is 404.86 HUF
+    1 USD is 355.87 HUF
+    ---
+    185.00 EUR is 74898.79 HUF
+    185.00 USD is 65836.30 HUF
 ```
 
 See https://frankfurter.dev for more info. It's a free, open-source currency data API
 that tracks reference exchange rates.
+
+You can pass an optional value to the function.
 
 ### (58) y: Start yazi (and stay in the folder where you quit)
 
