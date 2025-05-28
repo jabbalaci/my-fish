@@ -43,6 +43,7 @@ wolfram, wolf                       - ask Wolfram Alpha
 noaccents, nonempty                 - remove accents (á -> a, etc.), remove empty lines
 whitespaces                         - show whitespaces
 base64encode, base64decode          - base64 encode/decode
+(un)utf8                            - encode to UTF-8, decode from UTF-8
 prettyjson, prettynum               - prettify JSON, prettify number
 longest                             - length of the longest line
 justify                             - fully justify text to <width> (default: 78)

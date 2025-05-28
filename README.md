@@ -998,7 +998,22 @@ It might be improved with https://www.flipyourtext.com/
 
 Conversion from tiny to normal is not perfect due to some Unicode limitations.
 
-### (71) upper: Convert to uppercase
+### (71) unutf8: Decode the input with UTF-8
+
+[unutf8.fish](functions/unutf8.fish)
+
+```shell
+    $ echo "\xc3\x89\x76\x61" | unutf8
+    Éva
+
+    $ echo "\xc3\x89\x76\x61" | unutf8 | utf8
+    \xc3\x89\x76\x61\x0a
+    # where \x0a is the newline character ('\n')
+```
+
+Decode a UTF-8-encoded byte array.
+
+### (72) upper: Convert to uppercase
 
 [upper.fish](functions/upper.fish)
 
@@ -1010,7 +1025,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     hello
 ```
 
-### (72) urldecode: URL-decode input
+### (73) urldecode: URL-decode input
 
 [urldecode.fish](functions/urldecode.fish)
 
@@ -1022,7 +1037,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     https%3A//en.wikipedia.org/wiki/C_%28programming_language%29
 ```
 
-### (73) urlencode: URL-encode input
+### (74) urlencode: URL-encode input
 
 [urlencode.fish](functions/urlencode.fish)
 
@@ -1034,7 +1049,21 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     https://en.wikipedia.org/wiki/C_(programming_language)
 ```
 
-### (74) whitespaces: Show whitespaces
+### (75) utf8: Encode the input with UTF-8
+
+[utf8.fish](functions/utf8.fish)
+
+```shell
+    $ echo -n "Éva" | utf8
+    \xc3\x89\x76\x61
+
+    $ echo -n "Éva" | utf8 | unutf8
+    Éva
+```
+
+Encode the input to a UTF-8-encoded byte array.
+
+### (76) whitespaces: Show whitespaces
 
 [whitespaces.fish](functions/whitespaces.fish)
 
@@ -1050,7 +1079,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
 
 Tab, newline, carriage return and space characters are made visible with Unicode characters.
 
-### (75) wolfram: Ask Wolfram Alpha
+### (77) wolfram: Ask Wolfram Alpha
 
 [wolfram.fish](functions/wolfram.fish)
 
@@ -1065,7 +1094,7 @@ Tab, newline, carriage return and space characters are made visible with Unicode
 You need an API key for this (it's free).
 API docs: https://products.wolframalpha.com/short-answers-api/documentation
 
-### (76) zalgo: Add Zalgo (glitchy) combining characters [aggressive]
+### (78) zalgo: Add Zalgo (glitchy) combining characters [aggressive]
 
 [zalgo.fish](functions/zalgo.fish)
 
@@ -1080,7 +1109,7 @@ API docs: https://products.wolframalpha.com/short-answers-api/documentation
 It adds glitchy characters to the text. `zalgo` is more
 aggressive than `zalgo0`.
 
-### (77) zalgo0: Add random Unicode glitches to text [light]
+### (79) zalgo0: Add random Unicode glitches to text [light]
 
 [zalgo0.fish](functions/zalgo0.fish)
 
