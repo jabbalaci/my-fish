@@ -1,18 +1,24 @@
 false && begin  # example
-    % echo "Fish shell" | zalgo
-    F̸̷̗̏̚ì̛͖s̞̗҆͠h͚҄҈̖̘ s̱̖̍ͪ҄̚h̭̹̳̘e̸ͥ҉҉̛̛l̗̖ͮl̤ͨ҈̙̚
+    % echo "Fish shell" | zalgo1
+    Fǐśħ śĥéŀĺ
 
-    % echo "Fish shell" | zalgo0
-    F̂i͕sͥh̐ ͍s͍h̶e̚l͇l͠
+    % echo "Fish shell" | zalgo2
+    F̌i̖s̕ȟ ͎sͅhel̬l͜
+
+    % echo "Fish shell" | zalgo3
+    F̪̘҄҃̚i̗̙̖ͨs̱̰ͮ҄҉̚̚h̋̈͐҈̙̗҅ š̖̙ͫ͢h̜̱̘̀҃e͈̠̐҅҉̘l̵̘̃̉҄l͓̘̘
 end
 
 false && begin  # note
-It adds glitchy characters to the text. `zalgo` is more
-aggressive than `zalgo0`.
+It adds glitchy characters to the text.
+
+* zalgo1: light
+* zalgo2: medium
+* zalgo3: aggressive
 end
 
 
-function zalgo -d "Add Zalgo (glitchy) combining characters [aggressive] (filter)"
+function zalgo3 -d "Add Zalgo (glitchy) characters (filter)"
     python3 -S -c "
 import sys
 import random

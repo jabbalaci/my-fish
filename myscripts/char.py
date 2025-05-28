@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 
+import html
+import json
 import sys
 import unicodedata
+import urllib.parse
 from itertools import zip_longest
 
 char = str
@@ -83,48 +86,176 @@ def to_binary(n: int) -> str:
     return s.zfill(24)
 
 
-def process(ch: char) -> None:
-    if len(ch) != 1:
-        print("Error: provide a single character")
-        sys.exit(1)
-    # else:
+def to_u_plus(ch: char) -> str:
+    return f"U+{ord(ch):04X}"
+
+
+def get_char(ch: char) -> str:
     code = ord(ch)
+    quote = "'" if ch != "'" else '"'
+    if code < 32:
+        return "non-printable"
+    else:
+        return quote + chr(code) + quote
+
+
+def get_html_entity(ch: char) -> str:
+    # Named entities (like &aacute;)
+    # print(get_html_entity('á'))  # &aacute;
+    # print(get_html_entity('😊')) # &#x1F60A;
+    named_entity = html.entities.codepoint2name.get(ord(ch))
+    if named_entity:
+        return f"&{named_entity};"
+    # else:
+    # Hex entity (for chars without named equivalents)
+    return f"&#x{ord(ch):04X};"
+
+
+def A_basic_info(ch: str) -> None:
+    print("## Basic Information")
+    #
+    code = ord(ch)
+    print(f"Character:                    {get_char(ch)}")
     text = "ASCII code:                  "
     if code > 127:
-        text = "Unicode code point (decimal):"
+        text = "Unicode code point (dec):    "
     print(text, code)
-    print("Unicode code point (hex):    ", f"U+{ord(ch):04X}")
+    print("Unicode code point (hex):    ", to_u_plus(ch))
     print("In binary:                   ", nibbles(to_binary(code)))
     #
     print("Unicode name:                ", unicodedata.name(ch, "--"))
     category_abbr = unicodedata.category(ch)
     category_desc = category_map.get(category_abbr, "Unknown Category")
     print(f"Category:                     {category_abbr} ({category_desc})")
-    print("Uppercase:                   ", ch.upper())
-    print("Lowercase:                   ", ch.lower())
+
+
+def B_cases(ch: str) -> None:
+    print("## Case & Transformation")
+    #
+    print(
+        "Uppercase:                    {0} ({1})".format(
+            get_char(ch.upper()), to_u_plus(ch.upper())
+        )
+    )
+    print(
+        "Lowercase:                    {0} ({1})".format(
+            get_char(ch.lower()), to_u_plus(ch.lower())
+        )
+    )
+
+
+def C_encoding(ch: str) -> None:
+    print("## Encoding Information")
     #
     utf8 = ch.encode("utf-8")
     byte_or_bytes = "byte" if len(utf8) == 1 else "bytes"
     print(f"UTF-8:                        {utf8} ({len(utf8)} {byte_or_bytes})")
-    print("In binary:                    ", end="")
+    print("UTF-8 binary:                 ", end="")
     for b in utf8:
         print(nibbles(to_binary(b)), end="  ")
     print()
+    print("URL encode:                  ", urllib.parse.quote(ch))
+
+
+def D_normalization(ch: str) -> None:
+    print("## Normalization Forms")
+    #
     nfd_form = unicodedata.normalize("NFD", ch)
     if nfd_form != ch:
-        decomposed_info = f"{nfd_form} = ("
+        decomposed_info = f"'{nfd_form}' = ("
         decomposed_info += " + ".join(
             [f"U+{ord(c):04X} ({unicodedata.name(c, '')})" for c in nfd_form]
         )
         decomposed_info += ")"
     else:
         decomposed_info = "None"
-    print("Decomposition info:          ", decomposed_info)
+    print("Decomposition info (NFD):    ", decomposed_info)
+
+
+def E_web_and_markup(ch: str) -> None:
+    print("## Web & Markup")
+    #
+    print("HTML entity:                 ", get_html_entity(ch))
+    v1 = f"&#{ord(ch)};"
+    v2 = f"&#x{ord(ch):04X};"
+    print(f"HTML numeric:                 {v1} or {v2}")
+    value = json.dumps(ch).replace('"', "")
+    print(f"JSON escape:                  {value}")
+
+
+def process(ch: str) -> None:
+    if len(ch) != 1:
+        print("Error: provide a single character")
+        if ch:
+            print(f"It contains {len(ch)} characters.")
+            nfkc = unicodedata.normalize("NFKC", ch)
+            nfkc_codepoints = "U+" + " ".join(f"{ord(c):04X}" for c in nfkc)
+            print(f"NFKC decomposition: {nfkc} ({nfkc_codepoints})")
+        #
+        sys.exit(1)
+    # else:
+
+    A_basic_info(ch)
+    print()
+    B_cases(ch)
+    print()
+    C_encoding(ch)
+    print()
+    D_normalization(ch)
+    print()
+    E_web_and_markup(ch)
+
+
+def print_help() -> None:
+    text = """
+-h, --help      This help
+--dec 65        Unicode code point as decimal number (here: 'A')
+--hex 41        Unicode code point as hex. number (here: 0x41 = 65, which is 'A')
+--char á        Provide the character (here: 'á')
+""".strip()
+    print(text)
 
 
 def main():
-    ch = input("Char: ")
-    print("---")
+    args = sys.argv[1:]
+    if ("-h" in args) or ("--help" in args):
+        print_help()
+        exit(0)
+    #
+    if "--dec" in args:
+        idx = args.index("--dec")
+        try:
+            value = int(args[idx + 1])
+        except:
+            print("Error: argument error")
+            sys.exit(1)
+        process(chr(value))
+        return
+    if "--hex" in args:
+        idx = args.index("--hex")
+        try:
+            value = int(args[idx + 1], 16)
+        except:
+            print("Error: argument error")
+            sys.exit(1)
+        process(chr(value))
+        return
+    if "--char" in args:
+        idx = args.index("--char")
+        try:
+            value = args[idx + 1]
+        except:
+            print("Error: argument error")
+            sys.exit(1)
+        process(value)
+        return
+    # else
+    try:
+        ch = input("Char: ")
+    except (KeyboardInterrupt, EOFError):
+        print()
+        exit(0)
+    print("===")
     process(ch)
 
 

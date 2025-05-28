@@ -64,7 +64,7 @@ shuffle                             - shuffle characters in each line
 obfuscate                           - replace letters with similar-looking symbols [e -> 3, a -> @, etc.]
 (un)roman                           - number <-> Roman numeral
 (un)morse                           - text <-> Morse code
-zalgo(0), (un)flip, (un)mirror      - add Zalgo characters, (un)flip text upside down, (un)mirror text vertically
+zalgo{1..3}, (un)flip, (un)mirror   - add Zalgo characters, (un)flip text upside down, (un)mirror text vertically
 (un)tiny                            - text <-> tiny superscript letters
 "
 end

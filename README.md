@@ -1094,35 +1094,68 @@ Tab, newline, carriage return and space characters are made visible with Unicode
 You need an API key for this (it's free).
 API docs: https://products.wolframalpha.com/short-answers-api/documentation
 
-### (78) zalgo: Add Zalgo (glitchy) combining characters [aggressive]
+### (78) zalgo1: Add funny accents to characters [a -> ấ, etc.]
 
-[zalgo.fish](functions/zalgo.fish)
-
-```shell
-    $ echo "Fish shell" | zalgo
-    F̸̷̗̏̚ì̛͖s̞̗҆͠h͚҄҈̖̘ s̱̖̍ͪ҄̚h̭̹̳̘e̸ͥ҉҉̛̛l̗̖ͮl̤ͨ҈̙̚
-
-    $ echo "Fish shell" | zalgo0
-    F̂i͕sͥh̐ ͍s͍h̶e̚l͇l͠
-```
-
-It adds glitchy characters to the text. `zalgo` is more
-aggressive than `zalgo0`.
-
-### (79) zalgo0: Add random Unicode glitches to text [light]
-
-[zalgo0.fish](functions/zalgo0.fish)
+[zalgo1.fish](functions/zalgo1.fish)
 
 ```shell
-    $ echo "Fish shell" | zalgo0
-    F̂i͕sͥh̐ ͍s͍h̶e̚l͇l͠
+    $ echo "Fish shell" | zalgo1
+    Fǐśħ śĥéŀĺ
 
-    $ echo "Fish shell" | zalgo
-    F̸̷̗̏̚ì̛͖s̞̗҆͠h͚҄҈̖̘ s̱̖̍ͪ҄̚h̭̹̳̘e̸ͥ҉҉̛̛l̗̖ͮl̤ͨ҈̙̚
+    $ echo "Fish shell" | zalgo2
+    F̌i̖s̕ȟ ͎sͅhel̬l͜
+
+    $ echo "Fish shell" | zalgo3
+    F̪̘҄҃̚i̗̙̖ͨs̱̰ͮ҄҉̚̚h̋̈͐҈̙̗҅ š̖̙ͫ͢h̜̱̘̀҃e͈̠̐҅҉̘l̵̘̃̉҄l͓̘̘
 ```
 
-It adds glitchy characters to the text. `zalgo0` is less
-aggressive than `zalgo`.
+It adds glitchy characters to the text.
+
+* zalgo1: light
+* zalgo2: medium
+* zalgo3: aggressive
+
+### (79) zalgo2: Add random Unicode glitches to text
+
+[zalgo2.fish](functions/zalgo2.fish)
+
+```shell
+    $ echo "Fish shell" | zalgo1
+    Fǐśħ śĥéŀĺ
+
+    $ echo "Fish shell" | zalgo2
+    F̌i̖s̕ȟ ͎sͅhel̬l͜
+
+    $ echo "Fish shell" | zalgo3
+    F̪̘҄҃̚i̗̙̖ͨs̱̰ͮ҄҉̚̚h̋̈͐҈̙̗҅ š̖̙ͫ͢h̜̱̘̀҃e͈̠̐҅҉̘l̵̘̃̉҄l͓̘̘
+```
+
+It adds glitchy characters to the text.
+
+* zalgo1: light
+* zalgo2: medium
+* zalgo3: aggressive
+
+### (80) zalgo3: Add Zalgo (glitchy) characters
+
+[zalgo3.fish](functions/zalgo3.fish)
+
+```shell
+    $ echo "Fish shell" | zalgo1
+    Fǐśħ śĥéŀĺ
+
+    $ echo "Fish shell" | zalgo2
+    F̌i̖s̕ȟ ͎sͅhel̬l͜
+
+    $ echo "Fish shell" | zalgo3
+    F̪̘҄҃̚i̗̙̖ͨs̱̰ͮ҄҉̚̚h̋̈͐҈̙̗҅ š̖̙ͫ͢h̜̱̘̀҃e͈̠̐҅҉̘l̵̘̃̉҄l͓̘̘
+```
+
+It adds glitchy characters to the text.
+
+* zalgo1: light
+* zalgo2: medium
+* zalgo3: aggressive
 
 <!-- END: filters -->
 
@@ -1219,47 +1252,46 @@ Sometimes it doesn't produce any output. Then try again :)
 [char.fish](functions/char.fish)
 
 ```shell
-    $ char
-    Char: a
-    ---
-    ASCII code:                   97
-    Unicode code point (hex):     U+0061
-    In binary:                    0110 0001
-    Unicode name:                 LATIN SMALL LETTER A
-    Category:                     Ll (Lowercase Letter)
-    Uppercase:                    A
-    Lowercase:                    a
-    UTF-8:                        b'a' (1 byte)
-    In binary:                    0110 0001
-    Decomposition info:           None
+    $ char -h
+    -h, --help      This help
+    --dec 65        Unicode code point as decimal number (here: 'A')
+    --hex 41        Unicode code point as hex. number (here: 0x41 = 65, which is 'A')
+    --char á        Provide the character (here: 'á')
 
     $ char
     Char: á
-    ---
-    Unicode code point (decimal): 225
+    ===
+    ## Basic Information
+    Character:                    'á'
+    Unicode code point (dec):     225
     Unicode code point (hex):     U+00E1
     In binary:                    1110 0001
     Unicode name:                 LATIN SMALL LETTER A WITH ACUTE
     Category:                     Ll (Lowercase Letter)
-    Uppercase:                    Á
-    Lowercase:                    á
+
+    ## Case & Transformation
+    Uppercase:                    'Á' (U+00C1)
+    Lowercase:                    'á' (U+00E1)
+
+    ## Encoding Information
     UTF-8:                        b'\xc3\xa1' (2 bytes)
-    In binary:                    1100 0011  1010 0001
-    Decomposition info:           á = (U+0061 (LATIN SMALL LETTER A) + U+0301 (COMBINING ACUTE ACCENT))
+    UTF-8 binary:                 1100 0011  1010 0001
+    URL encode:                   %C3%A1
+
+    ## Normalization Forms
+    Decomposition info (NFD):     'á' = (U+0061 (LATIN SMALL LETTER A) + U+0301 (COMBINING ACUTE ACCENT))
+
+    ## Web & Markup
+    HTML entity:                  &aacute;
+    HTML numeric:                 &#225; or &#x00E1;
+    JSON escape:                  \u00e1
 
     $ char
-    Char: 😀
-    ---
-    Unicode code point (decimal): 128512
-    Unicode code point (hex):     U+1F600
-    In binary:                    0000 0001 1111 0110 0000 0000
-    Unicode name:                 GRINNING FACE
-    Category:                     So (Other Symbol)
-    Uppercase:                    😀
-    Lowercase:                    😀
-    UTF-8:                        b'\xf0\x9f\x98\x80' (4 bytes)
-    In binary:                    1111 0000  1001 1111  1001 1000  1000 0000
-    Decomposition info:           None
+    Char: helló
+    ===
+    Error: provide a single character
+    It contains 5 characters.
+    NFKC decomposition: helló (U+0068 0065 006C 006C 00F3)
 ```
 
 Everything you wanted to know about a character :)
