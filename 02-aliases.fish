@@ -112,3 +112,4 @@ abbr tocb "xsel -b"
 abbr repo "gh repo view --web"          # yay -S github-cli
 alias xxd "xxd -R never -g 1 -d"        # no color, group by 1 byte, show offset in decimal instead of hex [in package tinyxxd]
 abbr mya myalias
+abbr sx start_xmodmap
