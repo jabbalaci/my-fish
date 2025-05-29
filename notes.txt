@@ -53,3 +53,10 @@ Find slow-loading functions:
     $ prg &>/dev/null           # short, same as before
 
 ---
+
+    if test -z "$filename"
+        echo "Error: filename argument is required" >&2
+        return 1
+    end
+
+---

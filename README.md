@@ -1710,7 +1710,21 @@ It inserts a clickable link and prevents embedding.
 It produces a string that can be pasted in the source code of a Moodle page.
 The link (URL) will appear as a normal text, not as a hyperlink.
 
-### (38) no-autosuggestions: Disable autosuggestions
+### (38) myalias: Similar to the alias in bash
+
+[myalias.fish](functions/myalias.fish)
+
+```shell
+    $ myalias rm
+    alias rm 'rm -i'
+
+    $ myalias
+    # list of all my aliases
+```
+
+`myalias` works similarly to `alias` in Bash/ZSH.
+
+### (39) no-autosuggestions: Disable autosuggestions
 
 [no-autosuggestions.fish](functions/no-autosuggestions.fish)
 
@@ -1723,7 +1737,7 @@ Disables autosuggestions. As you type, nothing will appear in gray after the cur
 Might be useful when you do a demo and others can see your screen and
 you don't want to reveal what files you downloaded last time with wget...
 
-### (39) no-theme: Select the None theme (no colors)
+### (40) no-theme: Select the None theme (no colors)
 
 [no-theme.fish](functions/no-theme.fish)
 
@@ -1737,7 +1751,7 @@ As you type, everything has the same color.
 By default, fish adds colors to syntactic elements.
 With `no-theme` you can disable it.
 
-### (40) private-mode: Start private mode, history will not be persisted
+### (41) private-mode: Start private mode, history will not be persisted
 
 [private-mode.fish](functions/private-mode.fish)
 
@@ -1748,7 +1762,7 @@ With `no-theme` you can disable it.
 
 In private mode history will not be persisted.
 
-### (41) pyloc: Count Python lines of code (excluding .venv)
+### (42) pyloc: Count Python lines of code (excluding .venv)
 
 [pyloc.fish](functions/pyloc.fish)
 
@@ -1763,7 +1777,7 @@ In private mode history will not be persisted.
 Traverses the current directory recursively (excluding .venv),
 and counts Python lines of code.
 
-### (42) python3clean: Start the Python 3 REPL without the extra info line
+### (43) python3clean: Start the Python 3 REPL without the extra info line
 
 [python3clean.fish](functions/python3clean.fish)
 
@@ -1787,7 +1801,7 @@ This function removes it.
 
 Tip: this function has a long name so I suggest putting an alias on it.
 
-### (43) qj: QuickJump script
+### (44) qj: QuickJump script
 
 [qj.fish](functions/qj.fish)
 
@@ -1806,7 +1820,7 @@ Tip: this function has a long name so I suggest putting an alias on it.
 This is a launcher for my QuickJump script.
 Available here: https://github.com/jabbalaci/quickjump
 
-### (44) r: Run a source code (compile and run)
+### (45) r: Run a source code (compile and run)
 
 [r.fish](functions/r.fish)
 
@@ -1820,7 +1834,7 @@ Available here: https://github.com/jabbalaci/quickjump
 
 Takes a source code and runs it. It can be extended to support various languages.
 
-### (45) random-functions: Some random functions (so that you don't forget them)
+### (46) random-functions: Some random functions (so that you don't forget them)
 
 [random-functions.fish](functions/random-functions.fish)
 
@@ -1842,7 +1856,7 @@ How it works:
 * B: aliases
 * Print A\B (difference)
 
-### (46) re: Wake up the Dropbox client
+### (47) re: Wake up the Dropbox client
 
 [re.fish](functions/re.fish)
 
@@ -1855,7 +1869,7 @@ When I wake up a computer from suspend mode, sometimes the Dropbox client
 doesn't recognize that it should start synchronizing. With this script
 I can force it to start working.
 
-### (47) ren: Rename a file interactively
+### (48) ren: Rename a file interactively
 
 [ren.fish](functions/ren.fish)
 
@@ -1869,7 +1883,7 @@ It allows you to rename a file interactively.
 
 Location of the script: https://github.com/jabbalaci/Bash-Utils/blob/master/ren.py
 
-### (48) resolution: Current resolution
+### (49) resolution: Current resolution
 
 [resolution.fish](functions/resolution.fish)
 
@@ -1880,7 +1894,7 @@ Location of the script: https://github.com/jabbalaci/Bash-Utils/blob/master/ren.
 
 Shows your current resolution.
 
-### (49) s: CD into /tmp/send
+### (50) s: CD into /tmp/send
 
 [s.fish](functions/s.fish)
 
@@ -1902,7 +1916,7 @@ it's easy to attach them), then delete them from `/tmp/send`.
 
 This script called `s` allows me to enter this folder with the speed of light.
 
-### (50) skip: Skip the first `<n>` lines of stdin
+### (51) skip: Skip the first `<n>` lines of stdin
 
 [skip.fish](functions/skip.fish)
 
@@ -1922,7 +1936,7 @@ This script called `s` allows me to enter this folder with the speed of light.
 
 Skips the first `n` lines of stdin.
 
-### (51) sp: Show the current path or show the path of a given file
+### (52) sp: Show the current path or show the path of a given file
 
 [sp.fish](functions/sp.fish)
 
@@ -1948,7 +1962,7 @@ path to the clipboard.
 
 `sp.py` can be found here: https://github.com/jabbalaci/Bash-Utils/blob/master/sp.py
 
-### (52) unixtime: Print the Unix epoch time
+### (53) unixtime: Print the Unix epoch time
 
 [unixtime.fish](functions/unixtime.fish)
 
@@ -1966,7 +1980,7 @@ since January 1, 1970.
 
 `unixtime2date` is the opposite.
 
-### (53) unixtime2date: Convert Unix epoch time to normal date
+### (54) unixtime2date: Convert Unix epoch time to normal date
 
 [unixtime2date.fish](functions/unixtime2date.fish)
 
@@ -1982,7 +1996,7 @@ since January 1, 1970.
 Takes a Unix epoch time (number) and converts it
 back to human-friendly date.
 
-### (54) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
+### (55) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
 
 [upgrade_pipx_and_uv.fish](functions/upgrade_pipx_and_uv.fish)
 
@@ -1996,7 +2010,7 @@ back to human-friendly date.
 They have that nice feature that they can update all the packages
 that were installed with them. This script triggers this update procedure.
 
-### (55) ups: Updates / upgrades
+### (56) ups: Updates / upgrades
 
 [ups.fish](functions/ups.fish)
 
@@ -2011,7 +2025,7 @@ upgrade softwares installed with pipx and uv, etc. I cannot keep
 all the update commands in my head. This script helps me keep
 my system up-to-date without causing any mental overhead.
 
-### (56) uv_venv: Call the `uv_venv` script
+### (57) uv_venv: Call the `uv_venv` script
 
 [uv_venv.fish](functions/uv_venv.fish)
 
@@ -2030,7 +2044,7 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (57) xfce-info: Current XFCE version
+### (58) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -2043,7 +2057,7 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (58) xrates: Currency rates of HUF, EUR and USD
+### (59) xrates: Currency rates of HUF, EUR and USD
 
 [xrates.fish](functions/xrates.fish)
 
@@ -2065,7 +2079,7 @@ that tracks reference exchange rates.
 
 You can pass an optional value to the function.
 
-### (59) y: Start yazi (and stay in the folder where you quit)
+### (60) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 
