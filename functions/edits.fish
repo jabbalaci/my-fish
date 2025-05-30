@@ -17,6 +17,7 @@ ea             - edit aliases
 eb             - edit bindings
 ep             - edit prompt
 ef <name>      - edit the given function
+efs <name>     - edit the given function's corresponding script
 epair <name>   - edit the given function and its pair (ex.: hex and unhex)
 
 qj fish        - quick jump to ~/.config/fish
