@@ -12,9 +12,8 @@ end
 
 function re -d "Wake up the Dropbox client"
     echo "# waking up the Dropbox client"
-    cd ~/Dropbox
-    set -l FILE tmp774545.txt
-    touch ./$FILE
-    sleep 15
-    rm -f ./$FILE
+    set -l FILE ~/Dropbox/tmp774545.txt
+    touch "$FILE"
+    sleep 10
+    rm -f "$FILE"
 end
