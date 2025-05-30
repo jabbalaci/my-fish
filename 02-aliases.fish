@@ -50,7 +50,6 @@ alias vim $EDITOR
 abbr v vim
 abbr val valgrind
 abbr m micro
-alias edit "$DROPBOX/home/jabba/opt/edit-1.0.0-x86_64-linux-gnu"  # https://github.com/microsoft/edit
 abbr e edit
 alias cat='bat --pager never'
 alias on="source .venv/bin/activate.fish"

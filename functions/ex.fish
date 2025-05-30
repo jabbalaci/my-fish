@@ -22,6 +22,8 @@ function ex --argument fname -d "Universal archive extractor"
                 tar xvzf $fname
             case '*.tar.xz'
                 tar xvf $fname
+            case '*.tar.zst'
+                tar --zstd -xvf $fname
             case '*.bz2'
                 bunzip2 $fname
             case '*.rar'
