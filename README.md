@@ -2044,9 +2044,7 @@ path to the clipboard.
     ...
 ```
 
-See https://worldtimeapi.org/pages/examples .
-Querying `curl http://worldtimeapi.org/api/timezone.txt`
-often failed for me, so I print the list of timezones as a string.
+See also https://worldtimeapi.org/pages/examples .
 
 ### (58) top10dirs: Top 10 largest directories
 
@@ -2207,6 +2205,18 @@ navigate somewhere in yazi and quit, you'll find yourself in the
 directory where you quit.
 
 Without this, you'd get back to the folder where you launched yazi.
+
+### (68) zoli: Check my friend's local time
+
+[zoli.fish](functions/zoli.fish)
+
+```shell
+    $ zoli
+    🇭🇺 Debrecen Time:   2025-05-31 21:29:59 (CEST)
+    🇺🇸 US Eastern Time: 2025-05-31 15:29:59 (EDT)
+```
+
+Check my friend's local time.
 
 <!-- END: functions -->
 
