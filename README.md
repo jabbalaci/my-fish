@@ -2033,7 +2033,22 @@ path to the clipboard.
 
 `sp.py` can be found here: https://github.com/jabbalaci/Bash-Utils/blob/master/sp.py
 
-### (57) unixtime: Print the Unix epoch time
+### (57) timezones: List of valid timezones
+
+[timezones.fish](functions/timezones.fish)
+
+```shell
+    $ timezones
+    Africa/Abidjan
+    Africa/Accra
+    ...
+```
+
+See https://worldtimeapi.org/pages/examples .
+Querying `curl http://worldtimeapi.org/api/timezone.txt`
+often failed for me, so I print the list of timezones as a string.
+
+### (58) unixtime: Print the Unix epoch time
 
 [unixtime.fish](functions/unixtime.fish)
 
@@ -2051,7 +2066,7 @@ since January 1, 1970.
 
 `unixtime2date` is the opposite.
 
-### (58) unixtime2date: Convert Unix epoch time to normal date
+### (59) unixtime2date: Convert Unix epoch time to normal date
 
 [unixtime2date.fish](functions/unixtime2date.fish)
 
@@ -2067,7 +2082,7 @@ since January 1, 1970.
 Takes a Unix epoch time (number) and converts it
 back to human-friendly date.
 
-### (59) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
+### (60) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
 
 [upgrade_pipx_and_uv.fish](functions/upgrade_pipx_and_uv.fish)
 
@@ -2081,7 +2096,7 @@ back to human-friendly date.
 They have that nice feature that they can update all the packages
 that were installed with them. This script triggers this update procedure.
 
-### (60) ups: Updates / upgrades
+### (61) ups: Updates / upgrades
 
 [ups.fish](functions/ups.fish)
 
@@ -2096,7 +2111,7 @@ upgrade softwares installed with pipx and uv, etc. I cannot keep
 all the update commands in my head. This script helps me keep
 my system up-to-date without causing any mental overhead.
 
-### (61) uv_venv: Call the `uv_venv` script
+### (62) uv_venv: Call the `uv_venv` script
 
 [uv_venv.fish](functions/uv_venv.fish)
 
@@ -2115,7 +2130,7 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (62) xfce-info: Current XFCE version
+### (63) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -2128,7 +2143,7 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (63) xrates: Currency rates of HUF, EUR and USD
+### (64) xrates: Currency rates of HUF, EUR and USD
 
 [xrates.fish](functions/xrates.fish)
 
@@ -2150,7 +2165,7 @@ that tracks reference exchange rates.
 
 You can pass an optional value to the function.
 
-### (64) y: Start yazi (and stay in the folder where you quit)
+### (65) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 
