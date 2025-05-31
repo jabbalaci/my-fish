@@ -16,15 +16,15 @@ function fish_greeting -d "Default greeting message"
 
     # else
 
-    set -l choice (random 1 3)
+    set -l choice (random 1 2)
     switch $choice
         case 1
             random-functions
         case 2
-            echo "Jabuci" | figlet -f rectangles | nonempty
+            set -l options "Jabba Laci" "Jabuci" "Manjaro Linux"
+            set -l text $options[(random 1 2)]
+            echo $text | figlet -f rectangles | nonempty
         case 3
-            echo "Manjaro Linux" | figlet -f rectangles | nonempty
-        case 4
             dos-greeting
             dos-prompt
     end
