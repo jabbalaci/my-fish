@@ -66,8 +66,6 @@ alias files "pacman -Ql"
 abbr run 'chmod u+x'
 abbr ff 'fastfetch'
 alias nh='thunar . 2>/dev/null'    # nautilus here (replaced by thunar)
-alias top10dirs='du -h --max-depth=1 2> /dev/null | sort -hr | head -n 10'    # including hidden dirs too
-alias top10files='find . -type f -print0 | du -h --files0-from=- | sort -hr | head -n 10'
 alias ssh='ssh -o ServerAliveInterval=60'
 alias ppwd='/bin/pwd'
 abbr c "code"

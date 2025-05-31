@@ -2048,7 +2048,35 @@ See https://worldtimeapi.org/pages/examples .
 Querying `curl http://worldtimeapi.org/api/timezone.txt`
 often failed for me, so I print the list of timezones as a string.
 
-### (58) unixtime: Print the Unix epoch time
+### (58) top10dirs: Top 10 largest directories
+
+[top10dirs.fish](functions/top10dirs.fish)
+
+```shell
+    $ top10dirs
+    367G    .
+    107G    ./retroujsag
+    91G     ./youtube
+    39G     ./byte_magazine
+    ...
+```
+
+List the top 10 directories in the current folder in descending order by size.
+
+### (59) top10files: Top 10 largest files
+
+[top10files.fish](functions/top10files.fish)
+
+```shell
+    $ top10files
+    5,8G    ./install/ubuntu/ubuntu-24.04.1-desktop-amd64.iso
+    5,6G    ./install/commodore_os_vision/CommodoreOS-20231213.iso
+    ...
+```
+
+List the top 10 files in the current folder (recursively) in descending order by size.
+
+### (60) unixtime: Print the Unix epoch time
 
 [unixtime.fish](functions/unixtime.fish)
 
@@ -2066,7 +2094,7 @@ since January 1, 1970.
 
 `unixtime2date` is the opposite.
 
-### (59) unixtime2date: Convert Unix epoch time to normal date
+### (61) unixtime2date: Convert Unix epoch time to normal date
 
 [unixtime2date.fish](functions/unixtime2date.fish)
 
@@ -2082,7 +2110,7 @@ since January 1, 1970.
 Takes a Unix epoch time (number) and converts it
 back to human-friendly date.
 
-### (60) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
+### (62) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
 
 [upgrade_pipx_and_uv.fish](functions/upgrade_pipx_and_uv.fish)
 
@@ -2096,7 +2124,7 @@ back to human-friendly date.
 They have that nice feature that they can update all the packages
 that were installed with them. This script triggers this update procedure.
 
-### (61) ups: Updates / upgrades
+### (63) ups: Updates / upgrades
 
 [ups.fish](functions/ups.fish)
 
@@ -2111,7 +2139,7 @@ upgrade softwares installed with pipx and uv, etc. I cannot keep
 all the update commands in my head. This script helps me keep
 my system up-to-date without causing any mental overhead.
 
-### (62) uv_venv: Call the `uv_venv` script
+### (64) uv_venv: Call the `uv_venv` script
 
 [uv_venv.fish](functions/uv_venv.fish)
 
@@ -2130,7 +2158,7 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (63) xfce-info: Current XFCE version
+### (65) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -2143,7 +2171,7 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (64) xrates: Currency rates of HUF, EUR and USD
+### (66) xrates: Currency rates of HUF, EUR and USD
 
 [xrates.fish](functions/xrates.fish)
 
@@ -2165,7 +2193,7 @@ that tracks reference exchange rates.
 
 You can pass an optional value to the function.
 
-### (65) y: Start yazi (and stay in the folder where you quit)
+### (67) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 
