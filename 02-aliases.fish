@@ -31,6 +31,7 @@ alias ls='ls --color=auto'
 alias ll='exa --icons --group-directories-first'
 alias d="ls -al"
 alias cls 'clear'
+alias cdc 'cd; clear'
 alias q="cls; d"
 alias ... "cd ../.."
 alias cd.. "cd .."

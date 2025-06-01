@@ -18,6 +18,7 @@ upper, lower, capitalize, title     - uppercase, lowercase, capitalize, title ca
 len, length; reverse                - length of a string; reverse a string
 trim, strip                         - trim leading/trailing whitespace
 collapse                            - collapse multiple whitespaces into single space (like split)
+words                               - print each word of the input
 replace                             - replace <old> <new>
 repeat                              - repeat a text <n> times
 addprefix, addsuffix                - add <prefix> / <suffix> to each line
@@ -55,6 +56,7 @@ randomline                          - select a non-empty random line
 between                             - print lines between <start_line> and <end_line> (incl.)
 sparkline                           - generate sparkline chart from numbers
 freq                                - word frequency (simple, case-insensitive)
+dedup, dups                         - remove duplicates and keep order, show duplicates
 
 >>> Fun <<<
 typewriter(2)                       - print text with some delay (without and with sound)
