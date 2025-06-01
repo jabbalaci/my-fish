@@ -6,11 +6,9 @@ end
 
 false && begin  # note
 It allows you to rename a file interactively.
-
-Location of the script: https://github.com/jabbalaci/Bash-Utils/blob/master/ren.py
 end
 
 
 function ren -d "Rename a file interactively"
-    $DROPBOX/python/Bash-Utils/ren.py $argv
+    $HOME/.config/fish/myscripts/ren.py $argv
 end
