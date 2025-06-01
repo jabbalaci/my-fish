@@ -27,6 +27,7 @@ abbr removepostfix removesuffix
 # ++++++++++++++ #
 # ++  others  ++ #
 # ++++++++++++++ #
+alias shell "ps -p $fish_pid -o comm="
 alias ls='ls --color=auto'
 alias ll='exa --icons --group-directories-first'
 alias d="ls -al"
@@ -40,6 +41,7 @@ abbr p2 'python2'
 abbr p3 'python3'
 abbr p 'python3'
 abbr pp 'python3clean'         # no extra info line
+abbr f fish
 abbr b bash
 abbr z zsh
 alias pypy='pypy3'
