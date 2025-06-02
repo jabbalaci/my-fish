@@ -24,3 +24,5 @@ for line in sys.stdin:
 "
 
 end
+
+# printf "%s\n" foofoo fooBAR fooBaz | string replace -r '^foo' ''

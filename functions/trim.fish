@@ -15,3 +15,5 @@ s = sys.stdin.read().strip()
 print(s)
 "
 end
+
+# printf "   %s\t\t  \n" foo BAR Baz | string trim

@@ -24,3 +24,5 @@ for line in sys.stdin:
     print(f'{line}{suffix}')
 "
 end
+
+# printf "%s\n" foo BAR Baz | string replace -r '$' " :SUFFIX"

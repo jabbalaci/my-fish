@@ -14,3 +14,5 @@ p = Path(fname)
 print(p.name)
 "
 end
+
+# ls ~/.config/functions/*.* | path basename

@@ -12,3 +12,5 @@ s = sys.stdin.read()
 print(s.swapcase(), end='')
 "
 end
+
+# printf "%s\n" foofoo BARfoo Bazfoo | tr [:lower:][:upper:] [:upper:][:lower:]

@@ -20,3 +20,5 @@ except:
     sys.exit(1)
 "
 end
+
+# echo "obase=2; 42" | bc

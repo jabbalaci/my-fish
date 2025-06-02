@@ -52,6 +52,10 @@ just the standard library, it shouldn't cause any
 problems. However, if you encounter any problem,
 just let me know. Thanks.
 
+On Reddit, from `/u/_mattmc3_` I got some great tips
+how to rewrite some of these functions in an
+idiomatic way.
+
 Here is the list of my filters in alphabetical order:
 
 <!-- START: filters -->

@@ -28,3 +28,5 @@ for k, v in sorted(d.items(), key=lambda t: t[-1], reverse=True):
     print(f'{k}: {v}')
 "
 end
+
+# printf "%s\n" foo foo bar bar bar baz | uniq -c

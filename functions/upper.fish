@@ -15,3 +15,5 @@ for line in sys.stdin:
     print(line.upper(), end='')
 "
 end
+
+# printf "%s\n" foo BAR Baz | string upper

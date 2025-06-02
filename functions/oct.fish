@@ -20,3 +20,5 @@ except:
     sys.exit(1)
 "
 end
+
+# echo 2025 | math --base 8

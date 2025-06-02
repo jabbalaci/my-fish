@@ -12,3 +12,5 @@ s = sys.stdin.read().rstrip('\r\n')
 print(len(s))
 "
 end
+
+# printf "%s\n" foo BAR Baz | string length

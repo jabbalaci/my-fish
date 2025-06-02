@@ -25,3 +25,5 @@ for line in sys.stdin:
 "
 
 end
+
+# printf "%s\n" foofoo BARfoo Bazfoo | string replace -r 'foo$' ''

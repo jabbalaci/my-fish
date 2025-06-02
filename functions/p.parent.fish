@@ -14,3 +14,5 @@ p = Path(fname)
 print(p.parent)
 "
 end
+
+# ls ./*.* | path resolve | path dirname | uniq

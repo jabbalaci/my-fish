@@ -14,3 +14,5 @@ p = Path(fname)
 print(p.suffix)
 "
 end
+
+# ls ~/.config/functions/*.* | path extension | uniq

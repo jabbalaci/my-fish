@@ -14,3 +14,5 @@ p = Path(fname)
 print(p.stem)
 "
 end
+
+# echo "$HOME/.config/fish/config.fish" | path change-extension ''

@@ -20,3 +20,5 @@ except:
     sys.exit(1)
 "
 end
+
+# echo 0xfe | math

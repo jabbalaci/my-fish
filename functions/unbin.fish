@@ -20,3 +20,5 @@ except:
     sys.exit(1)
 "
 end
+
+# echo "ibase=2; 101010" | bc

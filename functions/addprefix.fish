@@ -23,3 +23,5 @@ for line in sys.stdin:
     print(f'{prefix}{line}', end='')
 "
 end
+
+# printf "%s\n" foo BAR Baz | string replace -r '^' "PREFIX: "
