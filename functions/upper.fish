@@ -8,12 +8,16 @@ end
 
 
 function upper -d "Convert to uppercase (filter)"
-    python3 -S -c "
-import sys
-
-for line in sys.stdin:
-    print(line.upper(), end='')
-"
+    if test -n "$argv"
+        string upper -- $argv
+    else
+        cat | string upper
+    end
 end
 
-# printf "%s\n" foo BAR Baz | string upper
+# python3 -S -c "
+# import sys
+#
+# for line in sys.stdin:
+    # print(line.upper(), end='')
+# "

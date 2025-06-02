@@ -5,6 +5,9 @@
 # Shared bindings:              https://fishshell.com/docs/current/interactive.html#shared-bindings
 # Emacs mode commands:          https://fishshell.com/docs/current/interactive.html#emacs-mode-commands
 
+# $ fish_key_reader
+#   ^ it shows you what escape sequence a keypress produces
+
 bind alt-l 'commandline -i "ls -al"; commandline -f execute'    # **l**ist dir (working solution)
 bind alt-g 'git status; commandline -f repaint'                 # **g**it status
 bind alt-m 'mc; commandline -f repaint'                         # **m**idnight commander

@@ -8,12 +8,16 @@ end
 
 
 function lower -d "Convert to lowercase (filter)"
-    python3 -S -c "
-import sys
-
-for line in sys.stdin:
-    print(line.lower(), end='')
-"
+    if test -n "$argv"
+        string upper -- $argv
+    else
+        cat | string lower
+    end
 end
 
-# printf "%s\n" foo BAR Baz | string lower
+# python3 -S -c "
+# import sys
+#
+# for line in sys.stdin:
+    # print(line.lower(), end='')
+# "
