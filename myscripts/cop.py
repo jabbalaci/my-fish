@@ -5,6 +5,8 @@ Copy a file interactively.
 
 It needs just one command-line argument: the name of a file
 that you want to copy.
+
+Author: Laszlo Szathmary (jabba.laci@gmail.com), 2025
 """
 
 import os

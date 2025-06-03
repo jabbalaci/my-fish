@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+"""
+Every info about a character.
+
+Author: Laszlo Szathmary (jabba.laci@gmail.com), 2025
+"""
+
 import html
 import json
 import sys

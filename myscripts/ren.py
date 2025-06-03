@@ -5,6 +5,8 @@ Rename a file/directory interactively.
 
 It needs just one command-line argument: the name of a file/directory
 that you want to rename.
+
+Author: Laszlo Szathmary (jabba.laci@gmail.com)
 """
 
 import os
