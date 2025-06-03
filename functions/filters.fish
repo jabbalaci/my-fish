@@ -57,6 +57,7 @@ between                             - print lines between <start_line> and <end_
 sparkline                           - generate sparkline chart from numbers
 freq                                - word frequency (simple, case-insensitive)
 dedup, dups                         - remove duplicates and keep order, show duplicates
+take, skip                          - take/skip the first <n> lines
 
 >>> Fun <<<
 typewriter(2)                       - print text with some delay (without and with sound)
