@@ -847,7 +847,27 @@ are rotated left.
     12563487
 ```
 
-### (57) sparkline: Generate sparkline chart from numbers
+### (57) skip: Skip the first `<n>` lines of stdin
+
+[skip.fish](functions/skip.fish)
+
+```shell
+    $ seq 5
+    1
+    2
+    3
+    4
+    5
+
+    $ seq 5 | skip 2
+    3
+    4
+    5
+```
+
+Skips the first `n` lines of stdin.
+
+### (58) sparkline: Generate sparkline chart from numbers
 
 [sparkline.fish](functions/sparkline.fish)
 
@@ -856,7 +876,7 @@ are rotated left.
     ▂▁▅▃█▁▇▆
 ```
 
-### (58) swapcase: Swap lower- and uppercase
+### (59) swapcase: Swap lower- and uppercase
 
 [swapcase.fish](functions/swapcase.fish)
 
@@ -865,7 +885,7 @@ are rotated left.
     hELLO wORLD
 ```
 
-### (59) take: Take the first `<n>` lines of stdin
+### (60) take: Take the first `<n>` lines of stdin
 
 [take.fish](functions/take.fish)
 
@@ -885,7 +905,7 @@ are rotated left.
 
 Take the first `n` lines of standard input.
 
-### (60) tiny: Convert text to tiny superscript letters
+### (61) tiny: Convert text to tiny superscript letters
 
 [tiny.fish](functions/tiny.fish)
 
@@ -899,7 +919,7 @@ Take the first `n` lines of standard input.
 
 Conversion from tiny to normal is not perfect due to some Unicode limitations.
 
-### (61) title: Convert to title case
+### (62) title: Convert to title case
 
 [title.fish](functions/title.fish)
 
@@ -908,7 +928,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     Hello World
 ```
 
-### (62) trim: Trim leading/trailing whitespace
+### (63) trim: Trim leading/trailing whitespace
 
 [trim.fish](functions/trim.fish)
 
@@ -920,7 +940,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
     5
 ```
 
-### (63) typewriter: Print like a typewriter
+### (64) typewriter: Print like a typewriter
 
 [typewriter.fish](functions/typewriter.fish)
 
@@ -934,7 +954,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
 The content of the file is printed character by character,
 with some delay, similarly to a typewriter.
 
-### (64) typewriter2: Print like a typewriter with sound effects
+### (65) typewriter2: Print like a typewriter with sound effects
 
 [typewriter2.fish](functions/typewriter2.fish)
 
@@ -953,7 +973,7 @@ The sound files are played with `mplayer` (make sure it's installed).
 You can download some sound file packs from here: https://github.com/jabbalaci/keysound/tree/main/sounds .
 This one uses the `fallout` sound pack.
 
-### (65) unbin: Binary number to decimal
+### (66) unbin: Binary number to decimal
 
 [unbin.fish](functions/unbin.fish)
 
@@ -965,7 +985,7 @@ This one uses the `fallout` sound pack.
     0b1110
 ```
 
-### (66) unflip: Revert upside-down Unicode text back to normal
+### (67) unflip: Revert upside-down Unicode text back to normal
 
 [unflip.fish](functions/unflip.fish)
 
@@ -977,7 +997,7 @@ This one uses the `fallout` sound pack.
     ʃʃǝɥs ɥsᴉℲ
 ```
 
-### (67) unhex: Hex number to decimal
+### (68) unhex: Hex number to decimal
 
 [unhex.fish](functions/unhex.fish)
 
@@ -989,7 +1009,7 @@ This one uses the `fallout` sound pack.
     0xff
 ```
 
-### (68) unmirror: Convert mirrored text back to normal
+### (69) unmirror: Convert mirrored text back to normal
 
 [unmirror.fish](functions/unmirror.fish)
 
@@ -1003,7 +1023,7 @@ This one uses the `fallout` sound pack.
 
 It might be improved with https://www.flipyourtext.com/
 
-### (69) unmorse: Convert Morse code to text [e.g., '... --- ...' -> 'SOS']
+### (70) unmorse: Convert Morse code to text [e.g., '... --- ...' -> 'SOS']
 
 [unmorse.fish](functions/unmorse.fish)
 
@@ -1018,7 +1038,7 @@ It might be improved with https://www.flipyourtext.com/
 * International Morse code: https://www.itu.int/rec/R-REC-M.1677-1-200910-I/
 * https://en.wikipedia.org/wiki/Morse_code
 
-### (70) unoct: Octal number to decimal
+### (71) unoct: Octal number to decimal
 
 [unoct.fish](functions/unoct.fish)
 
@@ -1030,7 +1050,7 @@ It might be improved with https://www.flipyourtext.com/
     0o755
 ```
 
-### (71) unquote: Decode GET-style quoted text
+### (72) unquote: Decode GET-style quoted text
 
 [unquote.fish](functions/unquote.fish)
 
@@ -1042,7 +1062,7 @@ It might be improved with https://www.flipyourtext.com/
     largest+prime+below+1+million
 ```
 
-### (72) unroman: Convert Roman numeral to number
+### (73) unroman: Convert Roman numeral to number
 
 [unroman.fish](functions/unroman.fish)
 
@@ -1054,7 +1074,7 @@ It might be improved with https://www.flipyourtext.com/
     MMXXV
 ```
 
-### (73) untiny: Convert tiny superscript letters back to normal text [not perfect]
+### (74) untiny: Convert tiny superscript letters back to normal text [not perfect]
 
 [untiny.fish](functions/untiny.fish)
 
@@ -1068,7 +1088,7 @@ It might be improved with https://www.flipyourtext.com/
 
 Conversion from tiny to normal is not perfect due to some Unicode limitations.
 
-### (74) unutf8: Decode the input with UTF-8
+### (75) unutf8: Decode the input with UTF-8
 
 [unutf8.fish](functions/unutf8.fish)
 
@@ -1083,7 +1103,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
 
 Decode a UTF-8-encoded byte array.
 
-### (75) upper: Convert to uppercase
+### (76) upper: Convert to uppercase
 
 [upper.fish](functions/upper.fish)
 
@@ -1095,7 +1115,7 @@ Decode a UTF-8-encoded byte array.
     hello
 ```
 
-### (76) urldecode: URL-decode input
+### (77) urldecode: URL-decode input
 
 [urldecode.fish](functions/urldecode.fish)
 
@@ -1107,7 +1127,7 @@ Decode a UTF-8-encoded byte array.
     https%3A//en.wikipedia.org/wiki/C_%28programming_language%29
 ```
 
-### (77) urlencode: URL-encode input
+### (78) urlencode: URL-encode input
 
 [urlencode.fish](functions/urlencode.fish)
 
@@ -1119,7 +1139,7 @@ Decode a UTF-8-encoded byte array.
     https://en.wikipedia.org/wiki/C_(programming_language)
 ```
 
-### (78) utf8: Encode the input with UTF-8
+### (79) utf8: Encode the input with UTF-8
 
 [utf8.fish](functions/utf8.fish)
 
@@ -1133,7 +1153,7 @@ Decode a UTF-8-encoded byte array.
 
 Encode the input to a UTF-8-encoded byte array.
 
-### (79) whitespaces: Show whitespaces
+### (80) whitespaces: Show whitespaces
 
 [whitespaces.fish](functions/whitespaces.fish)
 
@@ -1149,7 +1169,7 @@ Encode the input to a UTF-8-encoded byte array.
 
 Tab, newline, carriage return and space characters are made visible with Unicode characters.
 
-### (80) wolfram: Ask Wolfram Alpha
+### (81) wolfram: Ask Wolfram Alpha
 
 [wolfram.fish](functions/wolfram.fish)
 
@@ -1164,7 +1184,7 @@ Tab, newline, carriage return and space characters are made visible with Unicode
 You need an API key for this (it's free).
 API docs: https://products.wolframalpha.com/short-answers-api/documentation
 
-### (81) words: Split input into words
+### (82) words: Split input into words
 
 [words.fish](functions/words.fish)
 
@@ -1182,7 +1202,7 @@ API docs: https://products.wolframalpha.com/short-answers-api/documentation
 
 Each word is printed on a separate line.
 
-### (82) zalgo1: Add funny accents to characters [a -> ấ, etc.]
+### (83) zalgo1: Add funny accents to characters [a -> ấ, etc.]
 
 [zalgo1.fish](functions/zalgo1.fish)
 
@@ -1203,7 +1223,7 @@ It adds glitchy characters to the text.
 * zalgo2: medium
 * zalgo3: aggressive
 
-### (83) zalgo2: Add random Unicode glitches to text
+### (84) zalgo2: Add random Unicode glitches to text
 
 [zalgo2.fish](functions/zalgo2.fish)
 
@@ -1224,7 +1244,7 @@ It adds glitchy characters to the text.
 * zalgo2: medium
 * zalgo3: aggressive
 
-### (84) zalgo3: Add Zalgo (glitchy) characters
+### (85) zalgo3: Add Zalgo (glitchy) characters
 
 [zalgo3.fish](functions/zalgo3.fish)
 
@@ -2080,27 +2100,7 @@ it's easy to attach them), then delete them from `/tmp/send`.
 
 This script called `s` allows me to enter this folder with the speed of light.
 
-### (57) skip: Skip the first `<n>` lines of stdin
-
-[skip.fish](functions/skip.fish)
-
-```shell
-    $ seq 5
-    1
-    2
-    3
-    4
-    5
-
-    $ seq 5 | skip 2
-    3
-    4
-    5
-```
-
-Skips the first `n` lines of stdin.
-
-### (58) sp: Show the current path or show the path of a given file
+### (57) sp: Show the current path or show the path of a given file
 
 [sp.fish](functions/sp.fish)
 
@@ -2126,7 +2126,7 @@ path to the clipboard.
 
 `sp.py` can be found here: https://github.com/jabbalaci/Bash-Utils/blob/master/sp.py
 
-### (59) timezones: List of valid timezones
+### (58) timezones: List of valid timezones
 
 [timezones.fish](functions/timezones.fish)
 
@@ -2139,7 +2139,7 @@ path to the clipboard.
 
 See also https://worldtimeapi.org/pages/examples .
 
-### (60) top10dirs: Top 10 largest directories
+### (59) top10dirs: Top 10 largest directories
 
 [top10dirs.fish](functions/top10dirs.fish)
 
@@ -2154,7 +2154,7 @@ See also https://worldtimeapi.org/pages/examples .
 
 List the top 10 directories in the current folder in descending order by size.
 
-### (61) top10files: Top 10 largest files
+### (60) top10files: Top 10 largest files
 
 [top10files.fish](functions/top10files.fish)
 
@@ -2167,7 +2167,7 @@ List the top 10 directories in the current folder in descending order by size.
 
 List the top 10 files in the current folder (recursively) in descending order by size.
 
-### (62) unixtime: Print the Unix epoch time
+### (61) unixtime: Print the Unix epoch time
 
 [unixtime.fish](functions/unixtime.fish)
 
@@ -2185,7 +2185,7 @@ since January 1, 1970.
 
 `unixtime2date` is the opposite.
 
-### (63) unixtime2date: Convert Unix epoch time to normal date
+### (62) unixtime2date: Convert Unix epoch time to normal date
 
 [unixtime2date.fish](functions/unixtime2date.fish)
 
@@ -2201,7 +2201,7 @@ since January 1, 1970.
 Takes a Unix epoch time (number) and converts it
 back to human-friendly date.
 
-### (64) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
+### (63) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
 
 [upgrade_pipx_and_uv.fish](functions/upgrade_pipx_and_uv.fish)
 
@@ -2215,7 +2215,7 @@ back to human-friendly date.
 They have that nice feature that they can update all the packages
 that were installed with them. This script triggers this update procedure.
 
-### (65) ups: Updates / upgrades
+### (64) ups: Updates / upgrades
 
 [ups.fish](functions/ups.fish)
 
@@ -2230,7 +2230,7 @@ upgrade softwares installed with pipx and uv, etc. I cannot keep
 all the update commands in my head. This script helps me keep
 my system up-to-date without causing any mental overhead.
 
-### (66) uv_venv: Call the `uv_venv` script
+### (65) uv_venv: Call the `uv_venv` script
 
 [uv_venv.fish](functions/uv_venv.fish)
 
@@ -2249,7 +2249,7 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (67) xfce-info: Current XFCE version
+### (66) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -2262,7 +2262,7 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (68) xrates: Currency rates of HUF, EUR and USD
+### (67) xrates: Currency rates of HUF, EUR and USD
 
 [xrates.fish](functions/xrates.fish)
 
@@ -2284,7 +2284,7 @@ that tracks reference exchange rates.
 
 You can pass an optional value to the function.
 
-### (69) y: Start yazi (and stay in the folder where you quit)
+### (68) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 
@@ -2299,7 +2299,7 @@ directory where you quit.
 
 Without this, you'd get back to the folder where you launched yazi.
 
-### (70) zoli: Check my friend's local time
+### (69) zoli: Check my friend's local time
 
 [zoli.fish](functions/zoli.fish)
 
