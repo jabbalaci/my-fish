@@ -29,6 +29,9 @@ function r --argument fname -d "Run a source code (compile and run)"
         case '*.c'
             gcc $fname
             ./a.out $rest
+        case '*.d'
+            dmd $fname -of=a.out
+            ./a.out $rest
         case '*.py'
             chmod u+x $fname
             ./$fname $rest
