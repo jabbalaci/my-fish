@@ -1,9 +1,12 @@
 false && begin  # example
+    % echo "    .aa    bb.    " | quotes
+    '    .aa    bb.    '
+
     % echo "    .aa    bb.    " | collapse
     .aa bb.
 
-    % echo "    .aa    bb.    " | collapse | len
-    7
+    % echo "    .aa    bb.    " | collapse | quotes
+    '.aa bb.'
 end
 
 

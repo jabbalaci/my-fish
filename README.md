@@ -169,11 +169,14 @@ Here is the list of my filters in alphabetical order:
 [collapse.fish](functions/collapse.fish)
 
 ```shell
+    $ echo "    .aa    bb.    " | quotes
+    '    .aa    bb.    '
+
     $ echo "    .aa    bb.    " | collapse
     .aa bb.
 
-    $ echo "    .aa    bb.    " | collapse | len
-    7
+    $ echo "    .aa    bb.    " | collapse | quotes
+    '.aa bb.'
 ```
 
 ### (10) dedup: Remove duplicate lines and keep the original order
