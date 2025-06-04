@@ -114,3 +114,5 @@ alias xxd "xxd -R never -g 1 -d"        # no color, group by 1 byte, show offset
 abbr mya myalias
 abbr sx start_xmodmap
 abbr puts echo
+abbr mvv ren
+abbr cpp cop
