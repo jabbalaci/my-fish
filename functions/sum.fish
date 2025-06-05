@@ -57,3 +57,5 @@ for line in sys.stdin:
 print(total)
 "
 end
+
+# LC_ALL=C datamash sum 1
