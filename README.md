@@ -246,7 +246,7 @@ In the first example, `duplicate` is just a note, not part of the file.
 `dups` will print all the duplicates, even several times.
 If you want to see a duplicate just once, then combine it with the `dedup` filter.
 
-### (13) every: Take every <n>th line of the input
+### (13) every: Take every <n>th line, optionally starting from <from>
 
 [every.fish](functions/every.fish)
 
@@ -256,11 +256,28 @@ If you want to see a duplicate just once, then combine it with the `dedup` filte
     one
     2
     two
+    3
+    three
 
+    # take every second line
     $ cat file.txt | every 2
     one
     two
+    three
+
+    # take every second line from the first line
+    $ cat file.txt | every 2 --from 1
+    1
+    2
+    3
+
+    # take every second line from the fourth line
+    $ cat file.txt | every 2 --from 4
+    two
+    three
 ```
+
+The index of the 1st line is 1.
 
 ### (14) ex.thumbnail: Extract the URL of a YouTube video's thumbnail
 
