@@ -58,6 +58,8 @@ sparkline                           - generate sparkline chart from numbers
 freq                                - word frequency (simple, case-insensitive)
 dedup, dups                         - remove duplicates and keep order, show duplicates
 take, skip                          - take/skip the first <n> lines
+every                               - take every <n>th line, optionally starting from <from>
+min, max, sum, avg, prod            - smallest element, largest element, sum, average, product
 
 >>> Fun <<<
 typewriter(2)                       - print text with some delay (without and with sound)
