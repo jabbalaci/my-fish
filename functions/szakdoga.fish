@@ -8,8 +8,18 @@ Egy szakdolgozat URL-je így néz ki (példa): https://dea.lib.unideb.hu/items/e
 "
     set -l url
     read -P "A letöltendő szakdolgozat URL-je: " url
+    if test -z "$url"
+        echo "# Abort. No URL was provided."
+        return 1
+    end
+    # else
     echo "# working..."
     set -l result (curl -s "$url" | ex.urls | grep bitstreams | grep download | head -1)
+    if test -z "$result"
+        echo "# nothing was found :("
+        return 1
+    end
+    # else
     echo $result
     echo -n $result | xsel -b
     echo "# copied to the clipboard"
