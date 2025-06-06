@@ -1,3 +1,9 @@
+false && begin  # example
+    % cut-info
+    # print some info about its basic usage
+end
+
+
 function cut-info -d "Basic usage of the cut command"
 	echo -n "\
 Note: if the delimiters are whitespaces, use awk.

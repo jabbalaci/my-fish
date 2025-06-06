@@ -1,3 +1,9 @@
+false && begin  # example
+    % tr-info
+    # print some info about its basic usage
+end
+
+
 function tr-info -d "Basic usage of the tr command"
 	echo -n "\
 tr

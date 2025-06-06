@@ -1,3 +1,9 @@
+false && begin  # example
+    % sort-info
+    # print some info about its basic usage
+end
+
+
 function sort-info -d "Basic usage of the sort command"
 	echo -n "\
 sort
