@@ -189,6 +189,12 @@ def E_web_and_markup(ch: str) -> None:
     print(f"JSON escape:                  {value}")
 
 
+def F_more_info(ch: str) -> None:
+    hex_code_point = to_u_plus(ch)
+    url = "https://www.compart.com/en/unicode/{cp}".format(cp=hex_code_point)
+    print(f"More info:                    {url}")
+
+
 def process(ch: str) -> None:
     if len(ch) != 1:
         print("Error: provide a single character")
@@ -210,6 +216,8 @@ def process(ch: str) -> None:
     D_normalization(ch)
     print()
     E_web_and_markup(ch)
+    print()
+    F_more_info(ch)
 
 
 def print_help() -> None:

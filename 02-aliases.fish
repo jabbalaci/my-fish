@@ -117,3 +117,4 @@ abbr puts echo
 abbr mvv ren
 abbr cpp cop
 abbr dm "LC_ALL=C datamash"             # yay -S datamash
+alias edge /usr/bin/microsoft-edge-stable
