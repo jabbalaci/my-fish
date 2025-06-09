@@ -1,5 +1,5 @@
 #############################
-# Aliases and abbreviations #
+## Aliases / abbreviations ##
 #############################
 
 alias ec="$EDITOR $FISH_DIR/config.fish"                    # edit config (this) file
@@ -7,6 +7,7 @@ alias ee="$EDITOR $FISH_DIR/01-env.fish"                    # edit env.
 alias ea="$EDITOR $FISH_DIR/02-aliases.fish"                # edit aliases
 alias eb="$EDITOR $FISH_DIR/03-bindings.fish"               # edit bindings
 alias ep="$EDITOR $FISH_DIR/functions/fish_prompt.fish"     # edit prompt
+alias eg="$EDITOR $FISH_DIR/functions/fish_greeting.fish"   # edit greeting
 # ef                                                        # edit function (it exists as a function)
 abbr config fish_config                                     # web-based configuration
 
@@ -118,3 +119,4 @@ abbr mvv ren
 abbr cpp cop
 abbr dm "LC_ALL=C datamash"             # yay -S datamash
 alias edge /usr/bin/microsoft-edge-stable
+abbr mo marimo

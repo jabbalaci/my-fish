@@ -16,6 +16,14 @@ function dos-greeting -d "Classical DOS starting screen"
 
     echo Starting MS-DOS...
     echo
-    echo HIMEM is testing extended memory...done.
+    # echo HIMEM is testing extended memory...done.
+    echo -n HIMEM is testing extended memory
+    python -S -c "
+from time import sleep
+for _ in range(3):
+    print('.', end='', flush=True)
+    sleep(0.5)
+"
+    echo done.
     echo
 end

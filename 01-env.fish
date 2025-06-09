@@ -1,6 +1,6 @@
-###############
-# Environment #
-###############
+#############################
+## Environmental variables ##
+#############################
 
 set -gx FISH_DIR "$HOME/.config/fish"
 set -gx FISH_FUNCTIONS_DIR "$FISH_DIR/functions"

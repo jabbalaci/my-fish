@@ -1,6 +1,6 @@
-############
-# bindings #
-############
+##############
+## Bindings ##
+##############
 
 # Shared bindings:              https://fishshell.com/docs/current/interactive.html#shared-bindings
 # Emacs mode commands:          https://fishshell.com/docs/current/interactive.html#emacs-mode-commands
