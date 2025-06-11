@@ -2462,7 +2462,19 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (70) xfce-info: Current XFCE version
+### (70) workspace: Identify the current workspace
+
+[workspace.fish](functions/workspace.fish)
+
+I use Manjaro with XFCE and I assigned it to Super+s the following way:
+
+Open Settings → Keyboard → Application Shortcuts, then add this command:
+
+`fish -c 'workspace'`
+
+Advantage: it works globally. Unfortunately, the terminal didn't recognize the Super key.
+
+### (71) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -2475,7 +2487,7 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (71) xrates: Currency rates of HUF, EUR and USD
+### (72) xrates: Currency rates of HUF, EUR and USD
 
 [xrates.fish](functions/xrates.fish)
 
@@ -2497,7 +2509,7 @@ that tracks reference exchange rates.
 
 You can pass an optional value to the function.
 
-### (72) y: Start yazi (and stay in the folder where you quit)
+### (73) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 
@@ -2512,7 +2524,7 @@ directory where you quit.
 
 Without this, you'd get back to the folder where you launched yazi.
 
-### (73) zoli: Check my friend's local time
+### (74) zoli: Check my friend's local time
 
 [zoli.fish](functions/zoli.fish)
 
