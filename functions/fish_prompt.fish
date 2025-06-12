@@ -75,6 +75,10 @@ function fish_prompt -d "Jabba's prompt"
         set nim_project " 👑"
     end
 
+    if set -q VIRTUAL_ENV
+        echo -n -s (set_color -o blue) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
+    end
+
     echo -s $green_color '[' (date "+%H:%M:%S") '] ' $time_color "[$fish_logo$nim_project] " $normal $cwd_color (prompt_pwd) $normal $git_color $branch_name $normal ' ' $prompt_status
     # echo -n -s $time_color $short_dir ' ' $status_color $suffix ' ' $normal
     echo -n -s $status_color $suffix ' ' $normal

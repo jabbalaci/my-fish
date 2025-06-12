@@ -55,3 +55,7 @@ set -gx PATH "$PATH:$HOME/nimbledeps/bin"       # binaries installed with nimble
 # for Valgrind if it drops an error
 # https://bbs.archlinux.org/viewtopic.php?id=276422
 # set -gx DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
+
+# Python virt. env.
+# I'll manage it in my prompt
+set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
