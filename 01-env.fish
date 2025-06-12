@@ -58,4 +58,4 @@ set -gx PATH "$PATH:$HOME/nimbledeps/bin"       # binaries installed with nimble
 
 # Python virt. env.
 # Don't show the active virt. env. -> I'll manage it manually in my prompt
-set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
+# set -gx VIRTUAL_ENV_DISABLE_PROMPT 1

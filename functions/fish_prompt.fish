@@ -75,6 +75,8 @@ function fish_prompt -d "Jabba's prompt"
         set nim_project " 👑"
     end
 
+    # Don't show the active virt. env. -> I'll manage it manually
+    set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
     if set -q VIRTUAL_ENV
         echo -n -s (set_color -o blue) "(" (basename "$VIRTUAL_ENV") ")" (set_color normal) " "
     end
