@@ -57,5 +57,5 @@ set -gx PATH "$PATH:$HOME/nimbledeps/bin"       # binaries installed with nimble
 # set -gx DEBUGINFOD_URLS "https://debuginfod.archlinux.org"
 
 # Python virt. env.
-# I'll manage it in my prompt
+# Don't show the active virt. env. -> I'll manage it manually in my prompt
 set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
