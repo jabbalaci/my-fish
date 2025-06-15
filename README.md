@@ -1101,7 +1101,7 @@ Supported data types: `--int` (default) and `--float`.
     hELLO wORLD
 ```
 
-### (67) take: Take the first `<n>` lines of stdin
+### (67) take: Take the first `<n>` lines of stdin, or take the last line if `last` is provided
 
 [take.fish](functions/take.fish)
 
@@ -1117,9 +1117,14 @@ Supported data types: `--int` (default) and `--float`.
     1
     2
     3
+
+    $ seq 5 | take last
+    5
 ```
 
-Take the first `n` lines of standard input.
+Take the first `n` lines of the standard input.
+
+If `last` is provided, then take the last line.
 
 ### (68) tiny: Convert text to tiny superscript letters
 

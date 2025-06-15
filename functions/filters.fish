@@ -54,10 +54,11 @@ border                              - draw border around text
 hexview, hexview2                   - show hex values of the input
 randomline                          - select a non-empty random line
 between                             - print lines between <start_line> and <end_line> (incl.)
+between.re                          - print lines between <start_regex> and <end_regex> (incl.)
 sparkline                           - generate sparkline chart from numbers
 freq                                - word frequency (simple, case-insensitive)
 dedup, dups                         - remove duplicates and keep order, show duplicates
-take, skip                          - take/skip the first <n> lines
+take, skip                          - take/skip the first <n> lines, or take/skip the last line if `last` is provided
 every                               - take every <n>th line, optionally starting from <from>
 min, max, sum, avg, prod            - smallest element, largest element, sum, average, product
 
