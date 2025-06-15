@@ -120,3 +120,4 @@ abbr cpp cop
 abbr dm "LC_ALL=C datamash"             # yay -S datamash
 alias edge /usr/bin/microsoft-edge-stable
 abbr mo marimo
+alias vimv "EDITOR=nvim command vimv"
