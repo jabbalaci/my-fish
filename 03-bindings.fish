@@ -8,14 +8,15 @@
 # $ fish_key_reader
 #   ^ it shows you what escape sequence a keypress produces
 
-# bind alt-l 'commandline -i "ls -al"; commandline -f execute'    # **l**ist dir (working solution)
-bind alt-g 'git status; commandline -f repaint'                 # **g**it status
-# bind alt-m 'mc; commandline -f repaint'                         # **m**idnight commander
-bind ctrl-space forward-char                                    # accept auto-completion
+# bind alt-l 'commandline -i "ls -al"; commandline -f execute'      # **l**ist dir (working solution)
+bind alt-g 'git status; commandline -f repaint'                     # **g**it status
+bind alt-u 'gitup; commandline -f repaint'                          # calling my gitup function that uploads local changes
+# bind alt-m 'mc; commandline -f repaint'                           # **m**idnight commander
+bind ctrl-space forward-char                                        # accept auto-completion
 # commandline -a appends text to the current command
-bind alt-p 'commandline -a " | less"'                           # alt-p now uses `|` instead of `&|` (p: paginate)
+bind alt-p 'commandline -a " | less"'                               # alt-p now uses `|` instead of `&|` (p: paginate)
 bind alt-c 'commandline -i "yay -Scc"'
-bind ctrl-o 'mc; commandline -f repaint'                        # start midnight commander
+bind ctrl-o 'mc; commandline -f repaint'                            # start midnight commander
 
 # +++++++++++ #
 # ++  old  ++ #

@@ -30,8 +30,9 @@ abbr removepostfix removesuffix
 # ++++++++++++++ #
 alias shell "ps -p $fish_pid -o comm="
 alias ls='ls --color=auto'
-alias ll='exa --icons --group-directories-first'
-alias d="ls -al"
+alias ll='eza --icons --group-directories-first'  # exa is unmaintained, eza is a fork of it
+# alias d="ls -al"
+alias d="LC_NUMERIC=C ls -alh --group-directories-first --time-style='+%Y-%m-%d %H:%M:%S'"
 alias cls 'clear'
 alias cdc 'cd; clear'
 alias q="cls; d"
