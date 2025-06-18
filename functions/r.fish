@@ -30,8 +30,13 @@ function r --argument fname -d "Run a source code (compile and run)"
             gcc $fname
             ./a.out $rest
         case '*.d'
-            dmd $fname -of=a.out
-            ./a.out $rest
+            # dmd $fname -of=a.out
+            # ./a.out $rest
+            set -l tmpdir $HOME/.rdmd
+            if not test -d $tmpdir
+                mkdir $tmpdir
+            end
+            rdmd --tmpdir=$tmpdir $argv
         case '*.py'
             chmod u+x $fname
             ./$fname $rest

@@ -54,7 +54,7 @@ alias fgrep='fgrep --color=auto'
 alias vim $EDITOR
 abbr v vim
 abbr val valgrind
-abbr m micro
+abbr m math
 abbr e edit
 alias cat='bat --pager never'
 alias on="source .venv/bin/activate.fish"
@@ -122,3 +122,9 @@ abbr dm "LC_ALL=C datamash"             # yay -S datamash
 alias edge /usr/bin/microsoft-edge-stable
 abbr mo marimo
 alias vimv "EDITOR=nvim command vimv"
+abbr gdl gallery-dl
+alias pmwiki $DROPBOX/d_lang/pmwiki/pmwiki.py
+alias rdmd "rdmd --tmpdir=$HOME/.rdmd"
+abbr ldc ldc2
+abbr ldmd ldmd2
+abbr e2 edit2
