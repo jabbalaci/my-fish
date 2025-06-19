@@ -53,6 +53,7 @@ alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias vim $EDITOR
 abbr v vim
+abbr nv nvim
 abbr val valgrind
 abbr m math
 abbr e edit
