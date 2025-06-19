@@ -63,7 +63,7 @@ function bm -d "Bookmark a file (for copy/paste)"
         if test -n "$JABBA_MARKED_FILE"
             set -l target_file (basename "$JABBA_MARKED_FILE")
             if test -e "./$target_file"
-                echo "Error: File '$target_file' already exists (won't overwrite)."
+                echo "Error: File '$target_file' already exists."
                 return 1
             else
                 cp -v "$JABBA_MARKED_FILE" ./

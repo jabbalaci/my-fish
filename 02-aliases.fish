@@ -129,3 +129,5 @@ alias rdmd "rdmd --tmpdir=$HOME/.rdmd"
 abbr ldc ldc2
 abbr ldmd ldmd2
 abbr e2 edit2
+abbr save "bm -c"
+abbr drop "bm -p"
