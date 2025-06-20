@@ -104,7 +104,6 @@ alias "ccat" "command cat"
 abbr pwd-short prompt_pwd
 abbr zj zellij
 alias matrix="cmatrix -ab"          # yay -S cmatrix
-abbr fp flatpak
 abbr rel "clear; exec fish"         # reload configuration changes in-place
 alias dlang "jkb dlang"
 alias nimm "jkb nim"
