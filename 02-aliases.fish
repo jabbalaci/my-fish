@@ -89,6 +89,7 @@ alias book="cd /home/jabba/Dropbox/books/assembly/current; ./open.sh"
 alias sysinfo="inxi -Fxxxrz"
 
 abbr pkg "pacman -Qo"       # The given file is in which package?
+abbr pkg-info "pacman -Qi"       #  package info
 alias aliases alias       # plural can be used too
 alias notes='code $DROPBOX/notes/notes.code-workspace'
 
@@ -130,3 +131,6 @@ abbr ldmd ldmd2
 abbr e2 edit2
 abbr save "bm -c"
 abbr drop "bm -p"
+abbr pmw pmwiki
+abbr df "df -h"
+abbr dfh "df -h"
