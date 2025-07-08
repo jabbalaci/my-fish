@@ -13,8 +13,7 @@ end
 
 
 function ups --argument choice -d "Updates / upgrades"
-    if test -z $choice
-	    echo -n "\
+    echo -n "\
 ups 0           -> good_shape_manjaro (find fastest mirror servers)
 ---
 ups 1           -> yay
@@ -23,7 +22,9 @@ ups 3           -> upgrade_pipx_and_uv
 ups 4           -> flatpak update
 ups 5           -> choosenim update stable
 "
-        return 0
+    if test -z $choice
+        echo
+        set choice (read -P "Choice: ")
     end
 
     switch $choice

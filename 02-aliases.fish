@@ -134,3 +134,5 @@ abbr drop "bm -p"
 abbr pmw pmwiki
 abbr df "df -h"
 abbr dfh "df -h"
+abbr ka killall
+alias cs $DROPBOX/python/CSharpCliHelper/cs.py
