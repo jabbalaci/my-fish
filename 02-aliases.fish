@@ -136,3 +136,4 @@ abbr df "df -h"
 abbr dfh "df -h"
 abbr ka killall
 alias cs $DROPBOX/python/CSharpCliHelper/cs.py
+alias edit msedit
