@@ -1604,7 +1604,7 @@ Sometimes it doesn't produce any output. Then try again :)
     /home/jabba
 
     $ bm -p
-    '/tmp/send/file.txt' -> './file.txt'
+    copy: '/tmp/send/file.txt' -> './file.txt'
 
     $ bm -l
     Bookmarked file: /tmp/send/file.txt

@@ -13,7 +13,7 @@ false && begin  # example
     /home/jabba
 
     % bm -p
-    '/tmp/send/file.txt' -> './file.txt'
+    copy: '/tmp/send/file.txt' -> './file.txt'
 
     % bm -l
     Bookmarked file: /tmp/send/file.txt
@@ -66,6 +66,7 @@ function bm -d "Bookmark a file (for copy/paste)"
                 echo "Error: File '$target_file' already exists."
                 return 1
             else
+                echo -n "copy: "
                 cp -v "$JABBA_MARKED_FILE" ./
             end
         else
@@ -85,6 +86,9 @@ function bm -d "Bookmark a file (for copy/paste)"
         echo "Bookmark cleared."
     else
         # Help text
+        if test -n "$JABBA_MARKED_FILE"
+            echo "Bookmarked file: $JABBA_MARKED_FILE"
+        end
         echo "Usage:"
         echo "  bm -c <file>   : Bookmark file"
         echo "  bm -p          : Paste bookmarked file here"
