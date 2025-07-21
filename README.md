@@ -2367,7 +2367,29 @@ I can force it to start working.
 
 It allows you to rename a file interactively.
 
-### (59) resolution: Current resolution
+### (59) repo: Open the GitHub URL of the current project
+
+[repo.fish](functions/repo.fish)
+
+```shell
+    $ repo
+    # opens the GitHub URL of the current project
+```
+
+Under Manjaro, install this package:
+
+```
+yay -S github-cli
+```
+
+Under Manjaro, after an update, this command dropped some warnings.
+The solution was to reinstall some packages:
+
+```
+sudo pacman -Syu mesa vulkan-intel ibus
+```
+
+### (60) resolution: Current resolution
 
 [resolution.fish](functions/resolution.fish)
 
@@ -2378,7 +2400,7 @@ It allows you to rename a file interactively.
 
 Shows your current resolution.
 
-### (60) s: CD into /tmp/send
+### (61) s: CD into /tmp/send
 
 [s.fish](functions/s.fish)
 
@@ -2400,7 +2422,7 @@ it's easy to attach them), then delete them from `/tmp/send`.
 
 This script called `s` allows me to enter this folder with the speed of light.
 
-### (61) sort-info: Basic usage of the sort command
+### (62) sort-info: Basic usage of the sort command
 
 [sort-info.fish](functions/sort-info.fish)
 
@@ -2409,7 +2431,7 @@ This script called `s` allows me to enter this folder with the speed of light.
     # print some info about its basic usage
 ```
 
-### (62) sp: Show the current path or show the path of a given file
+### (63) sp: Show the current path or show the path of a given file
 
 [sp.fish](functions/sp.fish)
 
@@ -2435,7 +2457,7 @@ path to the clipboard.
 
 `sp.py` can be found here: https://github.com/jabbalaci/Bash-Utils/blob/master/sp.py
 
-### (63) timezones: List of valid timezones
+### (64) timezones: List of valid timezones
 
 [timezones.fish](functions/timezones.fish)
 
@@ -2448,7 +2470,7 @@ path to the clipboard.
 
 See also https://worldtimeapi.org/pages/examples .
 
-### (64) top10dirs: Top 10 largest directories
+### (65) top10dirs: Top 10 largest directories
 
 [top10dirs.fish](functions/top10dirs.fish)
 
@@ -2463,7 +2485,7 @@ See also https://worldtimeapi.org/pages/examples .
 
 List the top 10 directories in the current folder in descending order by size.
 
-### (65) top10files: Top 10 largest files
+### (66) top10files: Top 10 largest files
 
 [top10files.fish](functions/top10files.fish)
 
@@ -2476,7 +2498,7 @@ List the top 10 directories in the current folder in descending order by size.
 
 List the top 10 files in the current folder (recursively) in descending order by size.
 
-### (66) tr-info: Basic usage of the tr command
+### (67) tr-info: Basic usage of the tr command
 
 [tr-info.fish](functions/tr-info.fish)
 
@@ -2485,7 +2507,7 @@ List the top 10 files in the current folder (recursively) in descending order by
     # print some info about its basic usage
 ```
 
-### (67) unixtime: Print the Unix epoch time
+### (68) unixtime: Print the Unix epoch time
 
 [unixtime.fish](functions/unixtime.fish)
 
@@ -2503,7 +2525,7 @@ since January 1, 1970.
 
 `unixtime2date` is the opposite.
 
-### (68) unixtime2date: Convert Unix epoch time to normal date
+### (69) unixtime2date: Convert Unix epoch time to normal date
 
 [unixtime2date.fish](functions/unixtime2date.fish)
 
@@ -2519,7 +2541,7 @@ since January 1, 1970.
 Takes a Unix epoch time (number) and converts it
 back to human-friendly date.
 
-### (69) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
+### (70) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
 
 [upgrade_pipx_and_uv.fish](functions/upgrade_pipx_and_uv.fish)
 
@@ -2533,7 +2555,7 @@ back to human-friendly date.
 They have that nice feature that they can update all the packages
 that were installed with them. This script triggers this update procedure.
 
-### (70) ups: Updates / upgrades
+### (71) ups: Updates / upgrades
 
 [ups.fish](functions/ups.fish)
 
@@ -2548,7 +2570,7 @@ upgrade softwares installed with pipx and uv, etc. I cannot keep
 all the update commands in my head. This script helps me keep
 my system up-to-date without causing any mental overhead.
 
-### (71) uv_venv: Call the `uv_venv` script
+### (72) uv_venv: Call the `uv_venv` script
 
 [uv_venv.fish](functions/uv_venv.fish)
 
@@ -2567,7 +2589,7 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (72) workspace: Identify the current workspace
+### (73) workspace: Identify the current workspace
 
 [workspace.fish](functions/workspace.fish)
 
@@ -2579,7 +2601,7 @@ Open Settings → Keyboard → Application Shortcuts, then add this command:
 
 Advantage: it works globally. Unfortunately, the terminal didn't recognize the Super key.
 
-### (73) xfce-info: Current XFCE version
+### (74) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -2592,7 +2614,7 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (74) xrates: Currency rates of HUF, EUR and USD
+### (75) xrates: Currency rates of HUF, EUR and USD
 
 [xrates.fish](functions/xrates.fish)
 
@@ -2614,7 +2636,7 @@ that tracks reference exchange rates.
 
 You can pass an optional value to the function.
 
-### (75) y: Start yazi (and stay in the folder where you quit)
+### (76) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 
@@ -2629,7 +2651,7 @@ directory where you quit.
 
 Without this, you'd get back to the folder where you launched yazi.
 
-### (76) zoli: Check my friend's local time
+### (77) zoli: Check my friend's local time
 
 [zoli.fish](functions/zoli.fish)
 

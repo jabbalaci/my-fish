@@ -21,5 +21,6 @@ function myalias --argument arg -d "Similar to the alias in bash"
 	    alias
     else
         alias | grep $arg
+        abbr | grep $arg
     end
 end
