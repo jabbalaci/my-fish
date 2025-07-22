@@ -138,3 +138,5 @@ alias cs $DROPBOX/python/CSharpCliHelper/cs.py
 alias edit msedit
 abbr bmc "bm -c"  # bookmark copy
 abbr bmp "bm -p"  # bookmark paste
+abbr bml "bm -l"  # bookmark list
+abbr bme "bm -e"  # bookmark erase
