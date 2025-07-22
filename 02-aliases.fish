@@ -136,3 +136,5 @@ abbr dfh "df -h"
 abbr ka killall
 alias cs $DROPBOX/python/CSharpCliHelper/cs.py
 alias edit msedit
+abbr bmc "bm -c"  # bookmark copy
+abbr bmp "bm -p"  # bookmark paste
