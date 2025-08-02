@@ -52,10 +52,7 @@ alias grep="grep --color=auto"
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias vim $EDITOR
-abbr v vim
-abbr nv nvim
 abbr val valgrind
-abbr m math
 abbr e edit
 alias cat='bat --pager never'
 alias on="source .venv/bin/activate.fish"
@@ -140,3 +137,28 @@ abbr bmc "bm -c"  # bookmark copy
 abbr bmp "bm -p"  # bookmark paste
 abbr bml "bm -l"  # bookmark list
 abbr bme "bm -e"  # bookmark erase
+
+alias m micro
+alias vim nvim
+
+alias nvim.lac='NVIM_APPNAME="nvim.lac" nvim'
+#
+alias nvim.astro='NVIM_APPNAME="nvim.astro" nvim'
+alias astro nvim.astro
+alias nvim.chad='NVIM_APPNAME="nvim.chad" nvim'
+alias chad nvim.chad
+alias nvim.ks='NVIM_APPNAME="nvim.ks" nvim'
+alias ks nvim.ks
+alias nvim.ks0='NVIM_APPNAME="nvim.ks0" nvim'
+alias ks0 nvim.ks0
+alias nvim.lazy='NVIM_APPNAME="nvim.lazy" nvim'
+alias lazy nvim.lazy
+#
+abbr v ks
+abbr nv "nvim -u NORC"  # vanilla version (no config file, no plugins)
+#
+set -gx NVIM_APPNAME nvim.ks
+set -gx EDITOR nvim
+set -gx VIEWER $EDITOR
+set -gx VISUAL $EDITOR
+set -gx GIT_EDITOR $EDITOR
