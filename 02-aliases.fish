@@ -47,6 +47,8 @@ abbr f fish
 abbr b bash
 abbr z zsh
 alias pypy='pypy3'
+alias pypy2='/opt/pypy/bin/pypy'
+alias pypy3='pypy3'
 alias tree="tree -C"
 alias grep="grep --color=auto"
 alias egrep='egrep --color=auto'

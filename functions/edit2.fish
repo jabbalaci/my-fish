@@ -19,8 +19,8 @@ function edit2 -d "Edit two files side by side"
     set -l file_a $argv[1]
     set -l file_b $argv[2]
 
-    micro -multiopen vsplit "$file_a" "$file_b"
+    # micro -multiopen vsplit "$file_a" "$file_b"
 
     # same effect with vim:
-    # vim -O file1 file2
+    vim -O "$file_a" "$file_b"
 end
