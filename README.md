@@ -2599,7 +2599,20 @@ upgrade softwares installed with pipx and uv, etc. I cannot keep
 all the update commands in my head. This script helps me keep
 my system up-to-date without causing any mental overhead.
 
-### (74) uv_venv: Call the `uv_venv` script
+### (74) ut: Run unittests on a D source file
+
+[ut.fish](functions/ut.fish)
+
+```shell
+    $ ut file.d
+    # run unittests of `file.d` using rdmd
+    $ ut file.d -main
+    # if `file.d` is a library, then an empty main() function is added
+```
+
+Run unittests on the given D source code using `rdmd`.
+
+### (75) uv_venv: Call the `uv_venv` script
 
 [uv_venv.fish](functions/uv_venv.fish)
 
@@ -2618,7 +2631,7 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (75) workspace: Identify the current workspace
+### (76) workspace: Identify the current workspace
 
 [workspace.fish](functions/workspace.fish)
 
@@ -2630,7 +2643,7 @@ Open Settings → Keyboard → Application Shortcuts, then add this command:
 
 Advantage: it works globally. Unfortunately, the terminal didn't recognize the Super key.
 
-### (76) xfce-info: Current XFCE version
+### (77) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -2643,7 +2656,7 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (77) xrates: Currency rates of HUF, EUR and USD
+### (78) xrates: Currency rates of HUF, EUR and USD
 
 [xrates.fish](functions/xrates.fish)
 
@@ -2665,7 +2678,7 @@ that tracks reference exchange rates.
 
 You can pass an optional value to the function.
 
-### (78) y: Start yazi (and stay in the folder where you quit)
+### (79) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 
@@ -2680,7 +2693,7 @@ directory where you quit.
 
 Without this, you'd get back to the folder where you launched yazi.
 
-### (79) zoli: Check my friend's local time
+### (80) zoli: Check my friend's local time
 
 [zoli.fish](functions/zoli.fish)
 
