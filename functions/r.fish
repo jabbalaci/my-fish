@@ -29,8 +29,7 @@ function r --argument fname -d "Run a source code (compile and run)"
 
     switch $fname
         case '*.c'
-            gcc $fname
-            ./a.out $rest
+            gcc $fname && ./a.out $rest
         case '*.d'
             # dmd $fname -of=a.out
             # ./a.out $rest
@@ -43,10 +42,9 @@ function r --argument fname -d "Run a source code (compile and run)"
             chmod u+x $fname
             ./$fname $rest
         case '*.java'
-            javac $fname
-            java $fname_without_ext
+            javac $fname && java $fname_without_ext $rest
         case '*.class'
-            java $fname_without_ext
+            java $fname_without_ext $rest
         case '*.sh' '*.fish'
             chmod u+x $fname
             ./$fname $rest
