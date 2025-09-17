@@ -25,6 +25,8 @@ function r --argument fname -d "Run a source code (compile and run)"
     # remove the 1st element and keep the rest
     set -l rest $argv[2..-1]
 
+    set -l fname_without_ext $(echo $fname | p.fname)
+
     switch $fname
         case '*.c'
             gcc $fname
@@ -40,6 +42,11 @@ function r --argument fname -d "Run a source code (compile and run)"
         case '*.py'
             chmod u+x $fname
             ./$fname $rest
+        case '*.java'
+            javac $fname
+            java $fname_without_ext
+        case '*.class'
+            java $fname_without_ext
         case '*.sh' '*.fish'
             chmod u+x $fname
             ./$fname $rest
