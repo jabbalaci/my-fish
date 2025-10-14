@@ -77,7 +77,7 @@ abbr c "code"
 abbr c. "code ."   # open current dir. in VS Code
 abbr jsh "jshell"
 abbr ac "audacity"
-abbr mongo "mongosh"
+abbr mongo "mongosh --quiet mytube"
 alias gedit="gedit 2>/dev/null"
 # The convert command is deprecated in IMv7, use "magick" instead of "convert"
 abbr convert "magick"
@@ -164,3 +164,8 @@ set -gx EDITOR nvim
 set -gx VIEWER $EDITOR
 set -gx VISUAL $EDITOR
 set -gx GIT_EDITOR $EDITOR
+
+alias one="cd $DROPBOX/python/webapps/OneRing; ./start.sh; cd -"
+alias morg="cd $DROPBOX/python/webapps/movieorg_project && source .venv/bin/activate.fish && ./start_app.py && deactivate"
+
+abbr pi "~/.local/bin/python3.14"
