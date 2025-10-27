@@ -17,5 +17,7 @@ if status is-interactive
         dos-greeting
         dos-prompt
     end
+
+    echo -en "\e[2 q" # disable cursor blinking (for guake)
 end
 # }}}
