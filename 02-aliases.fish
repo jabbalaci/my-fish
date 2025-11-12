@@ -169,3 +169,7 @@ alias one="cd $DROPBOX/python/webapps/OneRing; ./start.sh; cd -"
 alias morg="cd $DROPBOX/python/webapps/movieorg_project && source .venv/bin/activate.fish && ./start_app.py && deactivate"
 
 abbr pi "~/.local/bin/python3.14"
+abbr ts "time sync"
+abbr zed zeditor
+alias rstudio="/usr/lib/rstudio/rstudio"
+alias ccdd="$DROPBOX/raylib/python/The_ultimate_introduction_to_Raylib/sajat_projektek/countdown/start.sh"
