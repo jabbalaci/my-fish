@@ -10,6 +10,7 @@ end
 
 
 function jkb --argument vault -d "Start Jabba's Knowledge Base"
+    set -l bak $(pwd)
     cd $DROPBOX/python/jkb
     if test -z $vault
         ./start.sh jkb
@@ -23,9 +24,11 @@ function jkb --argument vault -d "Start Jabba's Knowledge Base"
                 ./start.sh nim
             case '*'
                 echo "Unknown vault: $vault" >&2
+                cd $bak
                 return 1
         end
     end
+    cd $bak
 end
 
 # skip

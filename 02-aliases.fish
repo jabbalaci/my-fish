@@ -37,6 +37,7 @@ alias cls 'clear'
 alias cdc 'cd; clear'
 alias q="cls; d"
 alias ... "cd ../.."
+alias .... "cd ../../.."
 alias cd.. "cd .."
 abbr - "cd -"
 abbr p2 'python2'
