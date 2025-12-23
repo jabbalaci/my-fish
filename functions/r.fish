@@ -30,6 +30,8 @@ function r --argument fname -d "Run a source code (compile and run)"
     switch $fname
         case '*.c'
             gcc $fname && ./a.out $rest
+        case '*.f90'
+            gfortran $fname && ./a.out $rest
         case '*.d'
             # dmd $fname -of=a.out
             # ./a.out $rest
