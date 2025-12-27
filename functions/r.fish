@@ -47,6 +47,8 @@ function r --argument fname -d "Run a source code (compile and run)"
             javac $fname && java $fname_without_ext $rest
         case '*.class'
             java $fname_without_ext $rest
+        case '*.swift'
+            swift $fname $rest
         case '*.sh' '*.fish'
             chmod u+x $fname
             ./$fname $rest
