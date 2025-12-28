@@ -178,3 +178,4 @@ abbr fr fresh  # yay -S fresh-editor-bin, see https://github.com/sinelaw/fresh
 
 # Fortran
 abbr gf gfortran
+alias ri="$FISH_MYSCRIPTS_DIR/ri.py"
