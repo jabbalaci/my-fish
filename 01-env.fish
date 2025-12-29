@@ -63,3 +63,6 @@ set -gx PATH "$PATH:$HOME/nimbledeps/bin"       # binaries installed with nimble
 
 # my own D binaries
 set -gx PATH "$PATH:$DROPBOX/d_lang/_bin"
+
+# ifx (Intel's Fortran compiler)
+set -gx PATH "$PATH:/opt/intel/oneapi/2025.3/bin"

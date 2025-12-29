@@ -25,8 +25,11 @@ def process(fname: str) -> None:
     dependencies.append(fname)
     f = open(fname)
     for line in f:
-        line = line.strip()
+        line = line.strip().lower()
         if line.startswith("use "):
+            if "intrinsic" in line:
+                return
+            # else:
             left = line.split(",")[0]
             name = left.removeprefix("use ").strip() + ".f90"
             if os.path.isfile(name):
@@ -53,6 +56,9 @@ def main():
     dependencies.reverse()
     cmd = "gfortran " + " ".join(dependencies)
     cmd = f"{cmd} && ./a.out"
+    # args[0] is the name of the file we want to compile, for ex.: $ ri main.f90
+    for arg in args[1:]:
+        cmd += f' "{arg}"'
     # print("#", cmd)
     os.system(cmd)
 
