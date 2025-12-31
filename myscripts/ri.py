@@ -127,7 +127,7 @@ def main():
     g = Graph(fname)
     g.start()
     cmd = g.get_compile_command()
-    print("#", cmd)
+    print("#", cmd, file=sys.stderr)
     if not DEBUG:
         os.system(cmd)
 
