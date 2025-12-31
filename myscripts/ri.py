@@ -16,6 +16,7 @@ import sys
 from collections import defaultdict
 from pprint import pprint
 
+COMPILER = "gfortran"
 SRC_DIRS = [".", "src"]  # look for files in these folders, in this order
 # DEBUG = True  # show data structures for debugging
 DEBUG = False
@@ -104,7 +105,13 @@ class Graph:
         f.close()
 
     def get_compile_command(self) -> str:
-        cmd = "gfortran -Jsrc " + " ".join([self.get_path(f) for f in self.filenames])
+        cmd = f"{COMPILER} "
+        jsrc = ""
+        if os.path.isdir("src"):
+            jsrc = "-Jsrc "  # where to store the *.mod files
+        #
+        cmd += jsrc
+        cmd += " ".join([self.get_path(f) for f in self.filenames])
         cmd = f"{cmd} && ./a.out"
         return cmd
 
@@ -121,7 +128,8 @@ def main():
     g.start()
     cmd = g.get_compile_command()
     print("#", cmd)
-    os.system(cmd)
+    if not DEBUG:
+        os.system(cmd)
 
 
 ##############################################################################
