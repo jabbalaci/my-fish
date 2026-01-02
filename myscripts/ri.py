@@ -18,7 +18,7 @@ from pprint import pprint
 
 COMPILER = "gfortran"
 SRC_DIRS = [".", "src"]  # look for files in these folders, in this order
-# DEBUG = True  # show data structures for debugging
+# DEBUG = True  # show data structures for debugging; don't compile, don't run
 DEBUG = False
 
 
@@ -105,13 +105,17 @@ class Graph:
         f.close()
 
     def get_compile_command(self) -> str:
-        cmd = f"{COMPILER} "
-        jsrc = ""
-        if os.path.isdir("src"):
-            jsrc = "-Jsrc "  # where to store the *.mod files
+        cmd = COMPILER
+        if not os.path.isdir("mod"):
+            try:
+                os.mkdir("mod")
+            except:
+                print("Error: cannot create the directory mod/", file=sys.stderr)
+                exit(1)
+            #
         #
-        cmd += jsrc
-        cmd += " ".join([self.get_path(f) for f in self.filenames])
+        cmd = f"{cmd} -Jmod -Imod "
+        cmd = cmd + " ".join([self.get_path(f) for f in self.filenames])
         cmd = f"{cmd} && ./a.out"
         return cmd
 
