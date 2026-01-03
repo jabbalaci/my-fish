@@ -178,4 +178,5 @@ abbr fr fresh  # yay -S fresh-editor-bin, see https://github.com/sinelaw/fresh
 
 # Fortran
 abbr gf gfortran
-alias ri="$FISH_MYSCRIPTS_DIR/ri.py"
+alias rr="$DROPBOX/python/Fortran_compile_run/ezf.py"   # https://github.com/jabbalaci/ezf
+alias ezf=rr
