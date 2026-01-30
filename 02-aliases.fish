@@ -46,7 +46,6 @@ abbr p 'python3'
 abbr pp 'python3clean'         # no extra info line
 abbr f fish
 abbr b bash
-abbr z zsh
 alias pypy='pypy3'
 alias pypy2='/opt/pypy/bin/pypy'
 alias pypy3='pypy3'
@@ -54,6 +53,7 @@ alias tree="tree -C"
 alias grep="grep --color=auto"
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+alias vi $EDITOR
 alias vim $EDITOR
 abbr val valgrind
 abbr e edit
@@ -180,3 +180,14 @@ abbr fr fresh  # yay -S fresh-editor-bin, see https://github.com/sinelaw/fresh
 abbr gf gfortran
 alias rr="$DROPBOX/python/Fortran_compile_run/ezf.py"   # https://github.com/jabbalaci/ezf
 alias ezf=rr
+alias ml="$DROPBOX/fortran/_jflib/tools/ml.py"          # multiline creator
+
+# Zig
+abbr z zig
+abbr zr "zig run"
+abbr zb "zig build"
+abbr zbr "zig build run"
+abbr ze "zig build-exe"
+abbr zef "zig build-exe -O ReleaseFast"
+abbr zesf "zig build-exe -O ReleaseSafe"
+abbr zesm "zig build-exe -O ReleaseSmall"
