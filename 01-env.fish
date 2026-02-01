@@ -66,3 +66,7 @@ set -gx PATH "$PATH:$DROPBOX/d_lang/_bin"
 
 # ifx (Intel's Fortran compiler)
 set -gx PATH "$PATH:/opt/intel/oneapi/2025.3/bin"
+
+set -gx ZIG_GLOBAL_CACHE_DIR "$HOME/.cache/zig"
+# create .zig-cache/ here:
+set -gx ZIG_LOCAL_CACHE_DIR "$HOME/.cache/zig"

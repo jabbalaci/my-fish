@@ -2486,7 +2486,16 @@ path to the clipboard.
 
 `sp.py` can be found here: https://github.com/jabbalaci/Bash-Utils/blob/master/sp.py
 
-### (66) timezones: List of valid timezones
+### (66) subreddit: Number of subscribers of a subreddit
+
+[subreddit.fish](functions/subreddit.fish)
+
+```shell
+    $ subreddit https://old.reddit.com/r/d_language/
+    subscribers: 5,210
+```
+
+### (67) timezones: List of valid timezones
 
 [timezones.fish](functions/timezones.fish)
 
@@ -2499,7 +2508,7 @@ path to the clipboard.
 
 See also https://worldtimeapi.org/pages/examples .
 
-### (67) top10dirs: Top 10 largest directories
+### (68) top10dirs: Top 10 largest directories
 
 [top10dirs.fish](functions/top10dirs.fish)
 
@@ -2514,7 +2523,7 @@ See also https://worldtimeapi.org/pages/examples .
 
 List the top 10 directories in the current folder in descending order by size.
 
-### (68) top10files: Top 10 largest files
+### (69) top10files: Top 10 largest files
 
 [top10files.fish](functions/top10files.fish)
 
@@ -2527,7 +2536,7 @@ List the top 10 directories in the current folder in descending order by size.
 
 List the top 10 files in the current folder (recursively) in descending order by size.
 
-### (69) tr-info: Basic usage of the tr command
+### (70) tr-info: Basic usage of the tr command
 
 [tr-info.fish](functions/tr-info.fish)
 
@@ -2536,7 +2545,7 @@ List the top 10 files in the current folder (recursively) in descending order by
     # print some info about its basic usage
 ```
 
-### (70) unixtime: Print the Unix epoch time
+### (71) unixtime: Print the Unix epoch time
 
 [unixtime.fish](functions/unixtime.fish)
 
@@ -2554,7 +2563,7 @@ since January 1, 1970.
 
 `unixtime2date` is the opposite.
 
-### (71) unixtime2date: Convert Unix epoch time to normal date
+### (72) unixtime2date: Convert Unix epoch time to normal date
 
 [unixtime2date.fish](functions/unixtime2date.fish)
 
@@ -2570,7 +2579,7 @@ since January 1, 1970.
 Takes a Unix epoch time (number) and converts it
 back to human-friendly date.
 
-### (72) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
+### (73) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
 
 [upgrade_pipx_and_uv.fish](functions/upgrade_pipx_and_uv.fish)
 
@@ -2584,7 +2593,7 @@ back to human-friendly date.
 They have that nice feature that they can update all the packages
 that were installed with them. This script triggers this update procedure.
 
-### (73) ups: Updates / upgrades
+### (74) ups: Updates / upgrades
 
 [ups.fish](functions/ups.fish)
 
@@ -2599,7 +2608,7 @@ upgrade softwares installed with pipx and uv, etc. I cannot keep
 all the update commands in my head. This script helps me keep
 my system up-to-date without causing any mental overhead.
 
-### (74) ut: Run unittests on a D source file
+### (75) ut: Run unittests on a D source file
 
 [ut.fish](functions/ut.fish)
 
@@ -2612,7 +2621,7 @@ my system up-to-date without causing any mental overhead.
 
 Run unittests on the given D source code using `rdmd`.
 
-### (75) uv_venv: Call the `uv_venv` script
+### (76) uv_venv: Call the `uv_venv` script
 
 [uv_venv.fish](functions/uv_venv.fish)
 
@@ -2631,7 +2640,7 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (76) workspace: Identify the current workspace
+### (77) workspace: Identify the current workspace
 
 [workspace.fish](functions/workspace.fish)
 
@@ -2643,7 +2652,7 @@ Open Settings → Keyboard → Application Shortcuts, then add this command:
 
 Advantage: it works globally. Unfortunately, the terminal didn't recognize the Super key.
 
-### (77) xfce-info: Current XFCE version
+### (78) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -2656,7 +2665,7 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (78) xrates: Currency rates of HUF, EUR and USD
+### (79) xrates: Currency rates of HUF, EUR and USD
 
 [xrates.fish](functions/xrates.fish)
 
@@ -2678,7 +2687,7 @@ that tracks reference exchange rates.
 
 You can pass an optional value to the function.
 
-### (79) y: Start yazi (and stay in the folder where you quit)
+### (80) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 
@@ -2693,7 +2702,16 @@ directory where you quit.
 
 Without this, you'd get back to the folder where you launched yazi.
 
-### (80) zoli: Check my friend's local time
+### (81) zig-info: My abbreviations for zig
+
+[zig-info.fish](functions/zig-info.fish)
+
+```shell
+    $ zig-info
+    # print some info about its basic usage
+```
+
+### (82) zoli: Check my friend's local time
 
 [zoli.fish](functions/zoli.fish)
 

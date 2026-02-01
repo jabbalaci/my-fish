@@ -185,9 +185,11 @@ alias ml="$DROPBOX/fortran/_jflib/tools/ml.py"          # multiline creator
 # Zig
 abbr z zig
 abbr zr "zig run"
+abbr zt "zig test"
 abbr zb "zig build"
 abbr zbr "zig build run"
 abbr ze "zig build-exe"
 abbr zef "zig build-exe -O ReleaseFast"
 abbr zesf "zig build-exe -O ReleaseSafe"
 abbr zesm "zig build-exe -O ReleaseSmall"
+abbr zew "zig build-exe -target x86_64-windows"
