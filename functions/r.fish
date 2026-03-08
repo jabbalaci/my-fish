@@ -44,7 +44,7 @@ function r --argument fname -d "Run a source code (compile and run)"
             chmod u+x $fname
             ./$fname $rest
         case '*.nim'
-            nim r --hints:off $fname $rest
+            nim r --hints:off --warnings:off $fname $rest
         case '*.java'
             javac $fname && java $fname_without_ext $rest
         case '*.class'

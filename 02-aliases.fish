@@ -140,6 +140,7 @@ abbr bmc "bm -c"  # bookmark copy
 abbr bmp "bm -p"  # bookmark paste
 abbr bml "bm -l"  # bookmark list
 abbr bme "bm -e"  # bookmark erase
+abbr ag "antigravity . 2>/dev/null"
 
 alias m micro
 alias vim nvim
@@ -169,12 +170,13 @@ set -gx GIT_EDITOR $EDITOR
 alias one="cd $DROPBOX/python/webapps/OneRing; ./start.sh; cd -"
 alias morg="cd $DROPBOX/python/webapps/movieorg_project && source .venv/bin/activate.fish && ./start_app.py && deactivate"
 
-abbr pi "~/.local/bin/python3.14"
 abbr ts "time sync"
 abbr zed zeditor
 alias rstudio="/usr/lib/rstudio/rstudio"
 alias ccdd="$DROPBOX/raylib/python/The_ultimate_introduction_to_Raylib/sajat_projektek/countdown/start.sh"
 abbr fr fresh  # yay -S fresh-editor-bin, see https://github.com/sinelaw/fresh
+
+abbr ge "setsid gedit >/dev/null 2>&1"
 
 # Fortran
 abbr gf gfortran
@@ -193,3 +195,7 @@ abbr zef "zig build-exe -O ReleaseFast"
 abbr zesf "zig build-exe -O ReleaseSafe"
 abbr zesm "zig build-exe -O ReleaseSmall"
 abbr zew "zig build-exe -target x86_64-windows"
+
+# Nim
+alias pi=$DROPBOX/nim/_projects/pi/pi
+alias rod=$DROPBOX/nim/_projects/NimCliHelper/rodcli
