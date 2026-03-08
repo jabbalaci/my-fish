@@ -70,3 +70,7 @@ set -gx PATH "$PATH:/opt/intel/oneapi/2025.3/bin"
 set -gx ZIG_GLOBAL_CACHE_DIR "$HOME/.cache/zig"
 # create .zig-cache/ here:
 set -gx ZIG_LOCAL_CACHE_DIR "$HOME/.cache/zig"
+
+# Java
+set -gx JAVA_HOME /usr/lib/jvm/default
+set -gx JFX_HOME /opt/javafx-sdk-17.0.18
