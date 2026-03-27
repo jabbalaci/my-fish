@@ -123,7 +123,8 @@ alias edge /usr/bin/microsoft-edge-stable
 abbr mo marimo
 alias vimv "EDITOR=nvim command vimv"
 abbr gdl gallery-dl
-alias pmwiki $DROPBOX/d_lang/pmwiki/pmwiki.py
+# alias pmwiki $DROPBOX/d_lang/pmwiki/pmwiki.py
+alias pmwiki $DROPBOX/nim/pmwiki/pmwiki.py
 alias rdmd "rdmd --tmpdir=$HOME/.rdmd"
 abbr ldc ldc2
 abbr ldmd ldmd2
@@ -199,3 +200,5 @@ abbr zew "zig build-exe -target x86_64-windows"
 # Nim
 alias pi=$DROPBOX/nim/_projects/pi/pi
 alias rod=$DROPBOX/nim/_projects/NimCliHelper/rodcli
+# set -gx PATH "$PATH:$DROPBOX/nim/_projects/nimbang"
+abbr nb nimbang
