@@ -82,9 +82,6 @@ abbr mongo "mongosh --quiet mytube"
 alias gedit="gedit 2>/dev/null"
 # The convert command is deprecated in IMv7, use "magick" instead of "convert"
 abbr convert "magick"
-# Nim
-abbr ncc "nim c -o:a.out"          # Nim C Compiler :)
-alias nim_all="micro -readonly on /home/jabba/Dropbox/nim/_projects/00_list_functions/all.txt"
 alias book="cd /home/jabba/Dropbox/books/assembly/current; ./open.sh"
 alias sysinfo="inxi -Fxxxrz"
 
@@ -198,7 +195,13 @@ abbr zesm "zig build-exe -O ReleaseSmall"
 abbr zew "zig build-exe -target x86_64-windows"
 
 # Nim
+alias nim_all="micro -readonly on $DROPBOX/nim/_projects/00_list_functions/all.txt"
 alias pi=$DROPBOX/nim/_projects/pi/pi
 alias rod=$DROPBOX/nim/_projects/NimCliHelper/rodcli
-# set -gx PATH "$PATH:$DROPBOX/nim/_projects/nimbang"
+# set -gx PATH "$DROPBOX/nim/_projects/nimbang:$PATH"  # find development version first
 abbr nb nimbang
+abbr ncc "nim c -o:a.out"                                   # Nim C Compiler :)
+abbr nimsilent "nim c --hints:off --warnings:off"           # silent compilation
+abbr nimrel "nim c -d:release"                              # release build
+abbr nimspeed "nim c --cc:clang -d:release --opt:speed"     # fast EXE
+abbr nimsmall "nim c -d:release --opt:size --passL:-s"      # small EXE

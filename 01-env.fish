@@ -49,9 +49,15 @@ set -gx UV_PYTHON "3.13"
 set -gx GOPATH "$HOME/go"
 set -gx PATH "$PATH:$HOME/go/bin"
 
-# Nim lang.
-set -gx PATH "$PATH:$HOME/.nimble/bin"          # Nim compiler, nimble package manager, it should come **first**
-set -gx PATH "$PATH:$HOME/nimbledeps/bin"       # binaries installed with nimble (nim's package manager), it should come second
+#############
+# Nim lang. #
+#############
+set -gx NIMBLE "$HOME/.nimble"
+# Nim compiler, nimble package manager, it should come **first**:
+set -gx PATH "$PATH:$NIMBLE/bin"
+# Make a symbolic link called "current" that points on the latest Nim installation. It should come **second**.
+# The binary `atlas` is here, for instance.
+# set -gx PATH "$PATH:$NIMBLE/nimbinaries/current/bin"
 
 # for Valgrind if it drops an error
 # https://bbs.archlinux.org/viewtopic.php?id=276422
