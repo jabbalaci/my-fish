@@ -80,3 +80,7 @@ set -gx ZIG_LOCAL_CACHE_DIR "$HOME/.cache/zig"
 # Java
 set -gx JAVA_HOME /usr/lib/jvm/default
 set -gx JFX_HOME /opt/javafx-sdk-17.0.18
+
+# DASM and xcbasic3
+set -gx PATH "$PATH:/opt/dasm"    # dasm
+set -gx PATH "$PATH:/opt/xc-basic3/bin/Linux"    # xcbasic3

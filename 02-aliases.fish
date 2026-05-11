@@ -56,7 +56,6 @@ alias fgrep='fgrep --color=auto'
 alias vi $EDITOR
 alias vim $EDITOR
 abbr val valgrind
-abbr e edit
 alias cat='bat --pager never'
 alias on="source .venv/bin/activate.fish"
 alias off deactivate
@@ -68,13 +67,13 @@ alias crontab='crontab -i'
 alias md='mkdir -p'
 #
 abbr a "./a.out"
+abbr vg valgrind
 alias files "pacman -Ql"
 abbr run 'chmod u+x'
 abbr ff 'fastfetch'
 alias nh='thunar . 2>/dev/null'    # nautilus here (replaced by thunar)
 alias ssh='ssh -o ServerAliveInterval=60'
 alias ppwd='/bin/pwd'
-abbr c "code"
 abbr c. "code ."   # open current dir. in VS Code
 abbr jsh "jshell"
 abbr ac "audacity"
@@ -142,6 +141,7 @@ abbr ag "antigravity . 2>/dev/null"
 
 alias m micro
 alias vim nvim
+alias e nvim
 
 alias nvim.lac='NVIM_APPNAME="nvim.lac" nvim'
 #
@@ -197,11 +197,23 @@ abbr zew "zig build-exe -target x86_64-windows"
 # Nim
 alias nim_all="micro -readonly on $DROPBOX/nim/_projects/00_list_functions/all.txt"
 alias pi=$DROPBOX/nim/_projects/pi/pi
-alias rod=$DROPBOX/nim/_projects/NimCliHelper/rodcli
+alias rod=$DROPBOX/nim/_projects/NimCliHelper/rodcli.nim
+alias cache="du -skh $HOME/.cache/nimbang"
 # set -gx PATH "$DROPBOX/nim/_projects/nimbang:$PATH"  # find development version first
+abbr nimdoc "nim doc"
+abbr nd "nim doc"
 abbr nb nimbang
+abbr nl nimble
 abbr ncc "nim c -o:a.out"                                   # Nim C Compiler :)
 abbr nimsilent "nim c --hints:off --warnings:off"           # silent compilation
 abbr nimrel "nim c -d:release"                              # release build
 abbr nimspeed "nim c --cc:clang -d:release --opt:speed"     # fast EXE
+abbr nimfast  "nim c --cc:clang -d:release --opt:speed"     # fast EXE
 abbr nimsmall "nim c -d:release --opt:size --passL:-s"      # small EXE
+
+# Nimony
+set -gx PATH "$PATH:$DROPBOX/nim/Nimony/bin"  # compiler and tools
+
+# Commodore 64 (C64)
+abbr x64 x64sc
+abbr xcb xcbasic3
