@@ -16,6 +16,7 @@ bind ctrl-space forward-char                                        # accept aut
 # commandline -a appends text to the current command
 bind alt-p 'commandline -a " | less"'                               # alt-p now uses `|` instead of `&|` (p: paginate)
 bind alt-c 'commandline -i "yay -Scc"'
+bind alt-h 'echo && cdh; commandline -f repaint'                    # change to a recently visited directory
 bind ctrl-o 'mc; commandline -f repaint'                            # start midnight commander
 
 # +++++++++++ #

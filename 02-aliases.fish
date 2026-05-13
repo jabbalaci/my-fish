@@ -183,16 +183,16 @@ alias ezf=rr
 alias ml="$DROPBOX/fortran/_jflib/tools/ml.py"          # multiline creator
 
 # Zig
-abbr z zig
-abbr zr "zig run"
-abbr zt "zig test"
-abbr zb "zig build"
-abbr zbr "zig build run"
-abbr ze "zig build-exe"
-abbr zef "zig build-exe -O ReleaseFast"
-abbr zesf "zig build-exe -O ReleaseSafe"
-abbr zesm "zig build-exe -O ReleaseSmall"
-abbr zew "zig build-exe -target x86_64-windows"
+# abbr z zig
+# abbr zr "zig run"
+# abbr zt "zig test"
+# abbr zb "zig build"
+# abbr zbr "zig build run"
+# abbr ze "zig build-exe"
+# abbr zef "zig build-exe -O ReleaseFast"
+# abbr zesf "zig build-exe -O ReleaseSafe"
+# abbr zesm "zig build-exe -O ReleaseSmall"
+# abbr zew "zig build-exe -target x86_64-windows"
 
 # Nim
 alias nim_all="micro -readonly on $DROPBOX/nim/_projects/00_list_functions/all.txt"
@@ -210,6 +210,8 @@ abbr nimrel "nim c -d:release"                              # release build
 abbr nimspeed "nim c --cc:clang -d:release --opt:speed"     # fast EXE
 abbr nimfast  "nim c --cc:clang -d:release --opt:speed"     # fast EXE
 abbr nimsmall "nim c -d:release --opt:size --passL:-s"      # small EXE
+#
+alias nimpkg="$DROPBOX/nim/_projects/nimpkg/nimpkg.py"
 
 # Nimony
 set -gx PATH "$PATH:$DROPBOX/nim/Nimony/bin"  # compiler and tools
