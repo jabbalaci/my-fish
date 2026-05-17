@@ -3,6 +3,7 @@
 #############################
 
 set -gx FISH_DIR "$HOME/.config/fish"
+set -gx FISH_BIN_DIR "$FISH_DIR/bin"
 set -gx FISH_FUNCTIONS_DIR "$FISH_DIR/functions"
 set -gx FISH_MYSCRIPTS_DIR "$FISH_DIR/myscripts"
 # set -gx EDITOR "micro"
@@ -18,6 +19,8 @@ set -gx LESS '-F -g -i -M -R -S -w -X -z-4'
 set -gx QT_SELECT "qt5"
 set -gx DROPBOX "$HOME/Dropbox"
 set -gx ASSETS "$DROPBOX/assets"
+
+set -gx PATH "$PATH:$FISH_BIN_DIR"
 
 # include my API keys
 source $DROPBOX/secret/own_api_keys.sh
@@ -42,8 +45,8 @@ set -gx BROWSER "/usr/bin/microsoft-edge-stable"
 # for ls and lf
 # set -gx LS_COLORS "$(vivid generate alabaster_dark)"
 
-# uv should use Python 3.13 by default
-set -gx UV_PYTHON "3.13"
+# uv should use Python 3.14 by default
+set -gx UV_PYTHON "3.14"
 
 # Go lang.
 set -gx GOPATH "$HOME/go"
@@ -71,11 +74,11 @@ set -gx PATH "$PATH:$NIMBLE/bin"
 set -gx PATH "$PATH:$DROPBOX/d_lang/_bin"
 
 # ifx (Intel's Fortran compiler)
-set -gx PATH "$PATH:/opt/intel/oneapi/2025.3/bin"
+# set -gx PATH "$PATH:/opt/intel/oneapi/2025.3/bin"
 
-set -gx ZIG_GLOBAL_CACHE_DIR "$HOME/.cache/zig"
+# set -gx ZIG_GLOBAL_CACHE_DIR "$HOME/.cache/zig"
 # create .zig-cache/ here:
-set -gx ZIG_LOCAL_CACHE_DIR "$HOME/.cache/zig"
+# set -gx ZIG_LOCAL_CACHE_DIR "$HOME/.cache/zig"
 
 # Java
 set -gx JAVA_HOME /usr/lib/jvm/default
@@ -84,3 +87,6 @@ set -gx JFX_HOME /opt/javafx-sdk-17.0.18
 # DASM and xcbasic3
 set -gx PATH "$PATH:/opt/dasm"    # dasm
 set -gx PATH "$PATH:/opt/xc-basic3/bin/Linux"    # xcbasic3
+
+# Nimony
+set -gx PATH "$PATH:$DROPBOX/nim/Nimony/bin"  # compiler and tools

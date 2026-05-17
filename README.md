@@ -1230,7 +1230,31 @@ This one uses the `fallout` sound pack.
     0xff
 ```
 
-### (76) unmirror: Convert mirrored text back to normal
+### (76) uniq_keep_order: Remove duplicated lines and keep the order
+
+[uniq_keep_order.fish](functions/uniq_keep_order.fish)
+
+```shell
+    $ cat text.txt
+    aa
+    bbb
+    aa
+    ccc
+    bbb
+    aa
+
+    $ cat text.txt | uniq_keep_order
+    aa
+    bbb
+    ccc
+```
+
+The Unix 'uniq' command does not detect repeated lines unless they are adjacent.
+In order to use 'uniq', you must sort the input.
+This filter solves both problems: no need to sort (we keep the original order),
+and duplicates don't have to be adjacent.
+
+### (77) unmirror: Convert mirrored text back to normal
 
 [unmirror.fish](functions/unmirror.fish)
 
@@ -1244,7 +1268,7 @@ This one uses the `fallout` sound pack.
 
 It might be improved with https://www.flipyourtext.com/
 
-### (77) unmorse: Convert Morse code to text [e.g., '... --- ...' -> 'SOS']
+### (78) unmorse: Convert Morse code to text [e.g., '... --- ...' -> 'SOS']
 
 [unmorse.fish](functions/unmorse.fish)
 
@@ -1259,7 +1283,7 @@ It might be improved with https://www.flipyourtext.com/
 * International Morse code: https://www.itu.int/rec/R-REC-M.1677-1-200910-I/
 * https://en.wikipedia.org/wiki/Morse_code
 
-### (78) unoct: Octal number to decimal
+### (79) unoct: Octal number to decimal
 
 [unoct.fish](functions/unoct.fish)
 
@@ -1271,7 +1295,7 @@ It might be improved with https://www.flipyourtext.com/
     0o755
 ```
 
-### (79) unquote: Decode GET-style quoted text
+### (80) unquote: Decode GET-style quoted text
 
 [unquote.fish](functions/unquote.fish)
 
@@ -1283,7 +1307,7 @@ It might be improved with https://www.flipyourtext.com/
     largest+prime+below+1+million
 ```
 
-### (80) unroman: Convert Roman numeral to number
+### (81) unroman: Convert Roman numeral to number
 
 [unroman.fish](functions/unroman.fish)
 
@@ -1295,7 +1319,7 @@ It might be improved with https://www.flipyourtext.com/
     MMXXV
 ```
 
-### (81) untiny: Convert tiny superscript letters back to normal text [not perfect]
+### (82) untiny: Convert tiny superscript letters back to normal text [not perfect]
 
 [untiny.fish](functions/untiny.fish)
 
@@ -1309,7 +1333,7 @@ It might be improved with https://www.flipyourtext.com/
 
 Conversion from tiny to normal is not perfect due to some Unicode limitations.
 
-### (82) unutf8: Decode the input with UTF-8
+### (83) unutf8: Decode the input with UTF-8
 
 [unutf8.fish](functions/unutf8.fish)
 
@@ -1324,7 +1348,7 @@ Conversion from tiny to normal is not perfect due to some Unicode limitations.
 
 Decode a UTF-8-encoded byte array.
 
-### (83) upper: Convert to uppercase
+### (84) upper: Convert to uppercase
 
 [upper.fish](functions/upper.fish)
 
@@ -1336,7 +1360,7 @@ Decode a UTF-8-encoded byte array.
     hello
 ```
 
-### (84) urldecode: URL-decode input
+### (85) urldecode: URL-decode input
 
 [urldecode.fish](functions/urldecode.fish)
 
@@ -1348,7 +1372,7 @@ Decode a UTF-8-encoded byte array.
     https%3A//en.wikipedia.org/wiki/C_%28programming_language%29
 ```
 
-### (85) urlencode: URL-encode input
+### (86) urlencode: URL-encode input
 
 [urlencode.fish](functions/urlencode.fish)
 
@@ -1360,7 +1384,7 @@ Decode a UTF-8-encoded byte array.
     https://en.wikipedia.org/wiki/C_(programming_language)
 ```
 
-### (86) utf8: Encode the input with UTF-8
+### (87) utf8: Encode the input with UTF-8
 
 [utf8.fish](functions/utf8.fish)
 
@@ -1374,7 +1398,7 @@ Decode a UTF-8-encoded byte array.
 
 Encode the input to a UTF-8-encoded byte array.
 
-### (87) whitespaces: Show whitespaces
+### (88) whitespaces: Show whitespaces
 
 [whitespaces.fish](functions/whitespaces.fish)
 
@@ -1390,7 +1414,7 @@ Encode the input to a UTF-8-encoded byte array.
 
 Tab, newline, carriage return and space characters are made visible with Unicode characters.
 
-### (88) wolfram: Ask Wolfram Alpha
+### (89) wolfram: Ask Wolfram Alpha
 
 [wolfram.fish](functions/wolfram.fish)
 
@@ -1405,7 +1429,7 @@ Tab, newline, carriage return and space characters are made visible with Unicode
 You need an API key for this (it's free).
 API docs: https://products.wolframalpha.com/short-answers-api/documentation
 
-### (89) words: Split input into words
+### (90) words: Split input into words
 
 [words.fish](functions/words.fish)
 
@@ -1423,7 +1447,7 @@ API docs: https://products.wolframalpha.com/short-answers-api/documentation
 
 Each word is printed on a separate line.
 
-### (90) zalgo1: Add funny accents to characters [a -> ấ, etc.]
+### (91) zalgo1: Add funny accents to characters [a -> ấ, etc.]
 
 [zalgo1.fish](functions/zalgo1.fish)
 
@@ -1444,7 +1468,7 @@ It adds glitchy characters to the text.
 * zalgo2: medium
 * zalgo3: aggressive
 
-### (91) zalgo2: Add random Unicode glitches to text
+### (92) zalgo2: Add random Unicode glitches to text
 
 [zalgo2.fish](functions/zalgo2.fish)
 
@@ -1465,7 +1489,7 @@ It adds glitchy characters to the text.
 * zalgo2: medium
 * zalgo3: aggressive
 
-### (92) zalgo3: Add Zalgo (glitchy) characters
+### (93) zalgo3: Add Zalgo (glitchy) characters
 
 [zalgo3.fish](functions/zalgo3.fish)
 
@@ -2346,8 +2370,8 @@ Tip: this function has a long name so I suggest putting an alias on it.
     /home/jabba/Dropbox
 ```
 
-This is a launcher for my QuickJump script.
-Available here: https://github.com/jabbalaci/quickjump
+This is a launcher for my QJump project.
+Available here: https://github.com/jabbalaci/qjump
 
 ### (58) r: Run a source code (compile and run)
 

@@ -15,9 +15,11 @@ bind alt-u 'gitup; commandline -f repaint'                          # calling my
 bind ctrl-space forward-char                                        # accept auto-completion
 # commandline -a appends text to the current command
 bind alt-p 'commandline -a " | less"'                               # alt-p now uses `|` instead of `&|` (p: paginate)
-bind alt-c 'commandline -i "yay -Scc"'
+bind alt-y 'commandline -i "yay -Scc"'                              # yay -Scc
 bind alt-h 'echo && cdh; commandline -f repaint'                    # change to a recently visited directory
 bind ctrl-o 'mc; commandline -f repaint'                            # start midnight commander
+bind alt-j 'jf; commandline -f repaint'                             # *j*ump to a *f*requently visited dir.
+bind alt-l 'jl; commandline -f repaint'                             # *j*ump to previously (*l*ast) visited dir.
 
 # +++++++++++ #
 # ++  old  ++ #

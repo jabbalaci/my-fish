@@ -121,13 +121,13 @@ alias vimv "EDITOR=nvim command vimv"
 abbr gdl gallery-dl
 # alias pmwiki $DROPBOX/d_lang/pmwiki/pmwiki.py
 alias pmwiki $DROPBOX/nim/pmwiki/pmwiki.py
+abbr pmw pmwiki
 alias rdmd "rdmd --tmpdir=$HOME/.rdmd"
 abbr ldc ldc2
 abbr ldmd ldmd2
 abbr e2 edit2
 abbr save "bm -c"
 abbr drop "bm -p"
-abbr pmw pmwiki
 abbr df "df -h"
 abbr dfh "df -h"
 abbr ka killall
@@ -212,9 +212,6 @@ abbr nimfast  "nim c --cc:clang -d:release --opt:speed"     # fast EXE
 abbr nimsmall "nim c -d:release --opt:size --passL:-s"      # small EXE
 #
 alias nimpkg="$DROPBOX/nim/_projects/nimpkg/nimpkg.py"
-
-# Nimony
-set -gx PATH "$PATH:$DROPBOX/nim/Nimony/bin"  # compiler and tools
 
 # Commodore 64 (C64)
 abbr x64 x64sc

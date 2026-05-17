@@ -10,6 +10,7 @@ if status is-interactive
 
     source "$HOME/.config/fish/02-aliases.fish"
     source "$HOME/.config/fish/03-bindings.fish"
+    source "$HOME/.config/fish/04-log_dirs.fish"
 
     set -l DOS_PROMPT 0
 

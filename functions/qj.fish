@@ -11,13 +11,12 @@ false && begin  # example
 end
 
 false && begin  # note
-This is a launcher for my QuickJump script.
-Available here: https://github.com/jabbalaci/quickjump
+This is a launcher for my QJump project.
+Available here: https://github.com/jabbalaci/qjump
 end
 
-
 function qj -d "QuickJump script"
-    set -l QJ "$DROPBOX/python/quickjump/quickjump.py"
+    set -l QJ "$DROPBOX/nim/_projects/qjump/qjump.nim"
     if test -z $argv[1]
         $QJ
     else
