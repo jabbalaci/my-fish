@@ -20,5 +20,8 @@ if status is-interactive
     end
 
     echo -en "\e[2 q" # disable cursor blinking (for guake)
+
+    # activate zoxide, see https://github.com/ajeetdsouza/zoxide
+    zoxide init --cmd j fish | source
 end
 # }}}
