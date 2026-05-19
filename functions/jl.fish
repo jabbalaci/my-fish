@@ -9,7 +9,9 @@ end
 function jl -d "*j*ump to a previously (*l*ast) visited dir."
     echo "# jump to a previously visited dir:"
     # Run the selection logic
-    set -l selection (tail -n20 $PWD_LOG_FILE | tac | uniq_keep_order | vip -ri)
+    # local settings only:
+    set -l FZF_OPTS --bind='home:first,end:last,load:last' --layout=reverse-list --height=30%
+    set -l selection (tail -n20 $PWD_LOG_FILE | uniq_keep_order | fzf $FZF_OPTS)
     # If a selection was made...
     if test -n "$selection"
         cd "$selection"
