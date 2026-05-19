@@ -18,8 +18,8 @@ bind alt-p 'commandline -a " | less"'                               # alt-p now 
 bind alt-y 'commandline -i "yay -Scc"'                              # yay -Scc
 bind alt-h 'echo && cdh; commandline -f repaint'                    # change to a recently visited directory
 bind ctrl-o 'mc; commandline -f repaint'                            # start midnight commander
-bind alt-i 'ji; commandline -f repaint'                             # call zoxide's ji interactive selector
-bind alt-j 'ji; commandline -f repaint'                             # call zoxide's ji interactive selector
+# bind alt-i 'ji; commandline -f repaint'                             # call zoxide's ji interactive selector
+# bind alt-j 'ji; commandline -f repaint'                             # call zoxide's ji interactive selector
 bind alt-l 'jl; commandline -f repaint'                             # *j*ump to previously (*l*ast) visited dir.
 
 # +++++++++++ #

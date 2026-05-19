@@ -1900,9 +1900,10 @@ Produce the given exit code. For testing purposes.
 
 Meaning of the options:
 
-* `-D 5`:          5 sec. delay
+* `-D 4`:          4 sec. delay
 * `-F`:            fullscreen
 * `-Z`:            auto-zoom images to fit screen
+* `-z`:            randomize the file list
 
 ### (26) filters: My filters
 
@@ -2174,7 +2175,21 @@ directory where you quit.
 
 Without this, you'd get back to the folder where you launched MC.
 
-### (46) mdgo: Make directory and cd into it
+### (46) mcu: Launch Midnight Commander without a subshell and stay in the folder where you quit
+
+[mcu.fish](functions/mcu.fish)
+
+```shell
+    $ mcu
+    # starts Midnight Commander without a subshell (Ctrl+o doesn't work)
+    # MC works faster this way
+```
+
+Use this function to start Midnight Commander without a subshell.
+This way, MC works faster. When you navigate somewhere in MC and quit,
+you'll find yourself in the directory where you quit.
+
+### (47) mdgo: Make directory and cd into it
 
 [mdgo.fish](functions/mdgo.fish)
 
@@ -2190,7 +2205,7 @@ Without this, you'd get back to the folder where you launched MC.
 
 Makes the directory and enters into it. Others like to call it `mdcd`.
 
-### (47) meteo: Weather report
+### (48) meteo: Weather report
 
 [meteo.fish](functions/meteo.fish)
 
@@ -2205,7 +2220,7 @@ Makes the directory and enters into it. Others like to call it `mdcd`.
 The location's format is `city,country` . It's a string with no space in it.
 In case of problems, consult OpenWeatherMap.org
 
-### (48) minimal-prompt: A minimal prompt
+### (49) minimal-prompt: A minimal prompt
 
 [minimal-prompt.fish](functions/minimal-prompt.fish)
 
@@ -2217,7 +2232,7 @@ In case of problems, consult OpenWeatherMap.org
 Might be useful if you want to do a demo and you want to hide your fancy prompt
 to avoid distraction.
 
-### (49) moodle-link: Put a link on the given URL without embedding it | Moodle
+### (50) moodle-link: Put a link on the given URL without embedding it | Moodle
 
 [moodle-link.fish](functions/moodle-link.fish)
 
@@ -2234,7 +2249,7 @@ An interactive script that reads a URL and produces a string
 that can be pasted in the source code of a Moodle page.
 It inserts a clickable link and prevents embedding.
 
-### (50) moodle-nolink: Insert a URL as text, without putting a link on it | Moodle
+### (51) moodle-nolink: Insert a URL as text, without putting a link on it | Moodle
 
 [moodle-nolink.fish](functions/moodle-nolink.fish)
 
@@ -2250,7 +2265,7 @@ It inserts a clickable link and prevents embedding.
 It produces a string that can be pasted in the source code of a Moodle page.
 The link (URL) will appear as a normal text, not as a hyperlink.
 
-### (51) myalias: Similar to the alias in bash
+### (52) myalias: Similar to the alias in bash
 
 [myalias.fish](functions/myalias.fish)
 
@@ -2264,7 +2279,7 @@ The link (URL) will appear as a normal text, not as a hyperlink.
 
 `myalias` works similarly to `alias` in Bash/ZSH.
 
-### (52) no-autosuggestions: Disable autosuggestions
+### (53) no-autosuggestions: Disable autosuggestions
 
 [no-autosuggestions.fish](functions/no-autosuggestions.fish)
 
@@ -2277,7 +2292,7 @@ Disables autosuggestions. As you type, nothing will appear in gray after the cur
 Might be useful when you do a demo and others can see your screen and
 you don't want to reveal what files you downloaded last time with wget...
 
-### (53) no-theme: Select the None theme (no colors)
+### (54) no-theme: Select the None theme (no colors)
 
 [no-theme.fish](functions/no-theme.fish)
 
@@ -2291,7 +2306,7 @@ As you type, everything has the same color.
 By default, fish adds colors to syntactic elements.
 With `no-theme` you can disable it.
 
-### (54) private-mode: Start private mode, history will not be persisted
+### (55) private-mode: Start private mode, history will not be persisted
 
 [private-mode.fish](functions/private-mode.fish)
 
@@ -2302,7 +2317,7 @@ With `no-theme` you can disable it.
 
 In private mode history will not be persisted.
 
-### (55) pyeval: Evaluate an expression with Python
+### (56) pyeval: Evaluate an expression with Python
 
 [pyeval.fish](functions/pyeval.fish)
 
@@ -2323,7 +2338,7 @@ In private mode history will not be persisted.
 The input is evaluated with Python's `eval()`
 function, so BE CAREFUL what you pass to it!
 
-### (56) pyloc: Count Python lines of code (excluding .venv)
+### (57) pyloc: Count Python lines of code (excluding .venv)
 
 [pyloc.fish](functions/pyloc.fish)
 
@@ -2338,7 +2353,7 @@ function, so BE CAREFUL what you pass to it!
 Traverses the current directory recursively (excluding .venv),
 and counts Python lines of code.
 
-### (57) python3clean: Start the Python 3 REPL without the extra info line
+### (58) python3clean: Start the Python 3 REPL without the extra info line
 
 [python3clean.fish](functions/python3clean.fish)
 
@@ -2362,7 +2377,7 @@ This function removes it.
 
 Tip: this function has a long name so I suggest putting an alias on it.
 
-### (58) qj: QuickJump script
+### (59) qj: QuickJump script
 
 [qj.fish](functions/qj.fish)
 
@@ -2381,7 +2396,7 @@ Tip: this function has a long name so I suggest putting an alias on it.
 This is a launcher for my QJump project.
 Available here: https://github.com/jabbalaci/qjump
 
-### (59) r: Run a source code (compile and run)
+### (60) r: Run a source code (compile and run)
 
 [r.fish](functions/r.fish)
 
@@ -2395,7 +2410,7 @@ Available here: https://github.com/jabbalaci/qjump
 
 Takes a source code and runs it. It can be extended to support various languages.
 
-### (60) random-functions: Some random functions (so that you don't forget them)
+### (61) random-functions: Some random functions (so that you don't forget them)
 
 [random-functions.fish](functions/random-functions.fish)
 
@@ -2417,7 +2432,7 @@ How it works:
 * B: aliases
 * Print A\B (difference)
 
-### (61) re: Wake up the Dropbox client
+### (62) re: Wake up the Dropbox client
 
 [re.fish](functions/re.fish)
 
@@ -2430,7 +2445,7 @@ When I wake up a computer from suspend mode, sometimes the Dropbox client
 doesn't recognize that it should start synchronizing. With this script
 I can force it to start working.
 
-### (62) ren: Rename a file interactively
+### (63) ren: Rename a file interactively
 
 [ren.fish](functions/ren.fish)
 
@@ -2442,7 +2457,7 @@ I can force it to start working.
 
 It allows you to rename a file interactively.
 
-### (63) repo: Open the GitHub URL of the current project
+### (64) repo: Open the GitHub URL of the current project
 
 [repo.fish](functions/repo.fish)
 
@@ -2464,7 +2479,7 @@ The solution was to reinstall some packages:
 sudo pacman -Syu mesa vulkan-intel ibus
 ```
 
-### (64) resolution: Current resolution
+### (65) resolution: Current resolution
 
 [resolution.fish](functions/resolution.fish)
 
@@ -2475,7 +2490,7 @@ sudo pacman -Syu mesa vulkan-intel ibus
 
 Shows your current resolution.
 
-### (65) s: CD into /tmp/send
+### (66) s: CD into /tmp/send
 
 [s.fish](functions/s.fish)
 
@@ -2497,7 +2512,7 @@ it's easy to attach them), then delete them from `/tmp/send`.
 
 This script called `s` allows me to enter this folder with the speed of light.
 
-### (66) sort-info: Basic usage of the sort command
+### (67) sort-info: Basic usage of the sort command
 
 [sort-info.fish](functions/sort-info.fish)
 
@@ -2506,7 +2521,7 @@ This script called `s` allows me to enter this folder with the speed of light.
     # print some info about its basic usage
 ```
 
-### (67) sp: Show the current path or show the path of a given file
+### (68) sp: Show the current path or show the path of a given file
 
 [sp.fish](functions/sp.fish)
 
@@ -2532,7 +2547,7 @@ path to the clipboard.
 
 `sp.py` can be found here: https://github.com/jabbalaci/Bash-Utils/blob/master/sp.py
 
-### (68) subreddit: Number of subscribers of a subreddit
+### (69) subreddit: Number of subscribers of a subreddit
 
 [subreddit.fish](functions/subreddit.fish)
 
@@ -2541,7 +2556,7 @@ path to the clipboard.
     subscribers: 5,210
 ```
 
-### (69) timezones: List of valid timezones
+### (70) timezones: List of valid timezones
 
 [timezones.fish](functions/timezones.fish)
 
@@ -2554,7 +2569,7 @@ path to the clipboard.
 
 See also https://worldtimeapi.org/pages/examples .
 
-### (70) top10dirs: Top 10 largest directories
+### (71) top10dirs: Top 10 largest directories
 
 [top10dirs.fish](functions/top10dirs.fish)
 
@@ -2569,7 +2584,7 @@ See also https://worldtimeapi.org/pages/examples .
 
 List the top 10 directories in the current folder in descending order by size.
 
-### (71) top10files: Top 10 largest files
+### (72) top10files: Top 10 largest files
 
 [top10files.fish](functions/top10files.fish)
 
@@ -2582,7 +2597,7 @@ List the top 10 directories in the current folder in descending order by size.
 
 List the top 10 files in the current folder (recursively) in descending order by size.
 
-### (72) tr-info: Basic usage of the tr command
+### (73) tr-info: Basic usage of the tr command
 
 [tr-info.fish](functions/tr-info.fish)
 
@@ -2591,7 +2606,7 @@ List the top 10 files in the current folder (recursively) in descending order by
     # print some info about its basic usage
 ```
 
-### (73) unixtime: Print the Unix epoch time
+### (74) unixtime: Print the Unix epoch time
 
 [unixtime.fish](functions/unixtime.fish)
 
@@ -2609,7 +2624,7 @@ since January 1, 1970.
 
 `unixtime2date` is the opposite.
 
-### (74) unixtime2date: Convert Unix epoch time to normal date
+### (75) unixtime2date: Convert Unix epoch time to normal date
 
 [unixtime2date.fish](functions/unixtime2date.fish)
 
@@ -2625,7 +2640,7 @@ since January 1, 1970.
 Takes a Unix epoch time (number) and converts it
 back to human-friendly date.
 
-### (75) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
+### (76) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
 
 [upgrade_pipx_and_uv.fish](functions/upgrade_pipx_and_uv.fish)
 
@@ -2639,7 +2654,7 @@ back to human-friendly date.
 They have that nice feature that they can update all the packages
 that were installed with them. This script triggers this update procedure.
 
-### (76) ups: Updates / upgrades
+### (77) ups: Updates / upgrades
 
 [ups.fish](functions/ups.fish)
 
@@ -2654,7 +2669,7 @@ upgrade softwares installed with pipx and uv, etc. I cannot keep
 all the update commands in my head. This script helps me keep
 my system up-to-date without causing any mental overhead.
 
-### (77) ut: Run unittests on a D source file
+### (78) ut: Run unittests on a D source file
 
 [ut.fish](functions/ut.fish)
 
@@ -2667,7 +2682,7 @@ my system up-to-date without causing any mental overhead.
 
 Run unittests on the given D source code using `rdmd`.
 
-### (78) uv_venv: Call the `uv_venv` script
+### (79) uv_venv: Call the `uv_venv` script
 
 [uv_venv.fish](functions/uv_venv.fish)
 
@@ -2686,7 +2701,7 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (79) workspace: Identify the current workspace
+### (80) workspace: Identify the current workspace
 
 [workspace.fish](functions/workspace.fish)
 
@@ -2698,7 +2713,7 @@ Open Settings → Keyboard → Application Shortcuts, then add this command:
 
 Advantage: it works globally. Unfortunately, the terminal didn't recognize the Super key.
 
-### (80) xfce-info: Current XFCE version
+### (81) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -2711,7 +2726,7 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (81) xrates: Currency rates of HUF, EUR and USD
+### (82) xrates: Currency rates of HUF, EUR and USD
 
 [xrates.fish](functions/xrates.fish)
 
@@ -2733,7 +2748,7 @@ that tracks reference exchange rates.
 
 You can pass an optional value to the function.
 
-### (82) y: Start yazi (and stay in the folder where you quit)
+### (83) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 
@@ -2748,7 +2763,7 @@ directory where you quit.
 
 Without this, you'd get back to the folder where you launched yazi.
 
-### (83) zig-info: My abbreviations for zig
+### (84) zig-info: My abbreviations for zig
 
 [zig-info.fish](functions/zig-info.fish)
 
@@ -2757,7 +2772,7 @@ Without this, you'd get back to the folder where you launched yazi.
     # print some info about its basic usage
 ```
 
-### (84) zoli: Check my friend's local time
+### (85) zoli: Check my friend's local time
 
 [zoli.fish](functions/zoli.fish)
 

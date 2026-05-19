@@ -23,6 +23,6 @@ if status is-interactive
 
     # activate zoxide, see https://github.com/ajeetdsouza/zoxide
     # first install zoxide (ex.: yay -S zoxide)
-    zoxide init --cmd j fish | source
+    # zoxide init --cmd j fish | source
 end
 # }}}
