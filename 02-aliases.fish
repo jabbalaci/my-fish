@@ -205,6 +205,7 @@ abbr nd "nim doc"
 abbr nb nimbang
 abbr nl nimble
 abbr ncc "nim c -o:a.out"                                   # Nim C Compiler :)
+abbr nimc "nim c"                                           # nim c
 abbr nimsilent "nim c --hints:off --warnings:off"           # silent compilation
 abbr nimrel "nim c -d:release"                              # release build
 abbr nimspeed "nim c --cc:clang -d:release --opt:speed"     # fast EXE
@@ -212,6 +213,7 @@ abbr nimfast  "nim c --cc:clang -d:release --opt:speed"     # fast EXE
 abbr nimsmall "nim c -d:release --opt:size --passL:-s"      # small EXE
 #
 alias nimpkg="$DROPBOX/nim/_projects/nimpkg/nimpkg.py"
+alias lastnim="$DROPBOX/nim/Nim-2026/last.nim"
 
 # Commodore 64 (C64)
 abbr x64 x64sc
