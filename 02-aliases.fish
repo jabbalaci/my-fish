@@ -206,6 +206,7 @@ abbr nb nimbang
 abbr nl nimble
 abbr ncc "nim c -o:a.out"                                   # Nim C Compiler :)
 abbr nimc "nim c"                                           # nim c
+abbr nc "nim c"                                             # nim c (originally, nc is netcat)
 abbr nimsilent "nim c --hints:off --warnings:off"           # silent compilation
 abbr nimrel "nim c -d:release"                              # release build
 abbr nimspeed "nim c --cc:clang -d:release --opt:speed"     # fast EXE
