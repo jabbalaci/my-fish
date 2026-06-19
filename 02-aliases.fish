@@ -11,6 +11,7 @@ alias eg="$EDITOR $FISH_DIR/functions/fish_greeting.fish"   # edit greeting
 # ef                                                        # edit function (it exists as a function)
 abbr config fish_config                                     # web-based configuration
 
+alias path="echo $PATH | tr ':' '\n'"
 
 # ++++++++++++++++++++++++++++++ #
 # ++  function abbreviations  ++ #
@@ -46,6 +47,7 @@ abbr p 'python3'
 abbr pp 'python3clean'         # no extra info line
 abbr f fish
 abbr b bash
+abbr x xonsh
 alias pypy='pypy3'
 alias pypy2='/opt/pypy/bin/pypy'
 alias pypy3='pypy3'
@@ -74,7 +76,6 @@ abbr ff 'fastfetch'
 alias nh='thunar . 2>/dev/null'    # nautilus here (replaced by thunar)
 alias ssh='ssh -o ServerAliveInterval=60'
 alias ppwd='/bin/pwd'
-abbr c. "code ."   # open current dir. in VS Code
 abbr jsh "jshell"
 abbr ac "audacity"
 abbr mongo "mongosh --quiet mytube"
@@ -137,11 +138,11 @@ abbr bmc "bm -c"  # bookmark copy
 abbr bmp "bm -p"  # bookmark paste
 abbr bml "bm -l"  # bookmark list
 abbr bme "bm -e"  # bookmark erase
-abbr ag "antigravity . 2>/dev/null"
+# abbr ag "antigravity . 2>/dev/null"
+alias jive.="jive $(pwd)"
 
 alias m micro
 alias vim nvim
-alias e nvim
 
 alias nvim.lac='NVIM_APPNAME="nvim.lac" nvim'
 #
@@ -169,10 +170,26 @@ alias one="cd $DROPBOX/python/webapps/OneRing; ./start.sh; cd -"
 alias morg="cd $DROPBOX/python/webapps/movieorg_project && source .venv/bin/activate.fish && ./start_app.py && deactivate"
 
 abbr ts "time sync"
-abbr zed zeditor
+if test -x /opt/zed.app/bin/zed
+    alias zed='/opt/zed.app/bin/zed'
+else
+    alias zed='/usr/bin/zeditor'
+end
+alias maximize_window="$DROPBOX/python/hotkeys/maximize_window_without_toggle.py"
+alias z.="zed .; maximize_window"
+alias z="z."
+alias e="z."     # e - edit
+alias e.="z."     # e - edit
+# alias c.="z."    # to force myself to use Zed instead of VS Code
+alias zr="pkill zed && sleep 0.1 && z."  # zed restart
+alias rz="zr"                            # restart zed
 alias rstudio="/usr/lib/rstudio/rstudio"
-alias ccdd="$DROPBOX/raylib/python/The_ultimate_introduction_to_Raylib/sajat_projektek/countdown/start.sh"
+alias ccdd="$DROPBOX/raylib/python/countdown/start.sh"
 abbr fr fresh  # yay -S fresh-editor-bin, see https://github.com/sinelaw/fresh
+
+alias vs="code ."   # open current dir. in VS Code
+alias vs.="code ."  # open current dir. in VS Code
+alias c.="code ."   # open current dir. in VS Code
 
 abbr ge "setsid gedit >/dev/null 2>&1"
 
@@ -205,6 +222,7 @@ abbr nd "nim doc"
 abbr nb nimbang
 abbr nl nimble
 abbr ncc "nim c -o:a.out"                                   # Nim C Compiler :)
+abbr nr "nim r --hints:off --warnings:off"
 abbr nimc "nim c"                                           # nim c
 abbr nc "nim c"                                             # nim c (originally, nc is netcat)
 abbr nimsilent "nim c --hints:off --warnings:off"           # silent compilation
@@ -215,6 +233,8 @@ abbr nimsmall "nim c -d:release --opt:size --passL:-s"      # small EXE
 #
 alias nimpkg="$DROPBOX/nim/_projects/nimpkg/nimpkg.py"
 alias lastnim="$DROPBOX/nim/Nim-2026/last.nim"
+abbr addnb addnimbang
+abbr nbadd addnimbang
 
 # Commodore 64 (C64)
 abbr x64 x64sc

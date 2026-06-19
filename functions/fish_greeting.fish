@@ -8,6 +8,13 @@ end
 
 
 function fish_greeting -d "Default greeting message"
+    # disable it
+    return
+
+    # always show this
+    echo "Jabba Laci" | figlet -f rectangles | nonempty
+    return
+
     if test (machine_id) = "asus-vivobook-s15"  # used for teaching
         #wezterm imgcat $DROPBOX/document/en/laszlo.jpg
         echo "Jabba Laci" | figlet -f rectangles | nonempty

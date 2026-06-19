@@ -90,3 +90,6 @@ set -gx PATH "$PATH:/opt/xc-basic3/bin/Linux"    # xcbasic3
 
 # Nimony
 set -gx PATH "$PATH:$DROPBOX/nim/Nimony/bin"  # compiler and tools
+
+# Zed editor
+set -gx PATH "$PATH:/opt/zed.app/bin"

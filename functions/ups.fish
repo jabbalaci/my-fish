@@ -21,6 +21,7 @@ ups 2           -> yay -Scc
 ups 3           -> upgrade_pipx_and_uv
 ups 4           -> flatpak update
 ups 5           -> choosenim update stable
+ups 6           -> nimpkg
 "
     if test -z $choice
         echo
@@ -48,6 +49,10 @@ ups 5           -> choosenim update stable
             choosenim update stable
             echo "# version info:"
             nim -V
+        case '6'
+            # calling nimpkg, which is a Python script
+            echo "# nimpkg"
+            nimpkg
         case '*'
             echo "unknown choice"
             return 1
