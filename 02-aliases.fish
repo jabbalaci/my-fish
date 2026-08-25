@@ -55,6 +55,7 @@ alias tree="tree -C"
 alias grep="grep --color=auto"
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
+abbr ssr "simplescreenrecorder"
 alias vi $EDITOR
 alias vim $EDITOR
 abbr val valgrind
@@ -221,7 +222,7 @@ abbr nimdoc "nim doc"
 abbr nd "nim doc"
 abbr nb nimbang
 abbr nl nimble
-abbr ncc "nim c -o:a.out"                                   # Nim C Compiler :)
+abbr ncc "nim c --hints:off -o:a.out"                       # Nim C Compiler :)
 abbr nr "nim r --hints:off --warnings:off"
 abbr nimc "nim c"                                           # nim c
 abbr nc "nim c"                                             # nim c (originally, nc is netcat)
@@ -235,7 +236,12 @@ alias nimpkg="$DROPBOX/nim/_projects/nimpkg/nimpkg.py"
 alias lastnim="$DROPBOX/nim/Nim-2026/last.nim"
 abbr addnb addnimbang
 abbr nbadd addnimbang
+abbr inim "inim --showColor=false"
 
 # Commodore 64 (C64)
 abbr x64 x64sc
 abbr xcb xcbasic3
+
+# Flow Control text editor
+alias flow /opt/flow/flow
+abbr fl flow
