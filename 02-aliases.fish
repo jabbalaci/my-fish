@@ -120,6 +120,7 @@ abbr dm "LC_ALL=C datamash"             # yay -S datamash
 alias edge /usr/bin/microsoft-edge-stable
 abbr mo marimo
 alias vimv "EDITOR=nvim command vimv"
+alias gallery-dl /opt/gallery-dl/gallery-dl.bin
 abbr gdl gallery-dl
 # alias pmwiki $DROPBOX/d_lang/pmwiki/pmwiki.py
 alias pmwiki $DROPBOX/nim/pmwiki/pmwiki.py
