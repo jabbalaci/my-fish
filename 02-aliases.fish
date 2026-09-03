@@ -189,9 +189,7 @@ alias rstudio="/usr/lib/rstudio/rstudio"
 alias ccdd="$DROPBOX/raylib/python/countdown/start.sh"
 abbr fr fresh  # yay -S fresh-editor-bin, see https://github.com/sinelaw/fresh
 
-alias vs="code ."   # open current dir. in VS Code
-alias vs.="code ."  # open current dir. in VS Code
-alias c.="code ."   # open current dir. in VS Code
+abbr c. "code ."   # open current dir. in VS Code
 
 abbr ge "setsid gedit >/dev/null 2>&1"
 
