@@ -244,3 +244,8 @@ abbr xcb xcbasic3
 # Flow Control text editor
 alias flow /opt/flow/flow
 abbr fl flow
+
+# lscd ( https://github.com/kernel1983/lscd )
+alias l="lscd_wrapper"
+alias lc="lscd_wrapper"
+alias qq="clear; lscd_wrapper"
