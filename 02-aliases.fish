@@ -45,6 +45,7 @@ abbr p2 'python2'
 abbr p3 'python3'
 abbr p 'python3'
 abbr pp 'python3clean'         # no extra info line
+abbr ipy ipython
 abbr f fish
 abbr b bash
 abbr x xonsh
