@@ -46,6 +46,7 @@ abbr p3 'python3'
 abbr p 'python3'
 abbr pp 'python3clean'         # no extra info line
 abbr ipy ipython
+abbr jc javac
 abbr f fish
 abbr b bash
 abbr x xonsh
@@ -120,7 +121,7 @@ abbr cpp cop
 abbr dm "LC_ALL=C datamash"             # yay -S datamash
 alias edge /usr/bin/microsoft-edge-stable
 abbr mo marimo
-alias vimv "EDITOR=nvim command vimv"
+alias vimv "EDITOR=moe command vimv"
 alias gallery-dl /opt/gallery-dl/gallery-dl.bin
 abbr gdl gallery-dl
 # alias pmwiki $DROPBOX/d_lang/pmwiki/pmwiki.py
@@ -144,8 +145,10 @@ abbr bme "bm -e"  # bookmark erase
 # abbr ag "antigravity . 2>/dev/null"
 alias jive.="jive $(pwd)"
 
-alias m micro
-alias vim nvim
+alias mi micro
+alias m moe
+#alias vim nvim
+alias vim moe
 
 alias nvim.lac='NVIM_APPNAME="nvim.lac" nvim'
 #
@@ -164,10 +167,10 @@ abbr v ks
 abbr nv "nvim -u NORC"  # vanilla version (no config file, no plugins)
 #
 set -gx NVIM_APPNAME nvim.ks
-set -gx EDITOR nvim
-set -gx VIEWER $EDITOR
-set -gx VISUAL $EDITOR
-set -gx GIT_EDITOR $EDITOR
+#set -gx EDITOR nvim
+#set -gx VIEWER $EDITOR
+#set -gx VISUAL $EDITOR
+#set -gx GIT_EDITOR $EDITOR
 
 alias one="cd $DROPBOX/python/webapps/OneRing; ./start.sh; cd -"
 alias morg="cd $DROPBOX/python/webapps/movieorg_project && source .venv/bin/activate.fish && ./start_app.py && deactivate"
@@ -193,6 +196,7 @@ abbr fr fresh  # yay -S fresh-editor-bin, see https://github.com/sinelaw/fresh
 abbr c. "code ."   # open current dir. in VS Code
 
 abbr ge "setsid gedit >/dev/null 2>&1"
+#alias monitor_off="xset dpms force off"
 
 # Fortran
 abbr gf gfortran
@@ -250,3 +254,7 @@ abbr fl flow
 alias l="lscd_wrapper"
 alias lc="lscd_wrapper"
 alias qq="clear; lscd_wrapper"
+
+alias myq="$DROPBOX/python/batch/myq.py"
+
+abbr ed ned

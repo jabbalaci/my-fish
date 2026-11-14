@@ -2654,7 +2654,19 @@ path to the clipboard.
 
 See also https://worldtimeapi.org/pages/examples .
 
-### (75) top10dirs: Top 10 largest directories
+### (75) tokyo: Check the local time in Tokyo, Japan
+
+[tokyo.fish](functions/tokyo.fish)
+
+```shell
+    $ tokyo
+    🇭🇺 Debrecen Time: 2025-05-31 21:29:59 (CEST)
+    🇯🇵 Tokyo Time:    2025-06-01 04:29:59 (JST)
+```
+
+Check the local time in Tokyo, Japan.
+
+### (76) top10dirs: Top 10 largest directories
 
 [top10dirs.fish](functions/top10dirs.fish)
 
@@ -2669,7 +2681,7 @@ See also https://worldtimeapi.org/pages/examples .
 
 List the top 10 directories in the current folder in descending order by size.
 
-### (76) top10files: Top 10 largest files
+### (77) top10files: Top 10 largest files
 
 [top10files.fish](functions/top10files.fish)
 
@@ -2682,7 +2694,7 @@ List the top 10 directories in the current folder in descending order by size.
 
 List the top 10 files in the current folder (recursively) in descending order by size.
 
-### (77) tr-info: Basic usage of the tr command
+### (78) tr-info: Basic usage of the tr command
 
 [tr-info.fish](functions/tr-info.fish)
 
@@ -2691,7 +2703,7 @@ List the top 10 files in the current folder (recursively) in descending order by
     # print some info about its basic usage
 ```
 
-### (78) unixtime: Print the Unix epoch time
+### (79) unixtime: Print the Unix epoch time
 
 [unixtime.fish](functions/unixtime.fish)
 
@@ -2709,7 +2721,7 @@ since January 1, 1970.
 
 `unixtime2date` is the opposite.
 
-### (79) unixtime2date: Convert Unix epoch time to normal date
+### (80) unixtime2date: Convert Unix epoch time to normal date
 
 [unixtime2date.fish](functions/unixtime2date.fish)
 
@@ -2725,7 +2737,7 @@ since January 1, 1970.
 Takes a Unix epoch time (number) and converts it
 back to human-friendly date.
 
-### (80) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
+### (81) upgrade_pipx_and_uv: Upgrade packages installed with pipx and uv
 
 [upgrade_pipx_and_uv.fish](functions/upgrade_pipx_and_uv.fish)
 
@@ -2739,7 +2751,7 @@ back to human-friendly date.
 They have that nice feature that they can update all the packages
 that were installed with them. This script triggers this update procedure.
 
-### (81) ups: Updates / upgrades
+### (82) ups: Updates / upgrades
 
 [ups.fish](functions/ups.fish)
 
@@ -2754,7 +2766,22 @@ upgrade softwares installed with pipx and uv, etc. I cannot keep
 all the update commands in my head. This script helps me keep
 my system up-to-date without causing any mental overhead.
 
-### (82) ut: Run unittests on a D source file
+### (83) use_ic: Create config.nims to use incremental compilation
+
+[use_ic.fish](functions/use_ic.fish)
+
+```shell
+    $ use_ic
+    # create config.nims or print info about what to add to it
+```
+
+If we want to use incremental compilation in Nim, then the
+simplest way is to create the file `config.nims` that contains
+this setting. If the file doesn't exist, it'll be created.
+If it exists, then an info line will be printed on the screen.
+Incremental compilation is supported from Nim 2.4.0.
+
+### (84) ut: Run unittests on a D source file
 
 [ut.fish](functions/ut.fish)
 
@@ -2767,7 +2794,7 @@ my system up-to-date without causing any mental overhead.
 
 Run unittests on the given D source code using `rdmd`.
 
-### (83) uv_venv: Call the `uv_venv` script
+### (85) uv_venv: Call the `uv_venv` script
 
 [uv_venv.fish](functions/uv_venv.fish)
 
@@ -2786,7 +2813,7 @@ The command uv venv creates `.venv/` in the project folder.
 This script creates the virt. env. in a separate folder (`~/.virtualenvs`), and in the project folder
 it creates a symbolic link called `.venv` that points on the virt. env. located in `~/.virtualenvs`.
 
-### (84) workspace: Identify the current workspace
+### (86) workspace: Identify the current workspace
 
 [workspace.fish](functions/workspace.fish)
 
@@ -2798,7 +2825,7 @@ Open Settings → Keyboard → Application Shortcuts, then add this command:
 
 Advantage: it works globally. Unfortunately, the terminal didn't recognize the Super key.
 
-### (85) xfce-info: Current XFCE version
+### (87) xfce-info: Current XFCE version
 
 [xfce-info.fish](functions/xfce-info.fish)
 
@@ -2811,7 +2838,7 @@ Starts a GUI application where you can check the version of your XFCE.
 
 Tip: the `fastfetch` command can also tell you this information in the command line.
 
-### (86) xrates: Currency rates of HUF, EUR and USD
+### (88) xrates: Currency rates of HUF, EUR and USD
 
 [xrates.fish](functions/xrates.fish)
 
@@ -2833,7 +2860,7 @@ that tracks reference exchange rates.
 
 You can pass an optional value to the function.
 
-### (87) y: Start yazi (and stay in the folder where you quit)
+### (89) y: Start yazi (and stay in the folder where you quit)
 
 [y.fish](functions/y.fish)
 
@@ -2848,7 +2875,7 @@ directory where you quit.
 
 Without this, you'd get back to the folder where you launched yazi.
 
-### (88) zig-info: My abbreviations for zig
+### (90) zig-info: My abbreviations for zig
 
 [zig-info.fish](functions/zig-info.fish)
 
@@ -2857,7 +2884,7 @@ Without this, you'd get back to the folder where you launched yazi.
     # print some info about its basic usage
 ```
 
-### (89) zoli: Check my friend's local time
+### (91) zoli: Check my friend's local time
 
 [zoli.fish](functions/zoli.fish)
 

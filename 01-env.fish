@@ -6,11 +6,14 @@ set -gx FISH_DIR "$HOME/.config/fish"
 set -gx FISH_BIN_DIR "$FISH_DIR/bin"
 set -gx FISH_FUNCTIONS_DIR "$FISH_DIR/functions"
 set -gx FISH_MYSCRIPTS_DIR "$FISH_DIR/myscripts"
+
 # set -gx EDITOR "micro"
-set -gx EDITOR "nvim"
+# set -gx EDITOR "nvim"
+set -gx EDITOR "moe"
 set -gx VIEWER $EDITOR
 set -gx VISUAL $EDITOR
 set -gx GIT_EDITOR $EDITOR
+
 set -gx PAGER less
 # Set the default Less options.
 # Mouse-wheel scrolling has been disabled by -X (disable screen clearing).
