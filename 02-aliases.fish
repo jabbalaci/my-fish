@@ -2,6 +2,10 @@
 ## Aliases / abbreviations ##
 #############################
 
+# Rule of thumb:
+# * use single quotes in an alias if the value should be evaluated when you run the command
+# * use double quotes only if you want it fixed when the alias is defined
+
 alias ec="$EDITOR $FISH_DIR/config.fish"                    # edit config (this) file
 alias ee="$EDITOR $FISH_DIR/01-env.fish"                    # edit env.
 alias ea="$EDITOR $FISH_DIR/02-aliases.fish"                # edit aliases
@@ -11,7 +15,7 @@ alias eg="$EDITOR $FISH_DIR/functions/fish_greeting.fish"   # edit greeting
 # ef                                                        # edit function (it exists as a function)
 abbr config fish_config                                     # web-based configuration
 
-alias path="echo $PATH | tr ':' '\n'"
+alias mypath='printf "%s\n" $PATH'                          # show $PATH, one directory per line
 
 # ++++++++++++++++++++++++++++++ #
 # ++  function abbreviations  ++ #
@@ -52,13 +56,13 @@ abbr b bash
 abbr x xonsh
 alias pypy='pypy3'
 alias pypy2='/opt/pypy/bin/pypy'
-alias pypy3='pypy3'
 alias tree="tree -C"
 alias grep="grep --color=auto"
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+# alias egrep='egrep --color=auto'  # obsolete, use grep -E
+# alias fgrep='fgrep --color=auto'  # obsolete, use grep -F
 abbr ssr "simplescreenrecorder"
-alias vi $EDITOR
+alias cvim /usr/bin/vim    # classic Vim by Bram Moolenar
+alias vi cvim
 alias vim $EDITOR
 abbr val valgrind
 alias cat='bat --pager never'
@@ -85,7 +89,7 @@ abbr mongo "mongosh --quiet mytube"
 alias gedit="gedit 2>/dev/null"
 # The convert command is deprecated in IMv7, use "magick" instead of "convert"
 abbr convert "magick"
-alias book="cd /home/jabba/Dropbox/books/assembly/current; ./open.sh"
+alias book="cd $DROPBOX/books/assembly/current; ./open.sh"
 alias sysinfo="inxi -Fxxxrz"
 
 abbr pkg "pacman -Qo"       # The given file is in which package?
@@ -137,18 +141,16 @@ abbr df "df -h"
 abbr dfh "df -h"
 abbr ka killall
 alias cs $DROPBOX/python/CSharpCliHelper/cs.py
-alias edit msedit
+# alias edit msedit
 abbr bmc "bm -c"  # bookmark copy
 abbr bmp "bm -p"  # bookmark paste
 abbr bml "bm -l"  # bookmark list
 abbr bme "bm -e"  # bookmark erase
 # abbr ag "antigravity . 2>/dev/null"
-alias jive.="jive $(pwd)"
+alias jive.='jive (pwd)'
 
 alias mi micro
 alias m moe
-#alias vim nvim
-alias vim moe
 
 alias nvim.lac='NVIM_APPNAME="nvim.lac" nvim'
 #
@@ -247,8 +249,8 @@ abbr x64 x64sc
 abbr xcb xcbasic3
 
 # Flow Control text editor
-alias flow /opt/flow/flow
-abbr fl flow
+# alias flow /opt/flow/flow
+# abbr fl flow
 
 # lscd ( https://github.com/kernel1983/lscd )
 alias l="lscd_wrapper"
@@ -258,3 +260,7 @@ alias qq="clear; lscd_wrapper"
 alias myq="$DROPBOX/python/batch/myq.py"
 
 abbr ed ned
+alias japan tokyo
+
+# my Git stuff
+alias gm="$DROPBOX/python/mygit/menu.sh"               # gitmenu

@@ -10,6 +10,8 @@
 
 # bind alt-l 'commandline -i "ls -al"; commandline -f execute'      # **l**ist dir (working solution)
 bind alt-g 'git status; commandline -f repaint'                     # **g**it status
+bind alt-m 'commandline -r gm; commandline -f execute'              # git **m**enu (gm is an alias)
+bind alt-b 'git branch; commandline -f repaint'                     # git **b**ranch
 bind alt-u 'gitup; commandline -f repaint'                          # calling my gitup function that uploads local changes
 # bind alt-m 'mc; commandline -f repaint'                           # **m**idnight commander
 bind ctrl-space forward-char                                        # accept auto-completion

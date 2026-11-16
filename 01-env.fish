@@ -2,6 +2,13 @@
 ## Environmental variables ##
 #############################
 
+# Bash -> Fish:
+#   export PATH=$PATH:/new/dir      # to the end
+#   fish_add_path -P -a /new/dir    # take PATH and append (-a) to the end
+#
+#   export PATH=/new/dir:$PATH      # to the front
+#   fish_add_path -P /new/dir       # take /new/dir and add it to the front of PATH
+
 set -gx FISH_DIR "$HOME/.config/fish"
 set -gx FISH_BIN_DIR "$FISH_DIR/bin"
 set -gx FISH_FUNCTIONS_DIR "$FISH_DIR/functions"
@@ -23,7 +30,8 @@ set -gx QT_SELECT "qt5"
 set -gx DROPBOX "$HOME/Dropbox"
 set -gx ASSETS "$DROPBOX/assets"
 
-set -gx PATH "$PATH:$FISH_BIN_DIR"
+# set -gx PATH "$PATH:$FISH_BIN_DIR"
+fish_add_path -P -a $FISH_BIN_DIR
 
 # include my API keys
 source $DROPBOX/secret/own_api_keys.sh
@@ -53,14 +61,16 @@ set -gx UV_PYTHON "3.14"
 
 # Go lang.
 set -gx GOPATH "$HOME/go"
-set -gx PATH "$PATH:$HOME/go/bin"
+# set -gx PATH "$PATH:$HOME/go/bin"
+fish_add_path -P -a $HOME/go/bin
 
 #############
 # Nim lang. #
 #############
 set -gx NIMBLE "$HOME/.nimble"
 # Nim compiler, nimble package manager, it should come **first**:
-set -gx PATH "$PATH:$NIMBLE/bin"
+# set -gx PATH "$PATH:$NIMBLE/bin"
+fish_add_path -P $NIMBLE/bin  # to the front
 # Make a symbolic link called "current" that points on the latest Nim installation. It should come **second**.
 # The binary `atlas` is here, for instance.
 # set -gx PATH "$PATH:$NIMBLE/nimbinaries/current/bin"
@@ -74,7 +84,8 @@ set -gx PATH "$PATH:$NIMBLE/bin"
 # set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # my own D binaries
-set -gx PATH "$PATH:$DROPBOX/d_lang/_bin"
+# set -gx PATH "$PATH:$DROPBOX/d_lang/_bin"
+fish_add_path -P -a $DROPBOX/d_lang/_bin
 
 # ifx (Intel's Fortran compiler)
 # set -gx PATH "$PATH:/opt/intel/oneapi/2025.3/bin"
@@ -85,14 +96,18 @@ set -gx PATH "$PATH:$DROPBOX/d_lang/_bin"
 
 # Java
 set -gx JAVA_HOME /usr/lib/jvm/default
-set -gx JFX_HOME /opt/javafx-sdk-17.0.18
+# set -gx JFX_HOME /opt/javafx-sdk-17.0.18
 
 # DASM and xcbasic3
-set -gx PATH "$PATH:/opt/dasm"    # dasm
-set -gx PATH "$PATH:/opt/xc-basic3/bin/Linux"    # xcbasic3
+# set -gx PATH "$PATH:/opt/dasm"    # dasm
+fish_add_path -P -a /opt/dasm
+# set -gx PATH "$PATH:/opt/xc-basic3/bin/Linux"    # xcbasic3
+fish_add_path -P -a /opt/xc-basic3/bin/Linux
 
 # Nimony
-set -gx PATH "$PATH:$DROPBOX/nim/Nimony/bin"  # compiler and tools
+# set -gx PATH "$PATH:$DROPBOX/nim/Nimony/bin"  # compiler and tools
+# fish_add_path -P -a $DROPBOX/nim/Nimony/bin
 
 # Zed editor
-set -gx PATH "$PATH:/opt/zed.app/bin"
+# set -gx PATH "$PATH:/opt/zed.app/bin"
+fish_add_path -P -a /opt/zed.app/bin
