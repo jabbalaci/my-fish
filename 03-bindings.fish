@@ -8,12 +8,17 @@
 # $ fish_key_reader
 #   ^ it shows you what escape sequence a keypress produces
 
+# Preset bindings are loaded *after* config.fish, so erasing them here directly has no effect.
+# fish_user_key_bindings is called right after the presets are installed.
+function fish_user_key_bindings
+    bind --erase --preset alt-s                                     # disable the alt-s keybinding
+end
+
 # bind alt-l 'commandline -i "ls -al"; commandline -f execute'      # **l**ist dir (working solution)
 bind alt-g 'git status; commandline -f repaint'                     # **g**it status
 bind alt-m 'commandline -r gm; commandline -f execute'              # git **m**enu (gm is an alias)
-bind alt-b 'git branch; commandline -f repaint'                     # git **b**ranch
+bind alt-b 'commandline -r "git branch"; commandline -f execute'    # git **b**ranch
 bind alt-u 'gitup; commandline -f repaint'                          # calling my gitup function that uploads local changes
-# bind alt-m 'mc; commandline -f repaint'                           # **m**idnight commander
 bind ctrl-space forward-char                                        # accept auto-completion
 # commandline -a appends text to the current command
 bind alt-p 'commandline -a " | less"'                               # alt-p now uses `|` instead of `&|` (p: paginate)
