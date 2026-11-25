@@ -262,5 +262,8 @@ alias myq="$DROPBOX/python/batch/myq.py"
 abbr ed ned
 alias japan tokyo
 
+# simplify clipboard text
+alias clean="$DROPBOX/nim/_projects/clean_clipboard_text/simplify_clipboard_text.nim"
+
 # my Git stuff
 alias gm="$DROPBOX/python/mygit/menu.sh"               # gitmenu

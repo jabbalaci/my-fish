@@ -37,7 +37,7 @@ function ex --argument fname -d "Universal archive extractor"
             case '*.tgz'
                 tar xvzf $fname
             case '*.zip'
-                unzip $fname
+                unzip -O utf-8 $fname
             case '*.jar'
                 unzip $fname
             case '*.Z'
